@@ -1,0 +1,14 @@
+﻿{
+  "Name": "FOUR SQUARES CHESS",
+  "Type": "Element",
+  "TaxonomyType": "Label",
+  "Id": "uzzQkYUL6EaoC7nGc12dew",
+  "Reference": "MnJv6WlD6ku6VBFHLWPq0Q/uzzQkYUL6EaoC7nGc12dew",
+  "ParentRef": "MnJv6WlD6ku6VBFHLWPq0Q/R2soqWcArkCT8yMjtD6T2w",
+  "Created": "2024-11-05T10:22:58.4321786Z",
+  "Updated": "2024-11-05T10:22:58.4321786Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=24.11.1.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.11.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

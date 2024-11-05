@@ -1,0 +1,939 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:av="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <x:Members>
+    <x:Property Name="acquired_argument" Type="OutArgument(x:String)" />
+  </x:Members>
+  <VisualBasic.Settings>
+    <x:Null />
+  </VisualBasic.Settings>
+  <sap2010:WorkflowViewState.IdRef>ActivityBuilder_1</sap2010:WorkflowViewState.IdRef>
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Linq.Expressions</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>System.Numerics</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Services.RuntimeAnalyze</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Platform.SyncObjects</x:String>
+      <x:String>UiPath.UIAutomationNext.Models</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Models</x:String>
+      <x:String>UiPath.Platform.Triggers</x:String>
+      <x:String>UiPath.Platform.Triggers.Scope</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>UiPath.Excel</x:String>
+      <x:String>UiPath.Excel.Activities</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Linq.Async</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
+      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>UiPath.Workflow</AssemblyReference>
+      <AssemblyReference>System.Runtime.Numerics</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+      <AssemblyReference>System.Private.Xml</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>System.Data.SqlClient</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.ViewModels</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="1452.0000000000002,671.2" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <Flowchart sap:VirtualizedContainerService.HintSize="600,648" sap2010:WorkflowViewState.IdRef="Flowchart_1">
+      <Flowchart.Variables>
+        <Variable x:TypeArguments="x:String" Name="Assign_variable" />
+        <Variable x:TypeArguments="sd:DataTable" Name="DataFrame" />
+      </Flowchart.Variables>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+          <av:Point x:Key="ShapeLocation">275,45</av:Point>
+          <av:Size x:Key="ShapeSize">49.6,49.6</av:Size>
+          <av:PointCollection x:Key="ConnectorLocation">275,69.8 245,69.8 245,70.2 195.4,70.2</av:PointCollection>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <Flowchart.StartNode>
+        <x:Reference>__ReferenceID17</x:Reference>
+      </Flowchart.StartNode>
+      <FlowStep x:Name="__ReferenceID17" sap2010:WorkflowViewState.IdRef="FlowStep_1">
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <av:Point x:Key="ShapeLocation">85,35</av:Point>
+            <av:Size x:Key="ShapeSize">110.4,70.4</av:Size>
+            <av:PointCollection x:Key="ConnectorLocation">85,70.2 55,70.2 55,10.200000000000003 375,10.200000000000003 375,70.2 405,70.2</av:PointCollection>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+        <Sequence sap:VirtualizedContainerService.HintSize="110.4,70.4" sap2010:WorkflowViewState.IdRef="Sequence_3">
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+          <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="416,113.6" sap2010:WorkflowViewState.IdRef="WriteLine_2" Text="This is a output from sequence" />
+        </Sequence>
+        <FlowStep.Next>
+          <FlowStep x:Name="__ReferenceID1" sap2010:WorkflowViewState.IdRef="FlowStep_2">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <av:Point x:Key="ShapeLocation">405,35</av:Point>
+                <av:Size x:Key="ShapeSize">110.4,70.4</av:Size>
+                <av:PointCollection x:Key="ConnectorLocation">460.2,105.4 460.2,155</av:PointCollection>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <Flowchart sap:VirtualizedContainerService.HintSize="110.4,70.4" sap2010:WorkflowViewState.IdRef="Flowchart_2">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                  <av:Point x:Key="ShapeLocation">705,35</av:Point>
+                  <av:Size x:Key="ShapeSize">49.6,49.6</av:Size>
+                  <av:PointCollection x:Key="ConnectorLocation">729.8,84.6 729.8,114.6 730.2,114.6 730.2,135</av:PointCollection>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <Flowchart.StartNode>
+                <x:Reference>__ReferenceID0</x:Reference>
+              </Flowchart.StartNode>
+              <FlowStep x:Name="__ReferenceID0" sap2010:WorkflowViewState.IdRef="FlowStep_18">
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <av:Point x:Key="ShapeLocation">675,135</av:Point>
+                    <av:Size x:Key="ShapeSize">110.4,70.4</av:Size>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+                <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="334.4,90.4" sap2010:WorkflowViewState.IdRef="WriteLine_3" Text="The most important aspect of flowcharts is that, unlike sequences, they present multiple branching logical operators, that enable you to create complex business processes and connect activities in multiple ways.">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                </WriteLine>
+              </FlowStep>
+            </Flowchart>
+            <FlowStep.Next>
+              <FlowStep x:Name="__ReferenceID2" sap2010:WorkflowViewState.IdRef="FlowStep_3">
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <av:Point x:Key="ShapeLocation">405,155</av:Point>
+                    <av:Size x:Key="ShapeSize">110.4,70.4</av:Size>
+                    <av:PointCollection x:Key="ConnectorLocation">405,190.2 355.4,190.2</av:PointCollection>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+                <Sequence DisplayName="Assign" sap:VirtualizedContainerService.HintSize="110.4,70.4" sap2010:WorkflowViewState.IdRef="Sequence_4">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <Assign sap:VirtualizedContainerService.HintSize="433.6,104.8" sap2010:WorkflowViewState.IdRef="Assign_1">
+                    <Assign.To>
+                      <OutArgument x:TypeArguments="x:String">[Assign_variable]</OutArgument>
+                    </Assign.To>
+                    <Assign.Value>
+                      <InArgument x:TypeArguments="x:String">Assigned</InArgument>
+                    </Assign.Value>
+                  </Assign>
+                </Sequence>
+                <FlowStep.Next>
+                  <FlowStep x:Name="__ReferenceID3" sap2010:WorkflowViewState.IdRef="FlowStep_4">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <av:Point x:Key="ShapeLocation">245,155</av:Point>
+                        <av:Size x:Key="ShapeSize">110.4,70.4</av:Size>
+                        <av:PointCollection x:Key="ConnectorLocation">245,190.2 195.4,190.2</av:PointCollection>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <Sequence DisplayName="Write line" sap:VirtualizedContainerService.HintSize="110.4,70.4" sap2010:WorkflowViewState.IdRef="Sequence_5">
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                      <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="416,113.6" sap2010:WorkflowViewState.IdRef="WriteLine_4" Text="[Assign_variable+&quot; and its was displayed using write line activity&quot;]" />
+                    </Sequence>
+                    <FlowStep.Next>
+                      <FlowStep x:Name="__ReferenceID4" sap2010:WorkflowViewState.IdRef="FlowStep_5">
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <av:Point x:Key="ShapeLocation">85,155</av:Point>
+                            <av:Size x:Key="ShapeSize">110.4,70.4</av:Size>
+                            <av:PointCollection x:Key="ConnectorLocation">140.2,225.4 140.2,275</av:PointCollection>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                        <Sequence DisplayName="Delay" sap:VirtualizedContainerService.HintSize="110.4,70.4" sap2010:WorkflowViewState.IdRef="Sequence_6">
+                          <Sequence.Variables>
+                            <Variable x:TypeArguments="ui:Timer" Name="start_time" />
+                          </Sequence.Variables>
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                          <ui:StartTimer DisplayName="Start Timer" sap:VirtualizedContainerService.HintSize="416,112.8" sap2010:WorkflowViewState.IdRef="StartTimer_1" Timer="[start_time]" />
+                          <Delay Duration="00:00:05" sap:VirtualizedContainerService.HintSize="416,122.4" sap2010:WorkflowViewState.IdRef="Delay_1" />
+                          <ui:StopTimer DisplayName="Stop Timer" sap:VirtualizedContainerService.HintSize="416,112.8" sap2010:WorkflowViewState.IdRef="StopTimer_1" Timer="[start_time]" />
+                          <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="416,113.6" sap2010:WorkflowViewState.IdRef="WriteLine_6" Text="[start_time.Elapsed.TotalSeconds.ToString()+&quot; :: &quot;+&quot;is the elapsed time after 5 seconds delay&quot;]" />
+                        </Sequence>
+                        <FlowStep.Next>
+                          <FlowStep x:Name="__ReferenceID5" sap2010:WorkflowViewState.IdRef="FlowStep_6">
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <av:Point x:Key="ShapeLocation">85,275</av:Point>
+                                <av:Size x:Key="ShapeSize">110.4,70.4</av:Size>
+                                <av:PointCollection x:Key="ConnectorLocation">195.4,310.2 245,310.2</av:PointCollection>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                            <Sequence DisplayName="IF" sap:VirtualizedContainerService.HintSize="110.4,70.4" sap2010:WorkflowViewState.IdRef="Sequence_7">
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                              <If Condition="[3 &gt; 2]" sap:VirtualizedContainerService.HintSize="449.6,508.8" sap2010:WorkflowViewState.IdRef="If_1">
+                                <If.Then>
+                                  <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="416,173.6" sap2010:WorkflowViewState.IdRef="Sequence_21">
+                                    <sap:WorkflowViewStateService.ViewState>
+                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                      </scg:Dictionary>
+                                    </sap:WorkflowViewStateService.ViewState>
+                                    <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="382.4,113.6" sap2010:WorkflowViewState.IdRef="WriteLine_7" Text="True :: Three is greater than two" />
+                                  </Sequence>
+                                </If.Then>
+                                <If.Else>
+                                  <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="416,173.6" sap2010:WorkflowViewState.IdRef="Sequence_22">
+                                    <sap:WorkflowViewStateService.ViewState>
+                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                      </scg:Dictionary>
+                                    </sap:WorkflowViewStateService.ViewState>
+                                    <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="382.4,113.6" sap2010:WorkflowViewState.IdRef="WriteLine_8" Text="False :: Three is lesser than two" />
+                                  </Sequence>
+                                </If.Else>
+                              </If>
+                            </Sequence>
+                            <FlowStep.Next>
+                              <FlowStep x:Name="__ReferenceID6" sap2010:WorkflowViewState.IdRef="FlowStep_7">
+                                <sap:WorkflowViewStateService.ViewState>
+                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                    <av:Point x:Key="ShapeLocation">245,275</av:Point>
+                                    <av:Size x:Key="ShapeSize">110.4,70.4</av:Size>
+                                    <av:PointCollection x:Key="ConnectorLocation">355.4,310.2 405,310.2</av:PointCollection>
+                                  </scg:Dictionary>
+                                </sap:WorkflowViewStateService.ViewState>
+                                <Sequence DisplayName="While" sap:VirtualizedContainerService.HintSize="110.4,70.4" sap2010:WorkflowViewState.IdRef="Sequence_8">
+                                  <Sequence.Variables>
+                                    <Variable x:TypeArguments="x:Int32" Name="counter">
+                                      <Variable.Default>
+                                        <Literal x:TypeArguments="x:Int32" />
+                                      </Variable.Default>
+                                    </Variable>
+                                  </Sequence.Variables>
+                                  <sap:WorkflowViewStateService.ViewState>
+                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                    </scg:Dictionary>
+                                  </sap:WorkflowViewStateService.ViewState>
+                                  <ui:InterruptibleWhile CurrentIndex="{x:Null}" DisplayName="While" sap:VirtualizedContainerService.HintSize="500.8,433.6" sap2010:WorkflowViewState.IdRef="InterruptibleWhile_1">
+                                    <ui:InterruptibleWhile.Body>
+                                      <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="467.2,287.2" sap2010:WorkflowViewState.IdRef="Sequence_23">
+                                        <sap:WorkflowViewStateService.ViewState>
+                                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                          </scg:Dictionary>
+                                        </sap:WorkflowViewStateService.ViewState>
+                                        <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="433.6,122.4" sap2010:WorkflowViewState.IdRef="WriteLine_9" Text="[counter.ToString()]" />
+                                        <Assign sap:VirtualizedContainerService.HintSize="433.6,104.8" sap2010:WorkflowViewState.IdRef="Assign_3">
+                                          <Assign.To>
+                                            <OutArgument x:TypeArguments="x:Int32">[counter]</OutArgument>
+                                          </Assign.To>
+                                          <Assign.Value>
+                                            <InArgument x:TypeArguments="x:Int32">[counter + 1]</InArgument>
+                                          </Assign.Value>
+                                        </Assign>
+                                      </Sequence>
+                                    </ui:InterruptibleWhile.Body>
+                                    <ui:InterruptibleWhile.Condition>
+                                      <VisualBasicValue x:TypeArguments="x:Boolean" DisplayName="Visual basic value" ExpressionText="counter &lt; 3" />
+                                    </ui:InterruptibleWhile.Condition>
+                                  </ui:InterruptibleWhile>
+                                  <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="500.8,113.6" sap2010:WorkflowViewState.IdRef="WriteLine_10" Text="exited while loop" />
+                                </Sequence>
+                                <FlowStep.Next>
+                                  <FlowStep x:Name="__ReferenceID7" sap2010:WorkflowViewState.IdRef="FlowStep_8">
+                                    <sap:WorkflowViewStateService.ViewState>
+                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                        <av:Point x:Key="ShapeLocation">405,275</av:Point>
+                                        <av:Size x:Key="ShapeSize">110.4,70.4</av:Size>
+                                        <av:PointCollection x:Key="ConnectorLocation">460.2,345.4 460.2,395</av:PointCollection>
+                                      </scg:Dictionary>
+                                    </sap:WorkflowViewStateService.ViewState>
+                                    <Sequence DisplayName="Do While" sap:VirtualizedContainerService.HintSize="110.4,70.4" sap2010:WorkflowViewState.IdRef="Sequence_9">
+                                      <Sequence.Variables>
+                                        <Variable x:TypeArguments="x:Int32" Name="counter">
+                                          <Variable.Default>
+                                            <Literal x:TypeArguments="x:Int32" />
+                                          </Variable.Default>
+                                        </Variable>
+                                      </Sequence.Variables>
+                                      <sap:WorkflowViewStateService.ViewState>
+                                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                        </scg:Dictionary>
+                                      </sap:WorkflowViewStateService.ViewState>
+                                      <ui:InterruptibleDoWhile CurrentIndex="{x:Null}" DisplayName="Do While" sap:VirtualizedContainerService.HintSize="500.8,433.6" sap2010:WorkflowViewState.IdRef="InterruptibleDoWhile_2">
+                                        <ui:InterruptibleDoWhile.Body>
+                                          <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="467.2,287.2" sap2010:WorkflowViewState.IdRef="Sequence_27">
+                                            <sap:WorkflowViewStateService.ViewState>
+                                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                              </scg:Dictionary>
+                                            </sap:WorkflowViewStateService.ViewState>
+                                            <Assign sap:VirtualizedContainerService.HintSize="433.6,113.6" sap2010:WorkflowViewState.IdRef="Assign_8">
+                                              <Assign.To>
+                                                <OutArgument x:TypeArguments="x:Int32">[counter]</OutArgument>
+                                              </Assign.To>
+                                              <Assign.Value>
+                                                <InArgument x:TypeArguments="x:Int32">[counter + 1]</InArgument>
+                                              </Assign.Value>
+                                            </Assign>
+                                            <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="433.6,113.6" sap2010:WorkflowViewState.IdRef="WriteLine_13" Text="[counter.ToString()]" />
+                                          </Sequence>
+                                        </ui:InterruptibleDoWhile.Body>
+                                        <ui:InterruptibleDoWhile.Condition>
+                                          <VisualBasicValue x:TypeArguments="x:Boolean" DisplayName="Visual basic value" ExpressionText="counter &lt; 3" />
+                                        </ui:InterruptibleDoWhile.Condition>
+                                      </ui:InterruptibleDoWhile>
+                                      <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="500.8,113.6" sap2010:WorkflowViewState.IdRef="WriteLine_14" Text="exited do while loop" />
+                                    </Sequence>
+                                    <FlowStep.Next>
+                                      <FlowStep x:Name="__ReferenceID10" sap2010:WorkflowViewState.IdRef="FlowStep_11">
+                                        <sap:WorkflowViewStateService.ViewState>
+                                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                            <av:Point x:Key="ShapeLocation">405,395</av:Point>
+                                            <av:Size x:Key="ShapeSize">110.4,70.4</av:Size>
+                                            <av:PointCollection x:Key="ConnectorLocation">405,430.2 355.4,430.2</av:PointCollection>
+                                          </scg:Dictionary>
+                                        </sap:WorkflowViewStateService.ViewState>
+                                        <Sequence DisplayName="For Each" sap:VirtualizedContainerService.HintSize="110.4,70.4" sap2010:WorkflowViewState.IdRef="Sequence_14">
+                                          <sap:WorkflowViewStateService.ViewState>
+                                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                            </scg:Dictionary>
+                                          </sap:WorkflowViewStateService.ViewState>
+                                          <ui:ForEach x:TypeArguments="x:Int32" CurrentIndex="{x:Null}" DisplayName="For Each currentNumber" sap:VirtualizedContainerService.HintSize="449.6,320" sap2010:WorkflowViewState.IdRef="ForEach`1_1" Values="[New List(Of Integer) From {1, 2, 3, 4, 5}]">
+                                            <ui:ForEach.Body>
+                                              <ActivityAction x:TypeArguments="x:Int32">
+                                                <ActivityAction.Argument>
+                                                  <DelegateInArgument x:TypeArguments="x:Int32" Name="currentNumber" />
+                                                </ActivityAction.Argument>
+                                                <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="416,173.6" sap2010:WorkflowViewState.IdRef="Sequence_30">
+                                                  <sap:WorkflowViewStateService.ViewState>
+                                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                    </scg:Dictionary>
+                                                  </sap:WorkflowViewStateService.ViewState>
+                                                  <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="382.4,113.6" sap2010:WorkflowViewState.IdRef="WriteLine_15" Text="[currentNumber.ToString()]" />
+                                                </Sequence>
+                                              </ActivityAction>
+                                            </ui:ForEach.Body>
+                                          </ui:ForEach>
+                                          <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="449.6,113.6" sap2010:WorkflowViewState.IdRef="WriteLine_17" Text="Exited For each" />
+                                        </Sequence>
+                                        <FlowStep.Next>
+                                          <FlowStep x:Name="__ReferenceID8" sap2010:WorkflowViewState.IdRef="FlowStep_9">
+                                            <sap:WorkflowViewStateService.ViewState>
+                                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                <av:Point x:Key="ShapeLocation">245,395</av:Point>
+                                                <av:Size x:Key="ShapeSize">110.4,70.4</av:Size>
+                                                <av:PointCollection x:Key="ConnectorLocation">245,430.2 195.4,430.2</av:PointCollection>
+                                              </scg:Dictionary>
+                                            </sap:WorkflowViewStateService.ViewState>
+                                            <Sequence DisplayName="Switch" sap:VirtualizedContainerService.HintSize="110.4,70.4" sap2010:WorkflowViewState.IdRef="Sequence_11">
+                                              <Sequence.Variables>
+                                                <Variable x:TypeArguments="x:Int32" Name="number">
+                                                  <Variable.Default>
+                                                    <Literal x:TypeArguments="x:Int32" Value="2" />
+                                                  </Variable.Default>
+                                                </Variable>
+                                              </Sequence.Variables>
+                                              <sap:WorkflowViewStateService.ViewState>
+                                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                </scg:Dictionary>
+                                              </sap:WorkflowViewStateService.ViewState>
+                                              <Switch x:TypeArguments="x:Int32" DisplayName="Switch" Expression="[number mod 2]" sap:VirtualizedContainerService.HintSize="496.8,301.6" sap2010:WorkflowViewState.IdRef="Switch`1_1">
+                                                <Switch.Default>
+                                                  <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="334.4,90.4" sap2010:WorkflowViewState.IdRef="WriteLine_18" Text="[&quot;the entered number &quot;+number.ToString()+&quot; is even&quot;]" />
+                                                </Switch.Default>
+                                                <WriteLine x:Key="1" DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="334.4,90.4" sap2010:WorkflowViewState.IdRef="WriteLine_19" Text="[&quot;the entered number &quot;+number.ToString()+&quot; is odd&quot;]" />
+                                              </Switch>
+                                            </Sequence>
+                                            <FlowStep.Next>
+                                              <FlowStep x:Name="__ReferenceID9" sap2010:WorkflowViewState.IdRef="FlowStep_10">
+                                                <sap:WorkflowViewStateService.ViewState>
+                                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                    <av:Point x:Key="ShapeLocation">85,395</av:Point>
+                                                    <av:Size x:Key="ShapeSize">110.4,70.4</av:Size>
+                                                    <av:PointCollection x:Key="ConnectorLocation">140.2,465.4 140.2,515</av:PointCollection>
+                                                  </scg:Dictionary>
+                                                </sap:WorkflowViewStateService.ViewState>
+                                                <Sequence DisplayName="Invoke Workflow File" sap:VirtualizedContainerService.HintSize="110.4,70.4" sap2010:WorkflowViewState.IdRef="Sequence_13">
+                                                  <sap:WorkflowViewStateService.ViewState>
+                                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                    </scg:Dictionary>
+                                                  </sap:WorkflowViewStateService.ViewState>
+                                                  <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="nested_workflow - Invoke Workflow File (nested_workflow.xaml)" sap:VirtualizedContainerService.HintSize="416,197.6" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_1" UnSafe="False" WorkflowFileName="nested_workflow.xaml">
+                                                    <ui:InvokeWorkflowFile.Arguments>
+                                                      <InArgument x:TypeArguments="x:String" x:Key="acquired_argument">The invoked workflow is executed successfully</InArgument>
+                                                    </ui:InvokeWorkflowFile.Arguments>
+                                                  </ui:InvokeWorkflowFile>
+                                                </Sequence>
+                                                <FlowStep.Next>
+                                                  <FlowStep x:Name="__ReferenceID11" sap2010:WorkflowViewState.IdRef="FlowStep_12">
+                                                    <sap:WorkflowViewStateService.ViewState>
+                                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                        <av:Point x:Key="ShapeLocation">85,515</av:Point>
+                                                        <av:Size x:Key="ShapeSize">110.4,70.4</av:Size>
+                                                        <av:PointCollection x:Key="ConnectorLocation">195.4,550.2 245,550.2</av:PointCollection>
+                                                      </scg:Dictionary>
+                                                    </sap:WorkflowViewStateService.ViewState>
+                                                    <Sequence DisplayName="Click" sap:VirtualizedContainerService.HintSize="110.4,70.4" sap2010:WorkflowViewState.IdRef="Sequence_15">
+                                                      <sap:WorkflowViewStateService.ViewState>
+                                                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                        </scg:Dictionary>
+                                                      </sap:WorkflowViewStateService.ViewState>
+                                                      <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Chrome: New Tab" sap:VirtualizedContainerService.HintSize="449.6,520" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="ecd7fc9e-2507-4df2-b401-16268e25ce5d" Version="V2">
+                                                        <uix:NApplicationCard.Body>
+                                                          <ActivityAction x:TypeArguments="x:Object">
+                                                            <ActivityAction.Argument>
+                                                              <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+                                                            </ActivityAction.Argument>
+                                                            <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="416,280" sap2010:WorkflowViewState.IdRef="Sequence_31">
+                                                              <sap:WorkflowViewStateService.ViewState>
+                                                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                                </scg:Dictionary>
+                                                              </sap:WorkflowViewStateService.ViewState>
+                                                              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'editable text Address a…'" sap:VirtualizedContainerService.HintSize="382.4,218.4" sap2010:WorkflowViewState.IdRef="NClick_1" InteractionMode="HardwareEvents" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="ecd7fc9e-2507-4df2-b401-16268e25ce5d" Version="V4">
+                                                                <uix:NClick.Target>
+                                                                  <uix:TargetAnchorable BrowserURL="chrome://newtab/" CVScreenId="2b28e56a-2f8d-4525-9097-66d31015e391" CvElementArea="203, 66, 1553, 42" CvType="InputBox" DesignTimeRectangle="250, 72, 1452, 31" DesignTimeScaleFactor="1.25" ElementType="InputBox" FullSelectorArgument="&lt;ctrl name='New Tab - Google Chrome - Camouflage' role='pane' /&gt;&lt;ctrl name='Address and search bar' role='editable text' /&gt;" FuzzySelectorArgument="&lt;ctrl name='New Tab - Google Chrome - Camouflage' role='pane' /&gt;&lt;ctrl name='Address and search bar' role='editable text' automationid='' /&gt;" Guid="ba39e42b-31a3-449a-9bea-c1bfce087787" InformativeScreenshot="9fd8af6752fe7ec3c646de14083b20f2.png" ScopeSelectorArgument="&lt;wnd app='chrome.exe' cls='Chrome_WidgetWin_1' title='New Tab - Google Chrome' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V4" Visibility="Interactive">
+                                                                    <uix:TargetAnchorable.Anchors>
+                                                                      <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                                                        <uix:Target DesignTimeRectangle="210, 72, 31, 31" ElementType="Icon" FullSelectorArgument="&lt;ctrl name='New Tab - Google Chrome - Camouflage' role='pane' /&gt;&lt;ctrl name='Search icon' role='graphic' /&gt;" FuzzySelectorArgument="&lt;ctrl name='New Tab - Google Chrome - Camouflage' role='pane' /&gt;&lt;ctrl name='Search icon' role='graphic' automationid='' /&gt;" Guid="b8fded3c-3962-494f-856c-ed0b4c44defa" SearchSteps="Selector, FuzzySelector" />
+                                                                      </scg:List>
+                                                                    </uix:TargetAnchorable.Anchors>
+                                                                  </uix:TargetAnchorable>
+                                                                </uix:NClick.Target>
+                                                                <uix:NClick.VerifyOptions>
+                                                                  <uix:VerifyExecutionOptions DisplayName="Element 'grouping'" Mode="Appears">
+                                                                    <uix:VerifyExecutionOptions.Retry>
+                                                                      <InArgument x:TypeArguments="x:Boolean" />
+                                                                    </uix:VerifyExecutionOptions.Retry>
+                                                                    <uix:VerifyExecutionOptions.Target>
+                                                                      <uix:TargetAnchorable BrowserURL="chrome://newtab/" DesignTimeRectangle="204, 66, 1553, 43" DesignTimeScaleFactor="1.25" FuzzySelectorArgument="&lt;ctrl name='New Tab - Google Chrome - Camouflage' role='pane' /&gt;&lt;ctrl automationid='' role='grouping' /&gt;" Guid="b513db65-1043-45d7-b0d3-37f55023b69f" InformativeScreenshot="031c6bca3fee76a8e946a32203c14096.png" ScopeSelectorArgument="&lt;wnd app='chrome.exe' cls='Chrome_WidgetWin_1' title='New Tab - Google Chrome' /&gt;" SearchSteps="FuzzySelector" Version="V4" Visibility="Interactive">
+                                                                        <uix:TargetAnchorable.Anchors>
+                                                                          <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                                                            <uix:Target DesignTimeRectangle="210, 72, 31, 31" ElementType="Icon" FullSelectorArgument="&lt;ctrl name='New Tab - Google Chrome - Camouflage' role='pane' /&gt;&lt;ctrl name='Search icon' role='graphic' /&gt;" FuzzySelectorArgument="&lt;ctrl name='New Tab - Google Chrome - Camouflage' role='pane' /&gt;&lt;ctrl name='Search icon' role='graphic' automationid='' /&gt;" Guid="7ac442de-fb7d-43e7-a4d7-c86e25326404" SearchSteps="Selector, FuzzySelector" />
+                                                                          </scg:List>
+                                                                        </uix:TargetAnchorable.Anchors>
+                                                                      </uix:TargetAnchorable>
+                                                                    </uix:VerifyExecutionOptions.Target>
+                                                                    <uix:VerifyExecutionOptions.Timeout>
+                                                                      <InArgument x:TypeArguments="x:Double" />
+                                                                    </uix:VerifyExecutionOptions.Timeout>
+                                                                  </uix:VerifyExecutionOptions>
+                                                                </uix:NClick.VerifyOptions>
+                                                              </uix:NClick>
+                                                            </Sequence>
+                                                          </ActivityAction>
+                                                        </uix:NApplicationCard.Body>
+                                                        <uix:NApplicationCard.TargetApp>
+                                                          <uix:TargetApp Area="-9, -9, 1938, 1038" BrowserType="Chrome" IconBase64="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" InformativeScreenshot="e00941dd8d6656ab6b95f9438f543285.png" Selector="&lt;html app='chrome.exe' title='New Tab' /&gt;" Title="New Tab" Url="chrome://newtab/" />
+                                                        </uix:NApplicationCard.TargetApp>
+                                                      </uix:NApplicationCard>
+                                                    </Sequence>
+                                                    <FlowStep.Next>
+                                                      <FlowStep x:Name="__ReferenceID12" sap2010:WorkflowViewState.IdRef="FlowStep_13">
+                                                        <sap:WorkflowViewStateService.ViewState>
+                                                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                            <av:Point x:Key="ShapeLocation">245,515</av:Point>
+                                                            <av:Size x:Key="ShapeSize">110.4,70.4</av:Size>
+                                                            <av:PointCollection x:Key="ConnectorLocation">355.4,550.2 405,550.2</av:PointCollection>
+                                                          </scg:Dictionary>
+                                                        </sap:WorkflowViewStateService.ViewState>
+                                                        <Sequence DisplayName="Type Into" sap:VirtualizedContainerService.HintSize="110.4,70.4" sap2010:WorkflowViewState.IdRef="Sequence_16">
+                                                          <sap:WorkflowViewStateService.ViewState>
+                                                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                            </scg:Dictionary>
+                                                          </sap:WorkflowViewStateService.ViewState>
+                                                          <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Chrome: New Tab" sap:VirtualizedContainerService.HintSize="449.6,806.4" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" InteractionMode="DebuggerApi" ScopeGuid="ecd7fc9e-2507-4df2-b401-16268e25ce5d" Version="V2">
+                                                            <uix:NApplicationCard.Body>
+                                                              <ActivityAction x:TypeArguments="x:Object">
+                                                                <ActivityAction.Argument>
+                                                                  <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+                                                                </ActivityAction.Argument>
+                                                                <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="416,566.4" sap2010:WorkflowViewState.IdRef="Sequence_32">
+                                                                  <sap:WorkflowViewStateService.ViewState>
+                                                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                                    </scg:Dictionary>
+                                                                  </sap:WorkflowViewStateService.ViewState>
+                                                                  <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'editable text Address a…'" sap:VirtualizedContainerService.HintSize="382.4,225.6" sap2010:WorkflowViewState.IdRef="NClick_2" InteractionMode="HardwareEvents" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="ecd7fc9e-2507-4df2-b401-16268e25ce5d" Version="V4">
+                                                                    <uix:NClick.Target>
+                                                                      <uix:TargetAnchorable BrowserURL="chrome://newtab/" CVScreenId="2b28e56a-2f8d-4525-9097-66d31015e391" CvElementArea="203, 66, 1553, 42" CvType="InputBox" DesignTimeRectangle="250, 72, 1452, 31" DesignTimeScaleFactor="1.25" ElementType="InputBox" FullSelectorArgument="&lt;ctrl name='New Tab - Google Chrome - Camouflage' role='pane' /&gt;&lt;ctrl name='Address and search bar' role='editable text' /&gt;" FuzzySelectorArgument="&lt;ctrl name='New Tab - Google Chrome - Camouflage' role='pane' /&gt;&lt;ctrl name='Address and search bar' role='editable text' automationid='' /&gt;" Guid="ba39e42b-31a3-449a-9bea-c1bfce087787" InformativeScreenshot="9fd8af6752fe7ec3c646de14083b20f2.png" ScopeSelectorArgument="&lt;wnd app='chrome.exe' cls='Chrome_WidgetWin_1' title='New Tab - Google Chrome' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V4" Visibility="Interactive">
+                                                                        <uix:TargetAnchorable.Anchors>
+                                                                          <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                                                            <uix:Target DesignTimeRectangle="210, 72, 31, 31" ElementType="Icon" FullSelectorArgument="&lt;ctrl name='New Tab - Google Chrome - Camouflage' role='pane' /&gt;&lt;ctrl name='Search icon' role='graphic' /&gt;" FuzzySelectorArgument="&lt;ctrl name='New Tab - Google Chrome - Camouflage' role='pane' /&gt;&lt;ctrl name='Search icon' role='graphic' automationid='' /&gt;" Guid="b8fded3c-3962-494f-856c-ed0b4c44defa" SearchSteps="Selector, FuzzySelector" />
+                                                                          </scg:List>
+                                                                        </uix:TargetAnchorable.Anchors>
+                                                                      </uix:TargetAnchorable>
+                                                                    </uix:NClick.Target>
+                                                                    <uix:NClick.VerifyOptions>
+                                                                      <uix:VerifyExecutionOptions DisplayName="Element 'grouping'" Mode="Appears">
+                                                                        <uix:VerifyExecutionOptions.Retry>
+                                                                          <InArgument x:TypeArguments="x:Boolean" />
+                                                                        </uix:VerifyExecutionOptions.Retry>
+                                                                        <uix:VerifyExecutionOptions.Target>
+                                                                          <uix:TargetAnchorable BrowserURL="chrome://newtab/" DesignTimeRectangle="204, 66, 1553, 43" DesignTimeScaleFactor="1.25" FuzzySelectorArgument="&lt;ctrl name='New Tab - Google Chrome - Camouflage' role='pane' /&gt;&lt;ctrl automationid='' role='grouping' /&gt;" Guid="b513db65-1043-45d7-b0d3-37f55023b69f" InformativeScreenshot="031c6bca3fee76a8e946a32203c14096.png" ScopeSelectorArgument="&lt;wnd app='chrome.exe' cls='Chrome_WidgetWin_1' title='New Tab - Google Chrome' /&gt;" SearchSteps="FuzzySelector" Version="V4" Visibility="Interactive">
+                                                                            <uix:TargetAnchorable.Anchors>
+                                                                              <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                                                                <uix:Target DesignTimeRectangle="210, 72, 31, 31" ElementType="Icon" FullSelectorArgument="&lt;ctrl name='New Tab - Google Chrome - Camouflage' role='pane' /&gt;&lt;ctrl name='Search icon' role='graphic' /&gt;" FuzzySelectorArgument="&lt;ctrl name='New Tab - Google Chrome - Camouflage' role='pane' /&gt;&lt;ctrl name='Search icon' role='graphic' automationid='' /&gt;" Guid="7ac442de-fb7d-43e7-a4d7-c86e25326404" SearchSteps="Selector, FuzzySelector" />
+                                                                              </scg:List>
+                                                                            </uix:TargetAnchorable.Anchors>
+                                                                          </uix:TargetAnchorable>
+                                                                        </uix:VerifyExecutionOptions.Target>
+                                                                        <uix:VerifyExecutionOptions.Timeout>
+                                                                          <InArgument x:TypeArguments="x:Double" />
+                                                                        </uix:VerifyExecutionOptions.Timeout>
+                                                                      </uix:VerifyExecutionOptions>
+                                                                    </uix:NClick.VerifyOptions>
+                                                                  </uix:NClick>
+                                                                  <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'editable text Address a…'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="382.4,279.2" sap2010:WorkflowViewState.IdRef="NTypeInto_1" InteractionMode="HardwareEvents" ScopeIdentifier="ecd7fc9e-2507-4df2-b401-16268e25ce5d" Text="uipath" Version="V4">
+                                                                    <uix:NTypeInto.Target>
+                                                                      <uix:TargetAnchorable BrowserURL="chrome://newtab/" CVScreenId="a9b711ae-0a3c-41fe-ae53-90e1cfafa3a8" CvElementArea="207, 64, 1550, 47" CvType="InputBox" DesignTimeRectangle="250, 72, 1452, 31" DesignTimeScaleFactor="1.25" ElementType="InputBox" FullSelectorArgument="&lt;ctrl name='New Tab - Google Chrome - Camouflage' role='pane' /&gt;&lt;ctrl name='Address and search bar' role='editable text' /&gt;" FuzzySelectorArgument="&lt;ctrl name='New Tab - Google Chrome - Camouflage' role='pane' /&gt;&lt;ctrl name='Address and search bar' role='editable text' automationid='' /&gt;" Guid="6c04c6a8-51d0-4d7b-b6a2-6749fdcc646f" InformativeScreenshot="3219158e82b571bf4478eb2ddcc4b35e.png" ScopeSelectorArgument="&lt;wnd app='chrome.exe' cls='Chrome_WidgetWin_1' title='New Tab - Google Chrome' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V4" Visibility="Interactive">
+                                                                        <uix:TargetAnchorable.Anchors>
+                                                                          <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                                                            <uix:Target DesignTimeRectangle="210, 72, 31, 31" ElementType="Icon" FullSelectorArgument="&lt;ctrl name='New Tab - Google Chrome - Camouflage' role='pane' /&gt;&lt;ctrl name='Search icon' role='graphic' /&gt;" FuzzySelectorArgument="&lt;ctrl name='New Tab - Google Chrome - Camouflage' role='pane' /&gt;&lt;ctrl name='Search icon' role='graphic' automationid='' /&gt;" Guid="fffc5e87-5447-4773-ae06-5cfb6125a1d5" SearchSteps="Selector, FuzzySelector" />
+                                                                          </scg:List>
+                                                                        </uix:TargetAnchorable.Anchors>
+                                                                      </uix:TargetAnchorable>
+                                                                    </uix:NTypeInto.Target>
+                                                                    <uix:NTypeInto.VerifyOptions>
+                                                                      <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
+                                                                        <uix:VerifyExecutionTypeIntoOptions.Retry>
+                                                                          <InArgument x:TypeArguments="x:Boolean" />
+                                                                        </uix:VerifyExecutionTypeIntoOptions.Retry>
+                                                                        <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                                                                          <InArgument x:TypeArguments="x:Double" />
+                                                                        </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                                                                      </uix:VerifyExecutionTypeIntoOptions>
+                                                                    </uix:NTypeInto.VerifyOptions>
+                                                                  </uix:NTypeInto>
+                                                                </Sequence>
+                                                              </ActivityAction>
+                                                            </uix:NApplicationCard.Body>
+                                                            <uix:NApplicationCard.TargetApp>
+                                                              <uix:TargetApp Area="-9, -9, 1938, 1038" BrowserType="Chrome" IconBase64="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" InformativeScreenshot="e00941dd8d6656ab6b95f9438f543285.png" Selector="&lt;html app='chrome.exe' title='New Tab' /&gt;" Title="New Tab" Url="chrome://newtab/" />
+                                                            </uix:NApplicationCard.TargetApp>
+                                                          </uix:NApplicationCard>
+                                                        </Sequence>
+                                                        <FlowStep.Next>
+                                                          <FlowStep x:Name="__ReferenceID13" sap2010:WorkflowViewState.IdRef="FlowStep_14">
+                                                            <sap:WorkflowViewStateService.ViewState>
+                                                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                                <av:Point x:Key="ShapeLocation">405,515</av:Point>
+                                                                <av:Size x:Key="ShapeSize">110.4,70.4</av:Size>
+                                                                <av:PointCollection x:Key="ConnectorLocation">460.2,585.4 460.2,645</av:PointCollection>
+                                                              </scg:Dictionary>
+                                                            </sap:WorkflowViewStateService.ViewState>
+                                                            <Sequence DisplayName="Get Text" sap:VirtualizedContainerService.HintSize="110.4,70.4" sap2010:WorkflowViewState.IdRef="Sequence_17">
+                                                              <sap:WorkflowViewStateService.ViewState>
+                                                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                                </scg:Dictionary>
+                                                              </sap:WorkflowViewStateService.ViewState>
+                                                              <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Chrome: New Tab" sap:VirtualizedContainerService.HintSize="449.6,1400" sap2010:WorkflowViewState.IdRef="NApplicationCard_3" InteractionMode="DebuggerApi" ScopeGuid="ecd7fc9e-2507-4df2-b401-16268e25ce5d" Version="V2">
+                                                                <uix:NApplicationCard.Body>
+                                                                  <ActivityAction x:TypeArguments="x:Object">
+                                                                    <ActivityAction.Argument>
+                                                                      <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+                                                                    </ActivityAction.Argument>
+                                                                    <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="416,1160" sap2010:WorkflowViewState.IdRef="Sequence_33">
+                                                                      <Sequence.Variables>
+                                                                        <Variable x:TypeArguments="x:String" Name="text" />
+                                                                      </Sequence.Variables>
+                                                                      <sap:WorkflowViewStateService.ViewState>
+                                                                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                                        </scg:Dictionary>
+                                                                      </sap:WorkflowViewStateService.ViewState>
+                                                                      <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'editable text Address a…'" sap:VirtualizedContainerService.HintSize="382.4,225.6" sap2010:WorkflowViewState.IdRef="NClick_3" InteractionMode="HardwareEvents" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="ecd7fc9e-2507-4df2-b401-16268e25ce5d" Version="V4">
+                                                                        <uix:NClick.Target>
+                                                                          <uix:TargetAnchorable BrowserURL="chrome://newtab/" CVScreenId="2b28e56a-2f8d-4525-9097-66d31015e391" CvElementArea="203, 66, 1553, 42" CvType="InputBox" DesignTimeRectangle="250, 72, 1452, 31" DesignTimeScaleFactor="1.25" ElementType="InputBox" FullSelectorArgument="&lt;ctrl name='New Tab - Google Chrome - Camouflage' role='pane' /&gt;&lt;ctrl name='Address and search bar' role='editable text' /&gt;" FuzzySelectorArgument="&lt;ctrl name='New Tab - Google Chrome - Camouflage' role='pane' /&gt;&lt;ctrl name='Address and search bar' role='editable text' automationid='' /&gt;" Guid="ba39e42b-31a3-449a-9bea-c1bfce087787" InformativeScreenshot="9fd8af6752fe7ec3c646de14083b20f2.png" ScopeSelectorArgument="&lt;wnd app='chrome.exe' cls='Chrome_WidgetWin_1' title='New Tab - Google Chrome' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V4" Visibility="Interactive">
+                                                                            <uix:TargetAnchorable.Anchors>
+                                                                              <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                                                                <uix:Target DesignTimeRectangle="210, 72, 31, 31" ElementType="Icon" FullSelectorArgument="&lt;ctrl name='New Tab - Google Chrome - Camouflage' role='pane' /&gt;&lt;ctrl name='Search icon' role='graphic' /&gt;" FuzzySelectorArgument="&lt;ctrl name='New Tab - Google Chrome - Camouflage' role='pane' /&gt;&lt;ctrl name='Search icon' role='graphic' automationid='' /&gt;" Guid="b8fded3c-3962-494f-856c-ed0b4c44defa" SearchSteps="Selector, FuzzySelector" />
+                                                                              </scg:List>
+                                                                            </uix:TargetAnchorable.Anchors>
+                                                                          </uix:TargetAnchorable>
+                                                                        </uix:NClick.Target>
+                                                                        <uix:NClick.VerifyOptions>
+                                                                          <uix:VerifyExecutionOptions DisplayName="Element 'grouping'" Mode="Appears">
+                                                                            <uix:VerifyExecutionOptions.Retry>
+                                                                              <InArgument x:TypeArguments="x:Boolean" />
+                                                                            </uix:VerifyExecutionOptions.Retry>
+                                                                            <uix:VerifyExecutionOptions.Target>
+                                                                              <uix:TargetAnchorable BrowserURL="chrome://newtab/" DesignTimeRectangle="204, 66, 1553, 43" DesignTimeScaleFactor="1.25" FuzzySelectorArgument="&lt;ctrl name='New Tab - Google Chrome - Camouflage' role='pane' /&gt;&lt;ctrl automationid='' role='grouping' /&gt;" Guid="b513db65-1043-45d7-b0d3-37f55023b69f" InformativeScreenshot="031c6bca3fee76a8e946a32203c14096.png" ScopeSelectorArgument="&lt;wnd app='chrome.exe' cls='Chrome_WidgetWin_1' title='New Tab - Google Chrome' /&gt;" SearchSteps="FuzzySelector" Version="V4" Visibility="Interactive">
+                                                                                <uix:TargetAnchorable.Anchors>
+                                                                                  <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                                                                    <uix:Target DesignTimeRectangle="210, 72, 31, 31" ElementType="Icon" FullSelectorArgument="&lt;ctrl name='New Tab - Google Chrome - Camouflage' role='pane' /&gt;&lt;ctrl name='Search icon' role='graphic' /&gt;" FuzzySelectorArgument="&lt;ctrl name='New Tab - Google Chrome - Camouflage' role='pane' /&gt;&lt;ctrl name='Search icon' role='graphic' automationid='' /&gt;" Guid="7ac442de-fb7d-43e7-a4d7-c86e25326404" SearchSteps="Selector, FuzzySelector" />
+                                                                                  </scg:List>
+                                                                                </uix:TargetAnchorable.Anchors>
+                                                                              </uix:TargetAnchorable>
+                                                                            </uix:VerifyExecutionOptions.Target>
+                                                                            <uix:VerifyExecutionOptions.Timeout>
+                                                                              <InArgument x:TypeArguments="x:Double" />
+                                                                            </uix:VerifyExecutionOptions.Timeout>
+                                                                          </uix:VerifyExecutionOptions>
+                                                                        </uix:NClick.VerifyOptions>
+                                                                      </uix:NClick>
+                                                                      <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'editable text Address a…'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="382.4,286.4" sap2010:WorkflowViewState.IdRef="NTypeInto_2" InteractionMode="HardwareEvents" ScopeIdentifier="ecd7fc9e-2507-4df2-b401-16268e25ce5d" Text="uipath" Version="V4">
+                                                                        <uix:NTypeInto.Target>
+                                                                          <uix:TargetAnchorable BrowserURL="chrome://newtab/" CVScreenId="a9b711ae-0a3c-41fe-ae53-90e1cfafa3a8" CvElementArea="207, 64, 1550, 47" CvType="InputBox" DesignTimeRectangle="250, 72, 1452, 31" DesignTimeScaleFactor="1.25" ElementType="InputBox" FullSelectorArgument="&lt;ctrl name='New Tab - Google Chrome - Camouflage' role='pane' /&gt;&lt;ctrl name='Address and search bar' role='editable text' /&gt;" FuzzySelectorArgument="&lt;ctrl name='New Tab - Google Chrome - Camouflage' role='pane' /&gt;&lt;ctrl name='Address and search bar' role='editable text' automationid='' /&gt;" Guid="6c04c6a8-51d0-4d7b-b6a2-6749fdcc646f" InformativeScreenshot="3219158e82b571bf4478eb2ddcc4b35e.png" ScopeSelectorArgument="&lt;wnd app='chrome.exe' cls='Chrome_WidgetWin_1' title='New Tab - Google Chrome' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V4" Visibility="Interactive">
+                                                                            <uix:TargetAnchorable.Anchors>
+                                                                              <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                                                                <uix:Target DesignTimeRectangle="210, 72, 31, 31" ElementType="Icon" FullSelectorArgument="&lt;ctrl name='New Tab - Google Chrome - Camouflage' role='pane' /&gt;&lt;ctrl name='Search icon' role='graphic' /&gt;" FuzzySelectorArgument="&lt;ctrl name='New Tab - Google Chrome - Camouflage' role='pane' /&gt;&lt;ctrl name='Search icon' role='graphic' automationid='' /&gt;" Guid="fffc5e87-5447-4773-ae06-5cfb6125a1d5" SearchSteps="Selector, FuzzySelector" />
+                                                                              </scg:List>
+                                                                            </uix:TargetAnchorable.Anchors>
+                                                                          </uix:TargetAnchorable>
+                                                                        </uix:NTypeInto.Target>
+                                                                        <uix:NTypeInto.VerifyOptions>
+                                                                          <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
+                                                                            <uix:VerifyExecutionTypeIntoOptions.Retry>
+                                                                              <InArgument x:TypeArguments="x:Boolean" />
+                                                                            </uix:VerifyExecutionTypeIntoOptions.Retry>
+                                                                            <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                                                                              <InArgument x:TypeArguments="x:Double" />
+                                                                            </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                                                                          </uix:VerifyExecutionTypeIntoOptions>
+                                                                        </uix:NTypeInto.VerifyOptions>
+                                                                      </uix:NTypeInto>
+                                                                      <uix:NKeyboardShortcuts ActivateBefore="True" ClickBeforeMode="None" DisplayName="Keyboard Shortcuts" sap:VirtualizedContainerService.HintSize="382.4,281.6" sap2010:WorkflowViewState.IdRef="NKeyboardShortcuts_2" Shortcuts="[d(hk)][k(Enter)][u(hk)]" Version="V4">
+                                                                        <uix:NKeyboardShortcuts.VerifyOptions>
+                                                                          <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                                                                            <uix:VerifyExecutionOptions.Retry>
+                                                                              <InArgument x:TypeArguments="x:Boolean" />
+                                                                            </uix:VerifyExecutionOptions.Retry>
+                                                                            <uix:VerifyExecutionOptions.Timeout>
+                                                                              <InArgument x:TypeArguments="x:Double" />
+                                                                            </uix:VerifyExecutionOptions.Timeout>
+                                                                          </uix:VerifyExecutionOptions>
+                                                                        </uix:NKeyboardShortcuts.VerifyOptions>
+                                                                      </uix:NKeyboardShortcuts>
+                                                                      <uix:NGetText DisplayName="Get Text 'DescriptionUiPath Inc. …'" sap:VirtualizedContainerService.HintSize="382.4,189.6" sap2010:WorkflowViewState.IdRef="NGetText_1" ScopeIdentifier="ecd7fc9e-2507-4df2-b401-16268e25ce5d" TextString="[text]" Version="V4">
+                                                                        <uix:NGetText.Target>
+                                                                          <uix:TargetAnchorable BrowserURL="https://www.google.com/search?q=uipath&amp;sca_esv=099553b9ac5746f6&amp;rlz=1C1ONGR_enIN1130IN1130&amp;ei=PQ8iZ6ebAo-gseMP-dvmyQU&amp;ved=0ahUKEwjnrZSo97WJAxUPUGwGHfmtOVkQ4dUDCBA&amp;uact=5&amp;oq=uipath&amp;gs_lp=Egxnd3Mtd2l6LXNlcnAiBnVpcGF0aDIKEAAYgAQYQxiKBTINEAAYgAQYsQMYQxiKBTIOEC4YgAQYsQMY0QMYxwEyCBAAGIAEGLEDMgoQABiABBhDGIoFMggQABiABBixAzIIEAAYgAQYsQMyCxAAGIAEGLEDGIMBMgUQABiABDIFEAAYgARI9wtQ-wJYqwdwAXgBkAEAmAF0oAH-A6oBAzMuMrgBA8gBAPgBAZgCBqACkwTCAgoQABiwAxjWBBhHmAMAiAYBkAYIkgcDMy4zoAeaHg&amp;sclient=gws-wiz-serp" DesignTimeRectangle="1175, 571, 465, 110" DesignTimeScaleFactor="1.25" FuzzySelectorArgument="&lt;webctrl class='kno-rdesc' parentid='kp-wp-tab-overview' tag='DIV' type='' aaname='' /&gt;" Guid="7a69cca4-f4d1-4363-acde-a56be18c3d41" InformativeScreenshot="2f61078f0775f720fe8b7ef8ffb2c533.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='uipath - Google Search' /&gt;" SearchSteps="FuzzySelector" Version="V4" Visibility="Interactive">
+                                                                            <uix:TargetAnchorable.Anchors>
+                                                                              <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                                                                <uix:Target DesignTimeRectangle="1150, 421, 490, 90" ElementType="InputBox" FuzzySelectorArgument="&lt;webctrl class='KsRP6' tag='DIV' type='' aaname='       ' /&gt;" Guid="d1d097fe-d287-48b4-a8ef-63cef9e9eda8" SearchSteps="FuzzySelector" />
+                                                                              </scg:List>
+                                                                            </uix:TargetAnchorable.Anchors>
+                                                                          </uix:TargetAnchorable>
+                                                                        </uix:NGetText.Target>
+                                                                      </uix:NGetText>
+                                                                      <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="382.4,115.2" sap2010:WorkflowViewState.IdRef="WriteLine_20" Text="[text]" />
+                                                                    </Sequence>
+                                                                  </ActivityAction>
+                                                                </uix:NApplicationCard.Body>
+                                                                <uix:NApplicationCard.TargetApp>
+                                                                  <uix:TargetApp Area="-9, -9, 1938, 1038" BrowserType="Chrome" IconBase64="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" InformativeScreenshot="e00941dd8d6656ab6b95f9438f543285.png" Selector="&lt;html app='chrome.exe' title='New Tab' /&gt;" Title="New Tab" Url="chrome://newtab/" />
+                                                                </uix:NApplicationCard.TargetApp>
+                                                              </uix:NApplicationCard>
+                                                            </Sequence>
+                                                            <FlowStep.Next>
+                                                              <FlowStep x:Name="__ReferenceID14" sap2010:WorkflowViewState.IdRef="FlowStep_15">
+                                                                <sap:WorkflowViewStateService.ViewState>
+                                                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                                    <av:Point x:Key="ShapeLocation">405,645</av:Point>
+                                                                    <av:Size x:Key="ShapeSize">110.4,70.4</av:Size>
+                                                                    <av:PointCollection x:Key="ConnectorLocation">405,680.2 355.4,680.2</av:PointCollection>
+                                                                  </scg:Dictionary>
+                                                                </sap:WorkflowViewStateService.ViewState>
+                                                                <Sequence DisplayName="Select Item" sap:VirtualizedContainerService.HintSize="483.20000000000005,1697.6" sap2010:WorkflowViewState.IdRef="Sequence_18">
+                                                                  <sap:WorkflowViewStateService.ViewState>
+                                                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                                    </scg:Dictionary>
+                                                                  </sap:WorkflowViewStateService.ViewState>
+                                                                  <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Application: explorer.exe" sap:VirtualizedContainerService.HintSize="449.6,710.4" sap2010:WorkflowViewState.IdRef="NApplicationCard_5" ScopeGuid="fd36a5a9-9d89-4cdb-bd32-4421688372f6" Version="V2">
+                                                                    <uix:NApplicationCard.Body>
+                                                                      <ActivityAction x:TypeArguments="x:Object">
+                                                                        <ActivityAction.Argument>
+                                                                          <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+                                                                        </ActivityAction.Argument>
+                                                                        <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="416,387.2" sap2010:WorkflowViewState.IdRef="Sequence_35">
+                                                                          <sap:WorkflowViewStateService.ViewState>
+                                                                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                                            </scg:Dictionary>
+                                                                          </sap:WorkflowViewStateService.ViewState>
+                                                                          <uix:NKeyboardShortcuts ActivateBefore="True" ClickBeforeMode="None" DisplayName="Keyboard Shortcuts" sap:VirtualizedContainerService.HintSize="382.4,210.4" sap2010:WorkflowViewState.IdRef="NKeyboardShortcuts_3" Shortcuts="[d(hk)][d(lwin)]e[u(lwin)][u(hk)]" Version="V4" />
+                                                                          <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="382.4,115.2" sap2010:WorkflowViewState.IdRef="WriteLine_23" Text="opened file explorer" />
+                                                                        </Sequence>
+                                                                      </ActivityAction>
+                                                                    </uix:NApplicationCard.Body>
+                                                                    <uix:NApplicationCard.TargetApp>
+                                                                      <uix:TargetApp Area="-9, -9, 1938, 1038" FilePath="C:\Windows\explorer.exe" IconBase64="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" InformativeScreenshot="bcf9aff9d494641417ff61d34816cdf8.png" Selector="&lt;wnd app='explorer.exe' cls='CabinetWClass' title='EX1_Basic Process - File Explorer' /&gt;" Title="EX1_Basic Process - File Explorer" />
+                                                                    </uix:NApplicationCard.TargetApp>
+                                                                  </uix:NApplicationCard>
+                                                                  <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Application: Home - File Explorer" sap:VirtualizedContainerService.HintSize="449.6,927.2" sap2010:WorkflowViewState.IdRef="NApplicationCard_6" ScopeGuid="2ce16bd4-01df-4a24-bf02-5073b1110122" Version="V2">
+                                                                    <uix:NApplicationCard.Body>
+                                                                      <ActivityAction x:TypeArguments="x:Object">
+                                                                        <ActivityAction.Argument>
+                                                                          <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+                                                                        </ActivityAction.Argument>
+                                                                        <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="416,612.8" sap2010:WorkflowViewState.IdRef="Sequence_36">
+                                                                          <sap:WorkflowViewStateService.ViewState>
+                                                                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                                            </scg:Dictionary>
+                                                                          </sap:WorkflowViewStateService.ViewState>
+                                                                          <uix:NSelectItem DisplayName="Select Item 'Start of Quick Access -…'" sap:VirtualizedContainerService.HintSize="382.4,189.6" sap2010:WorkflowViewState.IdRef="NSelectItem_3" Item="Desktop" ScopeIdentifier="2ce16bd4-01df-4a24-bf02-5073b1110122" Version="V4">
+                                                                            <uix:NSelectItem.Items>
+                                                                              <scg:List x:TypeArguments="x:String" Capacity="24">
+                                                                                <x:String>Desktop</x:String>
+                                                                                <x:String>Home</x:String>
+                                                                                <x:String>Gallery</x:String>
+                                                                                <x:String>OneDrive - Personal</x:String>
+                                                                                <x:String>AppData</x:String>
+                                                                                <x:String>Desktop</x:String>
+                                                                                <x:String>Documents</x:String>
+                                                                                <x:String>Pictures</x:String>
+                                                                                <x:String>Start of Quick Access - Desktop (pinned)</x:String>
+                                                                                <x:String>Downloads (pinned)</x:String>
+                                                                                <x:String>Documents (pinned)</x:String>
+                                                                                <x:String>Pictures (pinned)</x:String>
+                                                                                <x:String>Music (pinned)</x:String>
+                                                                                <x:String>Videos (pinned)</x:String>
+                                                                                <x:String>End of Quick Access - Github</x:String>
+                                                                                <x:String>This PC</x:String>
+                                                                                <x:String>Windows (C:)</x:String>
+                                                                                <x:String>College (D:)</x:String>
+                                                                                <x:String>Commercial (J:)</x:String>
+                                                                                <x:String>Home (L:)</x:String>
+                                                                                <x:String>ME (P:)</x:String>
+                                                                                <x:String>Space (X:)</x:String>
+                                                                                <x:String>Network</x:String>
+                                                                                <x:String>Linux</x:String>
+                                                                              </scg:List>
+                                                                            </uix:NSelectItem.Items>
+                                                                            <uix:NSelectItem.Target>
+                                                                              <uix:TargetAnchorable CVScreenId="8d7df8cc-f9a8-4ddc-a8e1-c247505756b0" CvTextArea="75, 510, 57, 17" CvTextArgument="Desktop" CvType="Text" DesignTimeRectangle="75, 250, 59, 40" DesignTimeScaleFactor="1.25" FuzzySelectorArgument="&lt;wnd cls='ShellTabWindowClass' title='Home' /&gt;&lt;wnd aaname='Explorer Pane' cls='DirectUIHWND' /&gt;&lt;wnd aaname='Control Host' cls='NamespaceTreeControl' title='Namespace Tree Control' /&gt;&lt;wnd cls='SysTreeView32' title='Navigation Pane' /&gt;&lt;ctrl name='Start of Quick Access - Desktop (pinned)' role='outline item' automationid='' check:text='Start of Quick Access - Desktop (pinned)' /&gt;" Guid="685ca215-e0c9-4e59-9963-445a7de62070" ImageBase64="" InformativeScreenshot="8ef6240881fe53cc0c4708d40bf36667.png" ScopeSelectorArgument="&lt;wnd app='explorer.exe' cls='CabinetWClass' title='Home - File Explorer' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
+                                                                                <uix:TargetAnchorable.Anchors>
+                                                                                  <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                                                                    <uix:Target CVScreenId="8d7df8cc-f9a8-4ddc-a8e1-c247505756b0" CvElementArea="48, 505, 27, 23" CvType="Icon" DesignTimeRectangle="46, 255, 31, 27" ElementType="Icon" Guid="27555fbb-5152-4aac-90ef-00c7c09382ba" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAB8AAAAbCAYAAACEP1QvAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAPRSURBVEhL7dTZU1NnGAZwZ+q4MBoXUAyKCBESUFyKoLiNUx071dE/QetW7zpTrUvdQItWrZVxt+5Ca9zXugCaCiRkk0DIRsIm0NCijP4JT5/vnJzBi3MuuJEbLt7r3zzP977fIL1ej/6aAbxfZgDvl9HEVxcV4UDPR+x//xGF3R9Q2NWDfdEe7O14x3mP3a3d2NXCaX6HnyLd2Bn+DztC/2J7oAvbfV3Y5o3iR08ntr7pxPItBaqGJr422o1FrVEsaI4iP9SB/EAH5vrakedpQ25tG3JcrfjS3oJZ1mbMrGzCjL+bML0ijKwXIWQ9CyHzSRDGhwFk3PdjRVlE1dDEF7ZEMT/yD+YF2jHP34G8+rfI9bxFjpuooxWzbS2YWUX0dROyKxoxrbwRWc+J/hWE6VEQGfd8SL/rx9RbPqT9Wa9qaOL5jZ2EmbahHbl1MprjJFojp53BtNmWiJz2eRBZT0NE/TA+CCD9TgMMN70wmBuQ+ocXU673EZcqFmlZ8Rx3G9PGKhZpWXH2yzCmlxN+GmTFIbniu0x7x0e4gWm9SC2pR8rVOky+7FE1NPFcvq1UsZK2mmlfR5D9Ktxb8ZMATI/5trG0omLDDaYt9SLlGtFLtUi+6MHEs25VQxMXC6VULBZKoKLiaWWNyGTFykKl3/PLaVlxGitOvV6HlCty2km/1xJ+A/2pPuKzbbGKLWF5oYiKik2PmVYsFLdYQm94kcZJLRUVeyQ0+YJA3Ug6Q/SkG4nHnaqGJi5t8asIUXE6fFemNSoLJd72NrdYVFxSx4ViUqZNvkj0nBsTBXrCicRiJ8Yfc2DcUYeqoYkrFX96sxKqpFUW6grTXuqtOOm0gF1I/M2B8b8SPmzH2IM1qoYmrtys8ZH8UQjYYBYVx9KKhbrMtKx40rlaJJ1ySRVPKHYRtWPcETviD9Vg7M82jCmsVjU0cRNRpeKprNhg9sVuVl4oCT0fWyhWPKHYwbROojVIOGRDPNOO2W/F6AIrRu2pUjU08Yz7hG+LzyJ2swIVNyvO5wJrFmmVirlQouIEVhxfZJPSji4kurcaul1VGLmzUtXQxA23BFov3axcMbeYNyulPcO0J11yxceY9ijRg0xbJNIS3meFbreMjthWibgtFlVDExdpp8R+KKliLlTSaRfflqcjKuYWS2l/ETDf9gDRguretDuIbrUg7gcLhn/fRzxhzhLoVm+GbtV3GLmSs2ITRnzD+Xoj4pZzlm3A8KWcr9Zj2JL1GLp4HYYuWochC7+FudyOwflrYS6z44u8NdAZF6gamvjnmAG8H0aP/wH4TdeSlDSuhwAAAABJRU5ErkJggg==" SearchSteps="CV" TargetType="ComputerVisionBased" />
+                                                                                  </scg:List>
+                                                                                </uix:TargetAnchorable.Anchors>
+                                                                              </uix:TargetAnchorable>
+                                                                            </uix:NSelectItem.Target>
+                                                                          </uix:NSelectItem>
+                                                                          <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="382.4,122.4" sap2010:WorkflowViewState.IdRef="WriteLine_24" Text="selected desktop from the quick access side panel using select item activity&#xD;&#xA;...&#xD;&#xA;closing file explorer..." />
+                                                                          <uix:NKeyboardShortcuts ActivateBefore="True" ClickBeforeMode="None" DisplayName="Keyboard Shortcuts" sap:VirtualizedContainerService.HintSize="382.4,239.2" sap2010:WorkflowViewState.IdRef="NKeyboardShortcuts_4" Shortcuts="[d(hk)][d(alt)][k(F4)][u(alt)][u(hk)]" Version="V4">
+                                                                            <uix:NKeyboardShortcuts.VerifyOptions>
+                                                                              <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                                                                                <uix:VerifyExecutionOptions.Retry>
+                                                                                  <InArgument x:TypeArguments="x:Boolean" />
+                                                                                </uix:VerifyExecutionOptions.Retry>
+                                                                                <uix:VerifyExecutionOptions.Timeout>
+                                                                                  <InArgument x:TypeArguments="x:Double" />
+                                                                                </uix:VerifyExecutionOptions.Timeout>
+                                                                              </uix:VerifyExecutionOptions>
+                                                                            </uix:NKeyboardShortcuts.VerifyOptions>
+                                                                          </uix:NKeyboardShortcuts>
+                                                                        </Sequence>
+                                                                      </ActivityAction>
+                                                                    </uix:NApplicationCard.Body>
+                                                                    <uix:NApplicationCard.TargetApp>
+                                                                      <uix:TargetApp Area="0, 0, 1920, 1019" FilePath="C:\Windows\explorer.exe" IconBase64="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" InformativeScreenshot="bfb51adf5dbbbc3c26bcb13ffd009cef.png" Selector="&lt;wnd app='explorer.exe' cls='CabinetWClass' title='Home - File Explorer' /&gt;" Title="Home - File Explorer" />
+                                                                    </uix:NApplicationCard.TargetApp>
+                                                                  </uix:NApplicationCard>
+                                                                </Sequence>
+                                                                <FlowStep.Next>
+                                                                  <FlowStep x:Name="__ReferenceID15" sap2010:WorkflowViewState.IdRef="FlowStep_16">
+                                                                    <sap:WorkflowViewStateService.ViewState>
+                                                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                                        <av:Point x:Key="ShapeLocation">245,645</av:Point>
+                                                                        <av:Size x:Key="ShapeSize">110.4,70.4</av:Size>
+                                                                        <av:PointCollection x:Key="ConnectorLocation">245,680.2 195.4,680.2</av:PointCollection>
+                                                                      </scg:Dictionary>
+                                                                    </sap:WorkflowViewStateService.ViewState>
+                                                                    <Sequence DisplayName="Read Range" sap:VirtualizedContainerService.HintSize="110.4,70.4" sap2010:WorkflowViewState.IdRef="Sequence_19">
+                                                                      <sap:WorkflowViewStateService.ViewState>
+                                                                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                                        </scg:Dictionary>
+                                                                      </sap:WorkflowViewStateService.ViewState>
+                                                                      <ui:ReadRange AddHeaders="True" DataTable="[DataFrame]" DisplayName="Read Range Workbook" sap:VirtualizedContainerService.HintSize="416,120" sap2010:WorkflowViewState.IdRef="ReadRange_1" PreserveFormat="True" Range="A1:E11" SheetName="Sheet1" WorkbookPath="Auxilliary_files\Test_data.xlsx" />
+                                                                      <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="416,113.6" sap2010:WorkflowViewState.IdRef="WriteLine_21" Text="[&quot;Found &quot;+DataFrame.RowCount().ToString()+&quot; rows in the workbook &quot;+DataFrame.TableName.ToString()]" />
+                                                                    </Sequence>
+                                                                    <FlowStep.Next>
+                                                                      <FlowStep x:Name="__ReferenceID16" sap2010:WorkflowViewState.IdRef="FlowStep_17">
+                                                                        <sap:WorkflowViewStateService.ViewState>
+                                                                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                                            <av:Point x:Key="ShapeLocation">85,645</av:Point>
+                                                                            <av:Size x:Key="ShapeSize">110.4,70.4</av:Size>
+                                                                          </scg:Dictionary>
+                                                                        </sap:WorkflowViewStateService.ViewState>
+                                                                        <Sequence DisplayName="Write Range" sap:VirtualizedContainerService.HintSize="110.4,70.4" sap2010:WorkflowViewState.IdRef="Sequence_20">
+                                                                          <sap:WorkflowViewStateService.ViewState>
+                                                                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                                            </scg:Dictionary>
+                                                                          </sap:WorkflowViewStateService.ViewState>
+                                                                          <ui:WriteRange AddHeaders="False" DataTable="[DataFrame]" DisplayName="Write Range Workbook" sap:VirtualizedContainerService.HintSize="416,148" sap2010:WorkflowViewState.IdRef="WriteRange_1" SheetName="Sheet2" StartingCell="A1:E11" WorkbookPath="Auxilliary_files\Test_data.xlsx" />
+                                                                          <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="416,113.6" sap2010:WorkflowViewState.IdRef="WriteLine_22" Text="Write Range Activity is performed, you can check this is the sheet 2 of the workbook at path 'Auxilliary_files\Test_data.xlsx'" />
+                                                                        </Sequence>
+                                                                      </FlowStep>
+                                                                    </FlowStep.Next>
+                                                                  </FlowStep>
+                                                                </FlowStep.Next>
+                                                              </FlowStep>
+                                                            </FlowStep.Next>
+                                                          </FlowStep>
+                                                        </FlowStep.Next>
+                                                      </FlowStep>
+                                                    </FlowStep.Next>
+                                                  </FlowStep>
+                                                </FlowStep.Next>
+                                              </FlowStep>
+                                            </FlowStep.Next>
+                                          </FlowStep>
+                                        </FlowStep.Next>
+                                      </FlowStep>
+                                    </FlowStep.Next>
+                                  </FlowStep>
+                                </FlowStep.Next>
+                              </FlowStep>
+                            </FlowStep.Next>
+                          </FlowStep>
+                        </FlowStep.Next>
+                      </FlowStep>
+                    </FlowStep.Next>
+                  </FlowStep>
+                </FlowStep.Next>
+              </FlowStep>
+            </FlowStep.Next>
+          </FlowStep>
+        </FlowStep.Next>
+      </FlowStep>
+      <x:Reference>__ReferenceID1</x:Reference>
+      <x:Reference>__ReferenceID2</x:Reference>
+      <x:Reference>__ReferenceID3</x:Reference>
+      <x:Reference>__ReferenceID4</x:Reference>
+      <x:Reference>__ReferenceID5</x:Reference>
+      <x:Reference>__ReferenceID6</x:Reference>
+      <x:Reference>__ReferenceID7</x:Reference>
+      <x:Reference>__ReferenceID8</x:Reference>
+      <x:Reference>__ReferenceID9</x:Reference>
+      <x:Reference>__ReferenceID10</x:Reference>
+      <x:Reference>__ReferenceID11</x:Reference>
+      <x:Reference>__ReferenceID12</x:Reference>
+      <x:Reference>__ReferenceID13</x:Reference>
+      <x:Reference>__ReferenceID14</x:Reference>
+      <x:Reference>__ReferenceID15</x:Reference>
+      <x:Reference>__ReferenceID16</x:Reference>
+    </Flowchart>
+  </Sequence>
+</Activity>

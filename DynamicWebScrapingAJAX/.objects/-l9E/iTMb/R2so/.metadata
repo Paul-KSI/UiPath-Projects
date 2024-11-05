@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Chrome: FOUR SQUARES CHESS - YouTube",
+  "Type": "Screen",
+  "Id": "R2soqWcArkCT8yMjtD6T2w",
+  "Reference": "MnJv6WlD6ku6VBFHLWPq0Q/R2soqWcArkCT8yMjtD6T2w",
+  "ParentRef": "MnJv6WlD6ku6VBFHLWPq0Q/iTMbngqAB0KeG38qI4y9iw",
+  "Created": "2024-11-05T10:22:19.9008012Z",
+  "Updated": "2024-11-05T10:22:19.9008012Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=24.11.1.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.11.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

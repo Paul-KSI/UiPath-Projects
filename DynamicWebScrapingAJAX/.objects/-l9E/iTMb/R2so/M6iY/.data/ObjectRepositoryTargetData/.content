@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="7HYLG0hEV0KsMc3G03cNpQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="https://www.youtube.com/@FOURSQUARESCHESS/shorts" CVScreenId="abc295cd-8f1e-48fd-8c3e-c8efc4d923b9" CvTextArea="452, 621, 600, 46" CvType="AnyWordGroup" DesignTimeRectangle="454, 612, 598, 67" DesignTimeScaleFactor="1.5625" ElementType="Text" FullSelectorArgument="&lt;webctrl aria-role='text' parentid='page-header' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl aria-role='text' parentid='page-header' tag='SPAN' type='' class='yt-core-attributed-string yt-core-attributed-string--white-space-pre-wrap' /&gt;" Guid="9b1929f1-1f24-4f10-8ee2-0f25b16608b7" ScopeSelectorArgument="&lt;html app='chrome.exe' title='FOUR SQUARES CHESS - YouTube' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="abc295cd-8f1e-48fd-8c3e-c8efc4d923b9" CvTextArea="452, 691, 240, 25" CvTextArgument="@FOURSQUARESCHESS" CvType="Text" DesignTimeRectangle="454, 688, 238, 31" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='@FOURSQUARESCHESS' aria-role='text' parentid='page-header' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='@FOURSQUARESCHESS' aria-role='text' parentid='page-header' tag='SPAN' type='' class='yt-core-attributed-string yt-content-metadata-view-model-wiz__metadata-text yt-core-attributed-string--white-space-pre-wrap yt-core-attributed-string--link-inherit-color' check:innerText='@FOURSQUARESCHESS' /&gt;" Guid="b60697c4-1c30-4b45-bc5e-45039b47f5ca" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="9027c86e7b022708cedc63eee7ebe4f2.png" xmlns="">0IasoOVEq4E2iyN-bLe85Vw</imageRef>
+    </TargetAnchorable>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

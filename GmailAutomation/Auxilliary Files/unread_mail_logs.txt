@@ -1,0 +1,94 @@
+Log mail: 05/11/2024 00:52:40
+
+
+From: camouflage.unite@gmail.com
+Date: 04/11/2024 19:22:41
+Status: Unread
+Attachments: 1
+Subject: Notification : Automated Generated mail | Uipath
+Body of the mail: Dear Sir/Madam,
+
+I hope this email finds you well. 
+
+I am writing to inform you that this is a test automation email sent by a UiPath bot as part of our testing process. We kindly request your patience and understanding during this testing phase.
+
+If you believe that this email was sent to you by mistake, please feel free to reply to this email so that we can address any concerns promptly.
+
+Please note that this is an auto-generated email and we appreciate your cooperation as we work to improve our systems.
+
+Thanks and regards,
+
+Gmail Automation Bot
+UiPath Automation Tool
+-----------------------------------------------------------
+
+
+From: camouflage.unite@gmail.com
+Date: 04/11/2024 19:22:33
+Status: Unread
+Attachments: 1
+Subject: Notification : Automated Generated mail | Uipath
+Body of the mail: Dear Sir/Madam,
+
+I hope this email finds you well. 
+
+I am writing to inform you that this is a test automation email sent by a UiPath bot as part of our testing process. We kindly request your patience and understanding during this testing phase.
+
+If you believe that this email was sent to you by mistake, please feel free to reply to this email so that we can address any concerns promptly.
+
+Please note that this is an auto-generated email and we appreciate your cooperation as we work to improve our systems.
+
+Thanks and regards,
+
+Gmail Automation Bot
+UiPath Automation Tool
+-----------------------------------------------------------
+
+
+From: no-reply@accounts.google.com
+Date: 04/11/2024 11:01:17
+Status: Unread
+Attachments: 0
+Subject: Security alert
+Body of the mail: [image: Google]
+UiPath for Gmail was granted access to your Google Account
+
+
+camouflage.unite@gmail.com
+
+If you did not grant access, you should check this activity and secure your
+account.
+Check activity
+<https://accounts.google.com/AccountChooser?Email=camouflage.unite@gmail.com&continue=https://myaccount.google.com/alert/nt/1730718076000?rfn%3D127%26rfnc%3D1%26eid%3D-2669643376730360650%26et%3D0>
+You can also see security activity at
+https://myaccount.google.com/notifications
+You received this email to let you know about important changes to your
+Google Account and services.
+© 2024 Google LLC, 1600 Amphitheatre Parkway, Mountain View, CA 94043, USA
+
+-----------------------------------------------------------
+
+
+From: no-reply@accounts.google.com
+Date: 04/11/2024 10:16:43
+Status: Unread
+Attachments: 0
+Subject: Security alert
+Body of the mail: [image: Google]
+UiPath GSuite was granted access to your Google Account
+
+
+camouflage.unite@gmail.com
+
+If you did not grant access, you should check this activity and secure your
+account.
+Check activity
+<https://accounts.google.com/AccountChooser?Email=camouflage.unite@gmail.com&continue=https://myaccount.google.com/alert/nt/1730715401000?rfn%3D127%26rfnc%3D1%26eid%3D-4513488228835322892%26et%3D0>
+You can also see security activity at
+https://myaccount.google.com/notifications
+You received this email to let you know about important changes to your
+Google Account and services.
+© 2024 Google LLC, 1600 Amphitheatre Parkway, Mountain View, CA 94043, USA
+
+-----------------------------------------------------------
+

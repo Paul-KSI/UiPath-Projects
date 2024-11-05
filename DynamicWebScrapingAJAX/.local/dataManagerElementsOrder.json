@@ -1,0 +1,30 @@
+{
+  "Workflows": [
+    {
+      "Path": null,
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [],
+      "ArgumentsSectionElementsOrder": null,
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Main.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "clipboard_yt_link&Sequence_2",
+        "Total_Videos&Sequence_2",
+        "Subscribers&Sequence_2",
+        "Channel_Handle&Sequence_2",
+        "Channel_Name&Sequence_2",
+        "shorts_upload_date&Sequence_2",
+        "shorts_views&Sequence_2",
+        "short_likes&Sequence_2",
+        "Shorts_name&Sequence_2"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    }
+  ]
+}

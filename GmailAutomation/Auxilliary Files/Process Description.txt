@@ -1,0 +1,3 @@
+Process Description: Gmail Automation Using UiPath
+
+This project automates essential Gmail tasks using UiPath, handling email sending, retrieval, filtering, and attachment management. The robot interacts directly with Gmail, allowing it to send emails with specific subjects, content, and attachments, as well as retrieve unread messages. Emails are filtered based on predefined criteria, such as sender or subject line, and attachments from relevant emails are downloaded automatically for easy access. This setup enables seamless email processing without manual intervention.

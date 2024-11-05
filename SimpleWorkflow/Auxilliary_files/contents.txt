@@ -1,0 +1,17 @@
+•	Sequence
+•	Flowchart
+•	Assign 
+•	Write Line
+•	Delay
+•	If
+•	While
+•	Do While
+•	For Each
+•	Switch
+•	Invoke Workflow File
+•	Click
+•	Type Into
+•	Get Text
+•	Select Item
+•	Read Range
+•	Write Range

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="PZOWmsMml0-X6e67DaJ53g" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="https://www.youtube.com/@FOURSQUARESCHESS/shorts" CVScreenId="abc295cd-8f1e-48fd-8c3e-c8efc4d923b9" CvTextArea="707, 691, 172, 21" CvType="AnyWordGroup" DesignTimeRectangle="710, 688, 169, 31" DesignTimeScaleFactor="1.5625" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='135K subscribers' aria-role='text' parentid='page-header' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl aria-role='text' parentid='page-header' tag='SPAN' type='' class='yt-core-attributed-string yt-content-metadata-view-model-wiz__metadata-text yt-core-attributed-string--white-space-pre-wrap yt-core-attributed-string--link-inherit-color' /&gt;" Guid="643fccf0-cc78-4d48-95c9-2289802b7bea" ScopeSelectorArgument="&lt;html app='chrome.exe' title='FOUR SQUARES CHESS - YouTube' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="abc295cd-8f1e-48fd-8c3e-c8efc4d923b9" CvTextArea="452, 691, 240, 25" CvTextArgument="@FOURSQUARESCHESS" CvType="Text" DesignTimeRectangle="454, 688, 238, 31" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='@FOURSQUARESCHESS' aria-role='text' parentid='page-header' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='@FOURSQUARESCHESS' aria-role='text' parentid='page-header' tag='SPAN' type='' class='yt-core-attributed-string yt-content-metadata-view-model-wiz__metadata-text yt-core-attributed-string--white-space-pre-wrap yt-core-attributed-string--link-inherit-color' check:innerText='@FOURSQUARESCHESS' /&gt;" Guid="5d5580af-09c2-4fd8-9a3a-3fff94581683" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="d6f060a53379526d93c956728d0c6eab.png" xmlns="">0pMR2udik1kW74PssqBV4fg</imageRef>
+    </TargetAnchorable>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>
