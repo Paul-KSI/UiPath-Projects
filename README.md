@@ -4,39 +4,37 @@ This repository contains various UiPath automation projects, covering a wide ran
 
 ## Project Structure
 
-- **Assets**: Contains auxiliary files needed for automation, including config files, data, and other dependencies.
-- **Project Folders**: Each project folder has the necessary workflows, `.xaml` files, and dependencies.
+- **Auxiliary Files**: All necessary data and inputs required for each project are provided in the **Auxiliary_Files** folder within each project directory. These files are referenced using relative paths to ensure smooth execution.
+- **Project Folders**: Each project folder contains the required `.xaml` workflows, configurations, and dependencies.
 
 ## Projects Overview
 
-| Project Name                           | Description                                                                                                   | Last Updated            |
-|----------------------------------------|---------------------------------------------------------------------------------------------------------------|-------------------------|
-| [**AttendedAutomationTrigger1**](https://github.com/Paul-KSI/UiPath-Projects/tree/main/AttendedAutomationTrigger1) | Sample automation with an attended trigger mechanism.                                                         | 4 hours ago             |
-| [**AttendedAutomationTrigger2**](https://github.com/Paul-KSI/UiPath-Projects/tree/main/AttendedAutomationTrigger2) | Variation of attended automation with enhancements.                                                           | 4 hours ago             |
-| [**BMI Automation**](https://github.com/Paul-KSI/UiPath-Projects/tree/main/BMI%20Automation)                     | Automates BMI calculation and related tasks.                                                                  | 7 hours ago             |
-| [**DynamicWebScrapingAJAX**](https://github.com/Paul-KSI/UiPath-Projects/tree/main/DynamicWebScrapingAJAX)       | Automates dynamic web scraping, including AJAX elements.                                                      | 1 hour ago              |
-| [**EcommerceWebscraping**](https://github.com/Paul-KSI/UiPath-Projects/tree/main/EcommerceWebscraping)           | Web scraping project targeting e-commerce platforms to extract product data.                                  | 4 hours ago             |
-| [**ExceptionalHandling**](https://github.com/Paul-KSI/UiPath-Projects/tree/main/ExceptionalHandling)             | Demonstrates best practices for exception handling in UiPath workflows.                                       | 7 hours ago             |
-| [**GmailAutomation**](https://github.com/Paul-KSI/UiPath-Projects/tree/main/GmailAutomation)                     | Automates Gmail interactions, including reading and sending emails.                                           | 4 hours ago             |
-| [**InvoiceAutomation**](https://github.com/Paul-KSI/UiPath-Projects/tree/main/InvoiceAutomation)                 | Automates invoice processing tasks, such as extracting data from PDF invoices.                                | 27 minutes ago          |
-| [**QueuesInOrchestrator**](https://github.com/Paul-KSI/UiPath-Projects/tree/main/QueuesInOrchestrator)           | Utilizes UiPath Orchestrator queues to manage automation tasks.                                               | 1 hour ago              |
-| [**SentimentalAnalysisDocumentUnderstanding**](https://github.com/Paul-KSI/UiPath-Projects/tree/main/SentimentalAnalysisDocumentUnderstanding) | Combines sentiment analysis with document understanding capabilities.          | 4 hours ago             |
-| [**SimpleWorkflow**](https://github.com/Paul-KSI/UiPath-Projects/tree/main/SimpleWorkflow)                       | A basic workflow demonstrating core UiPath functionalities.                                                   | 4 hours ago             |
-| [**feeConcessionBot**](https://github.com/Paul-KSI/UiPath-Projects/tree/main/feeConcessionBot)                   | Automates the fee concession process for educational institutions.                                            | 7 hours ago             |
-| [**pdf Automation**](https://github.com/Paul-KSI/UiPath-Projects/tree/main/pdf%20Automation)                     | Automation for handling PDF documents, such as data extraction and text search.                               | 27 minutes ago          |
+| Project Name                                                                                           | Description                                                                                                   |
+|--------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------|
+| [**AttendedAutomationTrigger1**](https://github.com/Paul-KSI/UiPath-Projects/tree/main/AttendedAutomationTrigger1) | Sample automation with an attended trigger mechanism.                                                         |
+| [**AttendedAutomationTrigger2**](https://github.com/Paul-KSI/UiPath-Projects/tree/main/AttendedAutomationTrigger2) | Variation of attended automation with enhancements.                                                           |
+| [**BMI Automation**](https://github.com/Paul-KSI/UiPath-Projects/tree/main/BMI%20Automation)                     | Automates BMI calculation and related tasks.                                                                  |
+| [**DynamicWebScrapingAJAX**](https://github.com/Paul-KSI/UiPath-Projects/tree/main/DynamicWebScrapingAJAX)       | Automates dynamic web scraping, including AJAX elements.                                                      |
+| [**EcommerceWebscraping**](https://github.com/Paul-KSI/UiPath-Projects/tree/main/EcommerceWebscraping)           | Web scraping project targeting e-commerce platforms to extract product data.                                  |
+| [**ExceptionalHandling**](https://github.com/Paul-KSI/UiPath-Projects/tree/main/ExceptionalHandling)             | Demonstrates best practices for exception handling in UiPath workflows.                                       |
+| [**GmailAutomation**](https://github.com/Paul-KSI/UiPath-Projects/tree/main/GmailAutomation)                     | Automates Gmail interactions, including reading and sending emails.                                           |
+| [**InvoiceAutomation**](https://github.com/Paul-KSI/UiPath-Projects/tree/main/InvoiceAutomation)                 | Automates invoice processing tasks, such as extracting data from PDF invoices.                                |
+| [**QueuesInOrchestrator**](https://github.com/Paul-KSI/UiPath-Projects/tree/main/QueuesInOrchestrator)           | Utilizes UiPath Orchestrator queues to manage automation tasks.                                               |
+| [**SentimentalAnalysisDocumentUnderstanding**](https://github.com/Paul-KSI/UiPath-Projects/tree/main/SentimentalAnalysisDocumentUnderstanding) | Combines sentiment analysis with document understanding capabilities.          |
+| [**SimpleWorkflow**](https://github.com/Paul-KSI/UiPath-Projects/tree/main/SimpleWorkflow)                       | A basic workflow demonstrating core UiPath functionalities.                                                   |
+| [**feeConcessionBot**](https://github.com/Paul-KSI/UiPath-Projects/tree/main/feeConcessionBot)                   | Automates the fee concession process for educational institutions.                                            |
+| [**pdf Automation**](https://github.com/Paul-KSI/UiPath-Projects/tree/main/pdf%20Automation)                     | Automation for handling PDF documents, such as data extraction and text search.                               |
 
-## Compressed Files
+## Download All Experiments
 
-This repository also contains several compressed files with additional resources for some of the projects:
+To download all experiments as a single compressed file, pick your preferred format from the options below:
 
-- `.zip`
-- `.rar`
-- `.7z`
-- `.tar`
+- [**All_experiments.zip**](https://github.com/Paul-KSI/UiPath-Projects/raw/main/All_experiments.zip)
+- [**All_experiments.rar**](https://github.com/Paul-KSI/UiPath-Projects/raw/main/All_experiments.rar)
+- [**All_experiments.7z**](https://github.com/Paul-KSI/UiPath-Projects/raw/main/All_experiments.7z)
+- [**All_experiments.tar**](https://github.com/Paul-KSI/UiPath-Projects/raw/main/All_experiments.tar)
 
-### How to Access
-
-You can access these files by navigating to the relevant folders or clicking the links above to explore each project in detail. For any additional setup, refer to the specific instructions in each project folder.
+Clicking any of the links above will start the download immediately.
 
 ---
 
