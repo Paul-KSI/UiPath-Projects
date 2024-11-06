@@ -1,0 +1,35 @@
+{
+  "Workflows": [
+    {
+      "Path": null,
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "statusWindowMessage&",
+        "Config&",
+        "instanceName&"
+      ],
+      "ArgumentsSectionElementsOrder": null,
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Main.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "statusWindowMessage&f71d4d72-a315-448a-bbc1-1aedda44d8cb",
+        "Config&f71d4d72-a315-448a-bbc1-1aedda44d8cb",
+        "instanceName&f71d4d72-a315-448a-bbc1-1aedda44d8cb",
+        "systemException&StateMachine_1",
+        "businessException&StateMachine_1",
+        "str_originAndStatus&StateMachine_1",
+        "strProjectJson&Sequence_2"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "Hide_Messages",
+        "Hide_Results"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    }
+  ]
+}

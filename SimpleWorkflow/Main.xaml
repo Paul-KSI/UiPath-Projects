@@ -64,65 +64,62 @@
       <AssemblyReference>PresentationFramework</AssemblyReference>
       <AssemblyReference>System</AssemblyReference>
       <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
       <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
       <AssemblyReference>System.Core</AssemblyReference>
       <AssemblyReference>System.Data</AssemblyReference>
       <AssemblyReference>System.Data.Common</AssemblyReference>
       <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Data.SqlClient</AssemblyReference>
       <AssemblyReference>System.Drawing</AssemblyReference>
       <AssemblyReference>System.Drawing.Common</AssemblyReference>
       <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
       <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Linq.Async</AssemblyReference>
+      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
       <AssemblyReference>System.Net.Mail</AssemblyReference>
       <AssemblyReference>System.ObjectModel</AssemblyReference>
       <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Private.Xml</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+      <AssemblyReference>System.Runtime.Numerics</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
       <AssemblyReference>System.Xaml</AssemblyReference>
       <AssemblyReference>System.Xml</AssemblyReference>
       <AssemblyReference>System.Xml.Linq</AssemblyReference>
-      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
-      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
-      <AssemblyReference>WindowsBase</AssemblyReference>
-      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
-      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
-      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
-      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
-      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
-      <AssemblyReference>System.Memory.Data</AssemblyReference>
-      <AssemblyReference>System.Console</AssemblyReference>
-      <AssemblyReference>System.Security.Permissions</AssemblyReference>
-      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
-      <AssemblyReference>System.ComponentModel</AssemblyReference>
-      <AssemblyReference>System.Memory</AssemblyReference>
-      <AssemblyReference>System.Private.Uri</AssemblyReference>
-      <AssemblyReference>System.Linq.Async</AssemblyReference>
-      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
-      <AssemblyReference>System.Collections</AssemblyReference>
-      <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
-      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
-      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
-      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
-      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
-      <AssemblyReference>UiPath.Workflow</AssemblyReference>
-      <AssemblyReference>System.Runtime.Numerics</AssemblyReference>
-      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
-      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
-      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
-      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
-      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
-      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
-      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
-      <AssemblyReference>UiPath.Platform</AssemblyReference>
-      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
-      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
-      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
-      <AssemblyReference>System.Private.Xml</AssemblyReference>
       <AssemblyReference>UiPath.Excel</AssemblyReference>
-      <AssemblyReference>System.Data.SqlClient</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
       <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
       <AssemblyReference>UiPath.System.Activities.ViewModels</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Workflow</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="1452.0000000000002,671.2" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="1146.4,671.2" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -153,13 +150,16 @@
             <av:PointCollection x:Key="ConnectorLocation">85,70.2 55,70.2 55,10.200000000000003 375,10.200000000000003 375,70.2 405,70.2</av:PointCollection>
           </scg:Dictionary>
         </sap:WorkflowViewStateService.ViewState>
-        <Sequence sap:VirtualizedContainerService.HintSize="110.4,70.4" sap2010:WorkflowViewState.IdRef="Sequence_3">
+        <Sequence sap:VirtualizedContainerService.HintSize="449.6,173.6" sap2010:WorkflowViewState.IdRef="Sequence_3">
+          <Sequence.Variables>
+            <Variable x:TypeArguments="x:String" Name="permission" />
+          </Sequence.Variables>
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
             </scg:Dictionary>
           </sap:WorkflowViewStateService.ViewState>
-          <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="416,113.6" sap2010:WorkflowViewState.IdRef="WriteLine_2" Text="This is a output from sequence" />
+          <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="416,113.6" sap2010:WorkflowViewState.IdRef="WriteLine_25" Text="Output : We begun with the first sequence activity" />
         </Sequence>
         <FlowStep.Next>
           <FlowStep x:Name="__ReferenceID1" sap2010:WorkflowViewState.IdRef="FlowStep_2">
@@ -311,18 +311,14 @@
                                 </sap:WorkflowViewStateService.ViewState>
                                 <Sequence DisplayName="While" sap:VirtualizedContainerService.HintSize="110.4,70.4" sap2010:WorkflowViewState.IdRef="Sequence_8">
                                   <Sequence.Variables>
-                                    <Variable x:TypeArguments="x:Int32" Name="counter">
-                                      <Variable.Default>
-                                        <Literal x:TypeArguments="x:Int32" />
-                                      </Variable.Default>
-                                    </Variable>
+                                    <Variable x:TypeArguments="x:Int32" Default="0" Name="counter" />
                                   </Sequence.Variables>
                                   <sap:WorkflowViewStateService.ViewState>
                                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                     </scg:Dictionary>
                                   </sap:WorkflowViewStateService.ViewState>
-                                  <ui:InterruptibleWhile CurrentIndex="{x:Null}" DisplayName="While" sap:VirtualizedContainerService.HintSize="500.8,433.6" sap2010:WorkflowViewState.IdRef="InterruptibleWhile_1">
+                                  <ui:InterruptibleWhile CurrentIndex="{x:Null}" Condition="[counter &lt; 3]" DisplayName="While" sap:VirtualizedContainerService.HintSize="500.8,433.6" sap2010:WorkflowViewState.IdRef="InterruptibleWhile_1">
                                     <ui:InterruptibleWhile.Body>
                                       <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="467.2,287.2" sap2010:WorkflowViewState.IdRef="Sequence_23">
                                         <sap:WorkflowViewStateService.ViewState>
@@ -341,9 +337,6 @@
                                         </Assign>
                                       </Sequence>
                                     </ui:InterruptibleWhile.Body>
-                                    <ui:InterruptibleWhile.Condition>
-                                      <VisualBasicValue x:TypeArguments="x:Boolean" DisplayName="Visual basic value" ExpressionText="counter &lt; 3" />
-                                    </ui:InterruptibleWhile.Condition>
                                   </ui:InterruptibleWhile>
                                   <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="500.8,113.6" sap2010:WorkflowViewState.IdRef="WriteLine_10" Text="exited while loop" />
                                 </Sequence>
@@ -358,18 +351,14 @@
                                     </sap:WorkflowViewStateService.ViewState>
                                     <Sequence DisplayName="Do While" sap:VirtualizedContainerService.HintSize="110.4,70.4" sap2010:WorkflowViewState.IdRef="Sequence_9">
                                       <Sequence.Variables>
-                                        <Variable x:TypeArguments="x:Int32" Name="counter">
-                                          <Variable.Default>
-                                            <Literal x:TypeArguments="x:Int32" />
-                                          </Variable.Default>
-                                        </Variable>
+                                        <Variable x:TypeArguments="x:Int32" Default="0" Name="counter" />
                                       </Sequence.Variables>
                                       <sap:WorkflowViewStateService.ViewState>
                                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                         </scg:Dictionary>
                                       </sap:WorkflowViewStateService.ViewState>
-                                      <ui:InterruptibleDoWhile CurrentIndex="{x:Null}" DisplayName="Do While" sap:VirtualizedContainerService.HintSize="500.8,433.6" sap2010:WorkflowViewState.IdRef="InterruptibleDoWhile_2">
+                                      <ui:InterruptibleDoWhile CurrentIndex="{x:Null}" Condition="[counter &lt; 3]" DisplayName="Do While" sap:VirtualizedContainerService.HintSize="500.8,433.6" sap2010:WorkflowViewState.IdRef="InterruptibleDoWhile_2">
                                         <ui:InterruptibleDoWhile.Body>
                                           <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="467.2,287.2" sap2010:WorkflowViewState.IdRef="Sequence_27">
                                             <sap:WorkflowViewStateService.ViewState>
@@ -388,9 +377,6 @@
                                             <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="433.6,113.6" sap2010:WorkflowViewState.IdRef="WriteLine_13" Text="[counter.ToString()]" />
                                           </Sequence>
                                         </ui:InterruptibleDoWhile.Body>
-                                        <ui:InterruptibleDoWhile.Condition>
-                                          <VisualBasicValue x:TypeArguments="x:Boolean" DisplayName="Visual basic value" ExpressionText="counter &lt; 3" />
-                                        </ui:InterruptibleDoWhile.Condition>
                                       </ui:InterruptibleDoWhile>
                                       <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="500.8,113.6" sap2010:WorkflowViewState.IdRef="WriteLine_14" Text="exited do while loop" />
                                     </Sequence>
@@ -439,11 +425,7 @@
                                             </sap:WorkflowViewStateService.ViewState>
                                             <Sequence DisplayName="Switch" sap:VirtualizedContainerService.HintSize="110.4,70.4" sap2010:WorkflowViewState.IdRef="Sequence_11">
                                               <Sequence.Variables>
-                                                <Variable x:TypeArguments="x:Int32" Name="number">
-                                                  <Variable.Default>
-                                                    <Literal x:TypeArguments="x:Int32" Value="2" />
-                                                  </Variable.Default>
-                                                </Variable>
+                                                <Variable x:TypeArguments="x:Int32" Default="2" Name="number" />
                                               </Sequence.Variables>
                                               <sap:WorkflowViewStateService.ViewState>
                                                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
@@ -509,7 +491,7 @@
                                                                 <uix:NClick.Target>
                                                                   <uix:TargetAnchorable BrowserURL="chrome://newtab/" CVScreenId="2b28e56a-2f8d-4525-9097-66d31015e391" CvElementArea="203, 66, 1553, 42" CvType="InputBox" DesignTimeRectangle="250, 72, 1452, 31" DesignTimeScaleFactor="1.25" ElementType="InputBox" FullSelectorArgument="&lt;ctrl name='New Tab - Google Chrome - Camouflage' role='pane' /&gt;&lt;ctrl name='Address and search bar' role='editable text' /&gt;" FuzzySelectorArgument="&lt;ctrl name='New Tab - Google Chrome - Camouflage' role='pane' /&gt;&lt;ctrl name='Address and search bar' role='editable text' automationid='' /&gt;" Guid="ba39e42b-31a3-449a-9bea-c1bfce087787" InformativeScreenshot="9fd8af6752fe7ec3c646de14083b20f2.png" ScopeSelectorArgument="&lt;wnd app='chrome.exe' cls='Chrome_WidgetWin_1' title='New Tab - Google Chrome' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V4" Visibility="Interactive">
                                                                     <uix:TargetAnchorable.Anchors>
-                                                                      <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                                                      <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
                                                                         <uix:Target DesignTimeRectangle="210, 72, 31, 31" ElementType="Icon" FullSelectorArgument="&lt;ctrl name='New Tab - Google Chrome - Camouflage' role='pane' /&gt;&lt;ctrl name='Search icon' role='graphic' /&gt;" FuzzySelectorArgument="&lt;ctrl name='New Tab - Google Chrome - Camouflage' role='pane' /&gt;&lt;ctrl name='Search icon' role='graphic' automationid='' /&gt;" Guid="b8fded3c-3962-494f-856c-ed0b4c44defa" SearchSteps="Selector, FuzzySelector" />
                                                                       </scg:List>
                                                                     </uix:TargetAnchorable.Anchors>
@@ -523,7 +505,7 @@
                                                                     <uix:VerifyExecutionOptions.Target>
                                                                       <uix:TargetAnchorable BrowserURL="chrome://newtab/" DesignTimeRectangle="204, 66, 1553, 43" DesignTimeScaleFactor="1.25" FuzzySelectorArgument="&lt;ctrl name='New Tab - Google Chrome - Camouflage' role='pane' /&gt;&lt;ctrl automationid='' role='grouping' /&gt;" Guid="b513db65-1043-45d7-b0d3-37f55023b69f" InformativeScreenshot="031c6bca3fee76a8e946a32203c14096.png" ScopeSelectorArgument="&lt;wnd app='chrome.exe' cls='Chrome_WidgetWin_1' title='New Tab - Google Chrome' /&gt;" SearchSteps="FuzzySelector" Version="V4" Visibility="Interactive">
                                                                         <uix:TargetAnchorable.Anchors>
-                                                                          <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                                                          <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
                                                                             <uix:Target DesignTimeRectangle="210, 72, 31, 31" ElementType="Icon" FullSelectorArgument="&lt;ctrl name='New Tab - Google Chrome - Camouflage' role='pane' /&gt;&lt;ctrl name='Search icon' role='graphic' /&gt;" FuzzySelectorArgument="&lt;ctrl name='New Tab - Google Chrome - Camouflage' role='pane' /&gt;&lt;ctrl name='Search icon' role='graphic' automationid='' /&gt;" Guid="7ac442de-fb7d-43e7-a4d7-c86e25326404" SearchSteps="Selector, FuzzySelector" />
                                                                           </scg:List>
                                                                         </uix:TargetAnchorable.Anchors>
@@ -604,7 +586,7 @@
                                                                     <uix:NTypeInto.Target>
                                                                       <uix:TargetAnchorable BrowserURL="chrome://newtab/" CVScreenId="a9b711ae-0a3c-41fe-ae53-90e1cfafa3a8" CvElementArea="207, 64, 1550, 47" CvType="InputBox" DesignTimeRectangle="250, 72, 1452, 31" DesignTimeScaleFactor="1.25" ElementType="InputBox" FullSelectorArgument="&lt;ctrl name='New Tab - Google Chrome - Camouflage' role='pane' /&gt;&lt;ctrl name='Address and search bar' role='editable text' /&gt;" FuzzySelectorArgument="&lt;ctrl name='New Tab - Google Chrome - Camouflage' role='pane' /&gt;&lt;ctrl name='Address and search bar' role='editable text' automationid='' /&gt;" Guid="6c04c6a8-51d0-4d7b-b6a2-6749fdcc646f" InformativeScreenshot="3219158e82b571bf4478eb2ddcc4b35e.png" ScopeSelectorArgument="&lt;wnd app='chrome.exe' cls='Chrome_WidgetWin_1' title='New Tab - Google Chrome' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V4" Visibility="Interactive">
                                                                         <uix:TargetAnchorable.Anchors>
-                                                                          <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                                                          <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
                                                                             <uix:Target DesignTimeRectangle="210, 72, 31, 31" ElementType="Icon" FullSelectorArgument="&lt;ctrl name='New Tab - Google Chrome - Camouflage' role='pane' /&gt;&lt;ctrl name='Search icon' role='graphic' /&gt;" FuzzySelectorArgument="&lt;ctrl name='New Tab - Google Chrome - Camouflage' role='pane' /&gt;&lt;ctrl name='Search icon' role='graphic' automationid='' /&gt;" Guid="fffc5e87-5447-4773-ae06-5cfb6125a1d5" SearchSteps="Selector, FuzzySelector" />
                                                                           </scg:List>
                                                                         </uix:TargetAnchorable.Anchors>
@@ -726,7 +708,7 @@
                                                                         <uix:NGetText.Target>
                                                                           <uix:TargetAnchorable BrowserURL="https://www.google.com/search?q=uipath&amp;sca_esv=099553b9ac5746f6&amp;rlz=1C1ONGR_enIN1130IN1130&amp;ei=PQ8iZ6ebAo-gseMP-dvmyQU&amp;ved=0ahUKEwjnrZSo97WJAxUPUGwGHfmtOVkQ4dUDCBA&amp;uact=5&amp;oq=uipath&amp;gs_lp=Egxnd3Mtd2l6LXNlcnAiBnVpcGF0aDIKEAAYgAQYQxiKBTINEAAYgAQYsQMYQxiKBTIOEC4YgAQYsQMY0QMYxwEyCBAAGIAEGLEDMgoQABiABBhDGIoFMggQABiABBixAzIIEAAYgAQYsQMyCxAAGIAEGLEDGIMBMgUQABiABDIFEAAYgARI9wtQ-wJYqwdwAXgBkAEAmAF0oAH-A6oBAzMuMrgBA8gBAPgBAZgCBqACkwTCAgoQABiwAxjWBBhHmAMAiAYBkAYIkgcDMy4zoAeaHg&amp;sclient=gws-wiz-serp" DesignTimeRectangle="1175, 571, 465, 110" DesignTimeScaleFactor="1.25" FuzzySelectorArgument="&lt;webctrl class='kno-rdesc' parentid='kp-wp-tab-overview' tag='DIV' type='' aaname='' /&gt;" Guid="7a69cca4-f4d1-4363-acde-a56be18c3d41" InformativeScreenshot="2f61078f0775f720fe8b7ef8ffb2c533.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='uipath - Google Search' /&gt;" SearchSteps="FuzzySelector" Version="V4" Visibility="Interactive">
                                                                             <uix:TargetAnchorable.Anchors>
-                                                                              <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                                                              <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
                                                                                 <uix:Target DesignTimeRectangle="1150, 421, 490, 90" ElementType="InputBox" FuzzySelectorArgument="&lt;webctrl class='KsRP6' tag='DIV' type='' aaname='       ' /&gt;" Guid="d1d097fe-d287-48b4-a8ef-63cef9e9eda8" SearchSteps="FuzzySelector" />
                                                                               </scg:List>
                                                                             </uix:TargetAnchorable.Anchors>
@@ -751,7 +733,7 @@
                                                                     <av:PointCollection x:Key="ConnectorLocation">405,680.2 355.4,680.2</av:PointCollection>
                                                                   </scg:Dictionary>
                                                                 </sap:WorkflowViewStateService.ViewState>
-                                                                <Sequence DisplayName="Select Item" sap:VirtualizedContainerService.HintSize="483.20000000000005,1697.6" sap2010:WorkflowViewState.IdRef="Sequence_18">
+                                                                <Sequence DisplayName="Select Item" sap:VirtualizedContainerService.HintSize="110.4,70.4" sap2010:WorkflowViewState.IdRef="Sequence_18">
                                                                   <sap:WorkflowViewStateService.ViewState>
                                                                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -822,14 +804,14 @@
                                                                             <uix:NSelectItem.Target>
                                                                               <uix:TargetAnchorable CVScreenId="8d7df8cc-f9a8-4ddc-a8e1-c247505756b0" CvTextArea="75, 510, 57, 17" CvTextArgument="Desktop" CvType="Text" DesignTimeRectangle="75, 250, 59, 40" DesignTimeScaleFactor="1.25" FuzzySelectorArgument="&lt;wnd cls='ShellTabWindowClass' title='Home' /&gt;&lt;wnd aaname='Explorer Pane' cls='DirectUIHWND' /&gt;&lt;wnd aaname='Control Host' cls='NamespaceTreeControl' title='Namespace Tree Control' /&gt;&lt;wnd cls='SysTreeView32' title='Navigation Pane' /&gt;&lt;ctrl name='Start of Quick Access - Desktop (pinned)' role='outline item' automationid='' check:text='Start of Quick Access - Desktop (pinned)' /&gt;" Guid="685ca215-e0c9-4e59-9963-445a7de62070" ImageBase64="" InformativeScreenshot="8ef6240881fe53cc0c4708d40bf36667.png" ScopeSelectorArgument="&lt;wnd app='explorer.exe' cls='CabinetWClass' title='Home - File Explorer' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
                                                                                 <uix:TargetAnchorable.Anchors>
-                                                                                  <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                                                                  <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
                                                                                     <uix:Target CVScreenId="8d7df8cc-f9a8-4ddc-a8e1-c247505756b0" CvElementArea="48, 505, 27, 23" CvType="Icon" DesignTimeRectangle="46, 255, 31, 27" ElementType="Icon" Guid="27555fbb-5152-4aac-90ef-00c7c09382ba" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAB8AAAAbCAYAAACEP1QvAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAPRSURBVEhL7dTZU1NnGAZwZ+q4MBoXUAyKCBESUFyKoLiNUx071dE/QetW7zpTrUvdQItWrZVxt+5Ca9zXugCaCiRkk0DIRsIm0NCijP4JT5/vnJzBi3MuuJEbLt7r3zzP977fIL1ej/6aAbxfZgDvl9HEVxcV4UDPR+x//xGF3R9Q2NWDfdEe7O14x3mP3a3d2NXCaX6HnyLd2Bn+DztC/2J7oAvbfV3Y5o3iR08ntr7pxPItBaqGJr422o1FrVEsaI4iP9SB/EAH5vrakedpQ25tG3JcrfjS3oJZ1mbMrGzCjL+bML0ijKwXIWQ9CyHzSRDGhwFk3PdjRVlE1dDEF7ZEMT/yD+YF2jHP34G8+rfI9bxFjpuooxWzbS2YWUX0dROyKxoxrbwRWc+J/hWE6VEQGfd8SL/rx9RbPqT9Wa9qaOL5jZ2EmbahHbl1MprjJFojp53BtNmWiJz2eRBZT0NE/TA+CCD9TgMMN70wmBuQ+ocXU673EZcqFmlZ8Rx3G9PGKhZpWXH2yzCmlxN+GmTFIbniu0x7x0e4gWm9SC2pR8rVOky+7FE1NPFcvq1UsZK2mmlfR5D9Ktxb8ZMATI/5trG0omLDDaYt9SLlGtFLtUi+6MHEs25VQxMXC6VULBZKoKLiaWWNyGTFykKl3/PLaVlxGitOvV6HlCty2km/1xJ+A/2pPuKzbbGKLWF5oYiKik2PmVYsFLdYQm94kcZJLRUVeyQ0+YJA3Ug6Q/SkG4nHnaqGJi5t8asIUXE6fFemNSoLJd72NrdYVFxSx4ViUqZNvkj0nBsTBXrCicRiJ8Yfc2DcUYeqoYkrFX96sxKqpFUW6grTXuqtOOm0gF1I/M2B8b8SPmzH2IM1qoYmrtys8ZH8UQjYYBYVx9KKhbrMtKx40rlaJJ1ySRVPKHYRtWPcETviD9Vg7M82jCmsVjU0cRNRpeKprNhg9sVuVl4oCT0fWyhWPKHYwbROojVIOGRDPNOO2W/F6AIrRu2pUjU08Yz7hG+LzyJ2swIVNyvO5wJrFmmVirlQouIEVhxfZJPSji4kurcaul1VGLmzUtXQxA23BFov3axcMbeYNyulPcO0J11yxceY9ijRg0xbJNIS3meFbreMjthWibgtFlVDExdpp8R+KKliLlTSaRfflqcjKuYWS2l/ETDf9gDRguretDuIbrUg7gcLhn/fRzxhzhLoVm+GbtV3GLmSs2ITRnzD+Xoj4pZzlm3A8KWcr9Zj2JL1GLp4HYYuWochC7+FudyOwflrYS6z44u8NdAZF6gamvjnmAG8H0aP/wH4TdeSlDSuhwAAAABJRU5ErkJggg==" SearchSteps="CV" TargetType="ComputerVisionBased" />
                                                                                   </scg:List>
                                                                                 </uix:TargetAnchorable.Anchors>
                                                                               </uix:TargetAnchorable>
                                                                             </uix:NSelectItem.Target>
                                                                           </uix:NSelectItem>
-                                                                          <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="382.4,122.4" sap2010:WorkflowViewState.IdRef="WriteLine_24" Text="selected desktop from the quick access side panel using select item activity&#xD;&#xA;...&#xD;&#xA;closing file explorer..." />
+                                                                          <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="382.4,122.4" sap2010:WorkflowViewState.IdRef="WriteLine_24" Text="selected desktop from the quick access side panel using select item activity&#xA;...&#xA;closing file explorer..." />
                                                                           <uix:NKeyboardShortcuts ActivateBefore="True" ClickBeforeMode="None" DisplayName="Keyboard Shortcuts" sap:VirtualizedContainerService.HintSize="382.4,239.2" sap2010:WorkflowViewState.IdRef="NKeyboardShortcuts_4" Shortcuts="[d(hk)][d(alt)][k(F4)][u(alt)][u(hk)]" Version="V4">
                                                                             <uix:NKeyboardShortcuts.VerifyOptions>
                                                                               <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">

@@ -1,0 +1,46 @@
+{
+  "Workflows": [
+    {
+      "Path": null,
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": null,
+      "ArgumentsSectionElementsOrder": null,
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Main.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "statusWindowMessage&b275ec98-bc99-4836-91a1-a258a7109df6",
+        "Config&b275ec98-bc99-4836-91a1-a258a7109df6",
+        "instanceName&b275ec98-bc99-4836-91a1-a258a7109df6",
+        "strProjectJson&Sequence_2",
+        "systemException&StateMachine_1",
+        "businessException&StateMachine_1",
+        "str_originAndStatus&StateMachine_1"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "Hide_Messages",
+        "Hide_Results"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Form_Inputs/onClick_SelectFolder.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "statusWindowMessage&b275ec98-bc99-4836-91a1-a258a7109df6",
+        "Config&b275ec98-bc99-4836-91a1-a258a7109df6",
+        "instanceName&b275ec98-bc99-4836-91a1-a258a7109df6",
+        "outputFolderPath&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "TriggerEventArgs"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    }
+  ]
+}

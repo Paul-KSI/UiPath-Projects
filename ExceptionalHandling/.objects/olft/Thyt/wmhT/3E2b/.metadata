@@ -1,0 +1,17 @@
+﻿{
+  "Name": "UsernameTestLogin",
+  "Type": "Element",
+  "TaxonomyType": "Input",
+  "Id": "3E2bCwAGGUaneEgvvh6Ypg",
+  "Reference": "gIeWm_f7X0m39VSjP0OiTw/3E2bCwAGGUaneEgvvh6Ypg",
+  "ParentRef": "gIeWm_f7X0m39VSjP0OiTw/wmhTgj_MDUSObPTzedgNcA",
+  "Created": "2024-10-29T15:17:03.6260628Z",
+  "Updated": "2024-10-29T15:21:41.5068116Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=24.11.1.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.11.1.0, Culture=neutral, PublicKeyToken=null"
+  ],
+  "UpdatedBy": [
+    "UiPath.Platform, Version=24.11.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

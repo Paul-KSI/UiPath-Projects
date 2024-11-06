@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Chrome: Test Login | Practice Test Automation",
+  "Type": "Screen",
+  "Id": "wmhTgj_MDUSObPTzedgNcA",
+  "Reference": "gIeWm_f7X0m39VSjP0OiTw/wmhTgj_MDUSObPTzedgNcA",
+  "ParentRef": "gIeWm_f7X0m39VSjP0OiTw/ThythFhv802Bi2hSM6HR4g",
+  "Created": "2024-10-29T15:17:03.530612Z",
+  "Updated": "2024-10-29T15:17:03.530612Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=24.11.1.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.11.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

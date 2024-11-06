@@ -1,0 +1,31 @@
+{
+  "Workflows": [
+    {
+      "Path": null,
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [],
+      "ArgumentsSectionElementsOrder": null,
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Main.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "Assign_variable&Flowchart_1",
+        "DataFrame&Flowchart_1",
+        "permission&Sequence_3",
+        "start_time&Sequence_6",
+        "counter&Sequence_8",
+        "counter&Sequence_9",
+        "number&Sequence_11",
+        "text&Sequence_33"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "acquired_argument"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    }
+  ]
+}
