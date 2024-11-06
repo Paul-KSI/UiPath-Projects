@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="QNDiR9kL0UiV-Us1unqqnQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="chrome://newtab/" CVScreenId="34a879db-7471-4296-9c2a-7083bcb4ac43" CvElementArea="202, 67, 1557, 42" CvType="InputBox" DesignTimeRectangle="250, 72, 1452, 31" DesignTimeScaleFactor="1.25" ElementType="InputBox" FullSelectorArgument="&lt;ctrl name='New Tab - Google Chrome - PAUL (ME)' role='pane' /&gt;&lt;ctrl name='Address and search bar' role='editable text' /&gt;" FuzzySelectorArgument="&lt;ctrl name='New Tab - Google Chrome - PAUL (ME)' role='pane' /&gt;&lt;ctrl name='Address and search bar' role='editable text' automationid='' /&gt;" Guid="5b7e43cf-c520-42ce-9130-4a455723d712" ScopeSelectorArgument="&lt;wnd app='chrome.exe' cls='Chrome_WidgetWin_1' title='New Tab - Google Chrome' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V4" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="34a879db-7471-4296-9c2a-7083bcb4ac43" CvTextArea="247, 79, 225, 17" CvTextArgument="Search Google or type a URL" CvType="Text" DesignTimeRectangle="204, 66, 1553, 43" FullSelectorArgument="&lt;ctrl name='New Tab - Google Chrome - PAUL (ME)' role='pane' /&gt;&lt;ctrl idx='3' role='grouping' /&gt;" FuzzySelectorArgument="&lt;ctrl name='New Tab - Google Chrome - PAUL (ME)' role='pane' /&gt;&lt;ctrl automationid='' role='grouping' /&gt;" Guid="a8344792-0fae-46f8-a9b3-245f6f2dd47f" SearchSteps="Selector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="f1c36e06d21b3f72693c1a11ee2db219.png" xmlns="">03hQqZfP1EkWe6Efw4F7XJA</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">None</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

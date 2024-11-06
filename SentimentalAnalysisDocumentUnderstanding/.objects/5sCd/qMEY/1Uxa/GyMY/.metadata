@@ -1,0 +1,14 @@
+﻿{
+  "Name": "Giri krishna Meda",
+  "Type": "Element",
+  "TaxonomyType": "None",
+  "Id": "GyMY6QyW9UCWn2KQWSQpWg",
+  "Reference": "-tIyJD5TCUWiFNPyWRMQnA/GyMY6QyW9UCWn2KQWSQpWg",
+  "ParentRef": "-tIyJD5TCUWiFNPyWRMQnA/1Uxa6-RnTUK5aKrK8WhtvA",
+  "Created": "2024-11-06T08:24:40.9394153Z",
+  "Updated": "2024-11-06T08:24:40.9394153Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=24.11.1.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.11.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

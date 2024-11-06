@@ -1,0 +1,14 @@
+﻿{
+  "Name": "grouping",
+  "Type": "Element",
+  "TaxonomyType": "Input",
+  "Id": "7m-2deXMgEiX0L_p2OFDQQ",
+  "Reference": "2eVGzTNIoEexQOJNk0Ntqw/7m-2deXMgEiX0L_p2OFDQQ",
+  "ParentRef": "2eVGzTNIoEexQOJNk0Ntqw/8tfchPSoP0y_BgDUAG5GEw",
+  "Created": "2024-08-20T06:04:02.0715083Z",
+  "Updated": "2024-08-20T06:04:02.0715083Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=24.10.0.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.10.3.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

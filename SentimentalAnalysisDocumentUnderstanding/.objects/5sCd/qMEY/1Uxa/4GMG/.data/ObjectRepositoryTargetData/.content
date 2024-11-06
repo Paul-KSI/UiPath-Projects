@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="GmaRJjmmVEO9xfiISuf5gw" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="https://www.flipkart.com/flipkart-supermart-select-sugar/product-reviews/itmfy2jxm4h87ptd?pid=SUGFY2JXQQKRYFBP&amp;lid=LSTSUGFY2JXQQKRYFBP7UR9AS&amp;aid=overall&amp;certifiedBuyer=false&amp;sortOrder=NEGATIVE_FIRST" DesignTimeRectangle="537, 793, 1265, 164" DesignTimeScaleFactor="1.25" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div' idx='16' parentid='container' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' class='col EPCmJX Ma1fCG' parentid='container' tag='DIV' aaname='' /&gt;" Guid="52d66933-d6f6-4172-afd5-ec2eeb70d73c" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Flipkart Supermart Select Sugar Reviews: Latest Review of Flipkart Supermart Select Sugar | Price in India | Flipkart.com' /&gt;" SearchSteps="FuzzySelector" Version="V4" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="58b931a4-4acb-4a2d-b306-6e64ad686d03" CvTextArea="565, 909, 84, 13" CvTextArgument="sidra shaikh" CvType="Text" DesignTimeRectangle="567, 906, 83, 21" ElementType="Text" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;p' idx='15' isleaf='1' tag='P' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' class='_2NsDsF AwS1CA' isleaf='1' tag='P' aaname='sidra shaikh' check:innerText='sidra shaikh' /&gt;" Guid="864c7b4a-598d-4382-998f-41f2e29e1b6f" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="00cc7984508025233c7b5ec25bb8a29c.png" xmlns="">09P92-oIfE0K7RV9DC94UFQ</imageRef>
+    </TargetAnchorable>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

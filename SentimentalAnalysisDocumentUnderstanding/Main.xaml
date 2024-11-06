@@ -1,0 +1,579 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:av="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:isactr="http://schemas.uipath.com/workflow/integration-service-activities/isactr" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:s="clr-namespace:System;assembly=System.Private.CoreLib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:uasc="clr-namespace:UiPath.Activities.System.Collections;assembly=UiPath.System.Activities" xmlns:ue="clr-namespace:UiPath.Excel;assembly=UiPath.Excel.Activities" xmlns:ueab="clr-namespace:UiPath.Excel.Activities.Business;assembly=UiPath.Excel.Activities" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uiascb="clr-namespace:UiPath.IntegrationService.Activities.SWEntities.CE8940DFCC3_v1_sub_sentimentminus_signanalysis_Create.Bundle;assembly=CE8940DFCC3_v1_sub_s.j0dnMXjsTL1xvA2T2Au9pb" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>UiPath.IntegrationService.Activities.Runtime.Models.FilterBuilder</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.IntegrationService.Activities.Runtime.Models</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>UiPath.IntegrationService.Activities.Runtime.Helpers.TypeDetailsCustomization</x:String>
+      <x:String>UiPath.IntegrationService.Activities.Runtime.Activities</x:String>
+      <x:String>UiPath.Platform.Activities</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Platform.SyncObjects</x:String>
+      <x:String>UiPath.Vision.OCR</x:String>
+      <x:String>UiPath.OCR.Contracts</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>UiPath.OCR.Activities</x:String>
+      <x:String>UiPath.OCR.Contracts.Activities</x:String>
+      <x:String>System.Linq.Expressions</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Services.RuntimeAnalyze</x:String>
+      <x:String>UiPath.Excel</x:String>
+      <x:String>UiPath.Excel.Activities.Business</x:String>
+      <x:String>UiPath.Excel.Model</x:String>
+      <x:String>UiPath.Activities.System.Collections</x:String>
+      <x:String>UiPath.Activities.System.Arrays</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>UiPath.Platform.ResourceHandling</x:String>
+      <x:String>UiPath.Excel.Activities</x:String>
+      <x:String>UiPath.DataTableUtilities</x:String>
+      <x:String>UiPath.Core.Activities.OCR.Engines</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Models</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>UiPath.IntegrationService.Activities.Runtime</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Core</AssemblyReference>
+      <AssemblyReference>UiPath.Vision.Core</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Contracts</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.Reflection.MetadataLoadContext</AssemblyReference>
+      <AssemblyReference>CE8940DFCC3_v1_sub_s.j0dnMXjsTL1xvA2T2Au9pb</AssemblyReference>
+      <AssemblyReference>CE8940DFCC3_v1_sub_s.j0dnMXjsTL1xvA2T2Au9pb</AssemblyReference>
+      <AssemblyReference>CE8940DFCC3_v1_sub_s.j0dnMXjsTL1xvA2T2Au9pb</AssemblyReference>
+      <AssemblyReference>CE8940DFCC3_v1_sub_s.j0dnMXjsTL1xvA2T2Au9pb</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Linq.Async</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
+      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>System.Private.Xml</AssemblyReference>
+      <AssemblyReference>System.Data.SqlClient</AssemblyReference>
+      <AssemblyReference>UiPath.Workflow</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="1146.4,671.2" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <Flowchart sap:VirtualizedContainerService.HintSize="600,648" sap2010:WorkflowViewState.IdRef="Flowchart_1">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+          <av:Point x:Key="ShapeLocation">275,35</av:Point>
+          <av:Size x:Key="ShapeSize">49.6,49.6</av:Size>
+          <av:PointCollection x:Key="ConnectorLocation">299.8,84.6 299.8,114.6 300.2,114.6 300.2,135</av:PointCollection>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <Flowchart.StartNode>
+        <x:Reference>__ReferenceID1</x:Reference>
+      </Flowchart.StartNode>
+      <FlowStep x:Name="__ReferenceID1" sap2010:WorkflowViewState.IdRef="FlowStep_1">
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <av:Point x:Key="ShapeLocation">245,135</av:Point>
+            <av:Size x:Key="ShapeSize">110.4,70.4</av:Size>
+            <av:PointCollection x:Key="ConnectorLocation">300.2,205.4 300.2,255</av:PointCollection>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+        <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="110.4,70.4" sap2010:WorkflowViewState.IdRef="CommentOut_1">
+          <ui:CommentOut.Body>
+            <Sequence DisplayName="Ignored Activities" sap2010:WorkflowViewState.IdRef="Sequence_16">
+              <Sequence DisplayName="gathering review data" sap:VirtualizedContainerService.HintSize="110.4,70.4" sap2010:WorkflowViewState.IdRef="Sequence_2">
+                <Sequence.Variables>
+                  <Variable x:TypeArguments="x:String" Name="Title_product" />
+                  <Variable x:TypeArguments="x:String" Name="r1" />
+                  <Variable x:TypeArguments="x:String" Name="r2" />
+                  <Variable x:TypeArguments="x:String" Name="r3" />
+                  <Variable x:TypeArguments="x:String" Name="r4" />
+                  <Variable x:TypeArguments="x:String" Name="r5" />
+                  <Variable x:TypeArguments="x:String" Name="r6" />
+                  <Variable x:TypeArguments="scg:IList(x:String)" Name="reviews" />
+                </Sequence.Variables>
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+                <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Chrome: Flipkart Supermart Select Sugar Reviews: Latest Review of Flipkart Supermart Sel" sap:VirtualizedContainerService.HintSize="1175.2,56.8" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="a32bd28d-4997-4ec0-b93e-c82f639ee7f1" Version="V2">
+                  <uix:NApplicationCard.Body>
+                    <ActivityAction x:TypeArguments="x:Object">
+                      <ActivityAction.Argument>
+                        <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+                      </ActivityAction.Argument>
+                      <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="483.2,709.6" sap2010:WorkflowViewState.IdRef="Sequence_3">
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                        <Sequence DisplayName="Positive Reviews" sap:VirtualizedContainerService.HintSize="449.6,648" sap2010:WorkflowViewState.IdRef="Sequence_4">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                          <uix:NGetText DisplayName="Get Text 'Vihari Bathala'" sap:VirtualizedContainerService.HintSize="416,189.6" sap2010:WorkflowViewState.IdRef="NGetText_1" ScopeIdentifier="a32bd28d-4997-4ec0-b93e-c82f639ee7f1" TextString="[r1]" Version="V4">
+                            <uix:NGetText.Target>
+                              <uix:TargetAnchorable BrowserURL="https://www.flipkart.com/flipkart-supermart-select-sugar/product-reviews/itmfy2jxm4h87ptd?pid=SUGFY2JXQQKRYFBP" ContentHash="PZ6S24QC8EKvmI6GkFRc0A" DesignTimeRectangle="537, 640, 1265, 163" DesignTimeScaleFactor="1.25" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div' idx='9' parentid='container' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' class='col EPCmJX Ma1fCG' parentid='container' tag='DIV' aaname='' /&gt;" Guid="b548f3ec-5826-4640-9883-351873987d20" InformativeScreenshot="c2091c222d95e3f053b7b791e2293407.png" Reference="-tIyJD5TCUWiFNPyWRMQnA/Epi3hlMDqUeVGD8gafNgzg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Flipkart Supermart Select Sugar Reviews: Latest Review of Flipkart Supermart Select Sugar | Price in India | Flipkart.com' /&gt;" SearchSteps="FuzzySelector" Version="V4" Visibility="Interactive">
+                                <uix:TargetAnchorable.Anchors>
+                                  <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                    <uix:Target CVScreenId="8bab7fb8-9346-4f71-89b0-6c35a958205e" CvTextArea="565, 755, 97, 13" CvTextArgument="Vihari Bathala" CvType="Text" DesignTimeRectangle="567, 752, 95, 21" ElementType="Text" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;p' tag='P' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' tag='P' class='_2NsDsF AwS1CA' aaname='Vihari Bathala' check:innerText='Vihari Bathala' /&gt;" Guid="06636d3a-4db2-4569-9daf-7cfd0d2c0480" SearchSteps="FuzzySelector, CV" />
+                                  </scg:List>
+                                </uix:TargetAnchorable.Anchors>
+                              </uix:TargetAnchorable>
+                            </uix:NGetText.Target>
+                          </uix:NGetText>
+                          <uix:NGetText DisplayName="Get Text 'Dinesh kumar'" sap:VirtualizedContainerService.HintSize="416,189.6" sap2010:WorkflowViewState.IdRef="NGetText_2" ScopeIdentifier="a32bd28d-4997-4ec0-b93e-c82f639ee7f1" TextString="[r2]" Version="V4">
+                            <uix:NGetText.Target>
+                              <uix:TargetAnchorable BrowserURL="https://www.flipkart.com/flipkart-supermart-select-sugar/product-reviews/itmfy2jxm4h87ptd?pid=SUGFY2JXQQKRYFBP" ContentHash="HUDkVC9rn0GkQSHd7EG82g" DesignTimeRectangle="537, 719, 1265, 188" DesignTimeScaleFactor="1.25" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div' idx='11' parentid='container' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' class='col EPCmJX Ma1fCG' parentid='container' tag='DIV' aaname='' /&gt;" Guid="721efabd-9737-4916-9025-0edaf1f8d374" InformativeScreenshot="b4f2a019f7b81c70e74cabd3335822c2.png" Reference="-tIyJD5TCUWiFNPyWRMQnA/Eh4jYfT1k06qPa53M9pZFA" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Flipkart Supermart Select Sugar Reviews: Latest Review of Flipkart Supermart Select Sugar | Price in India | Flipkart.com' /&gt;" SearchSteps="FuzzySelector" Version="V4" Visibility="Interactive">
+                                <uix:TargetAnchorable.Anchors>
+                                  <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                    <uix:Target CVScreenId="2737131c-3bd8-4c6d-b1ba-d147104e58fb" CvTextArea="565, 859, 97, 13" CvTextArgument="Dinesh kumar" CvType="Text" DesignTimeRectangle="567, 856, 94, 21" ElementType="Text" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;p' idx='5' isleaf='1' tag='P' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' class='_2NsDsF AwS1CA' isleaf='1' tag='P' aaname='Dinesh kumar' check:innerText='Dinesh kumar' /&gt;" Guid="09c5ec13-0b20-420c-86cd-8d884e23d03e" SearchSteps="FuzzySelector, CV" />
+                                  </scg:List>
+                                </uix:TargetAnchorable.Anchors>
+                              </uix:TargetAnchorable>
+                            </uix:NGetText.Target>
+                          </uix:NGetText>
+                          <uix:NGetText DisplayName="Get Text 'Manish'" sap:VirtualizedContainerService.HintSize="416,182.4" sap2010:WorkflowViewState.IdRef="NGetText_3" ScopeIdentifier="a32bd28d-4997-4ec0-b93e-c82f639ee7f1" TextString="[r3]" Version="V4">
+                            <uix:NGetText.Target>
+                              <uix:TargetAnchorable BrowserURL="https://www.flipkart.com/flipkart-supermart-select-sugar/product-reviews/itmfy2jxm4h87ptd?pid=SUGFY2JXQQKRYFBP" ContentHash="PTIZHhk2f0qqPNJQ_FcE1w" DesignTimeRectangle="537, 653, 1265, 163" DesignTimeScaleFactor="1.25" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div' idx='15' parentid='container' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' class='col EPCmJX Ma1fCG' parentid='container' tag='DIV' aaname='' /&gt;" Guid="772b1045-11aa-4d6b-9a5b-a7f92e88ffaf" InformativeScreenshot="36a89ca97063f5cddf76b19c50aeb989.png" Reference="-tIyJD5TCUWiFNPyWRMQnA/rxg44P8yb0m76OOAtecFnw" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Flipkart Supermart Select Sugar Reviews: Latest Review of Flipkart Supermart Select Sugar | Price in India | Flipkart.com' /&gt;" SearchSteps="FuzzySelector" Version="V4" Visibility="Interactive">
+                                <uix:TargetAnchorable.Anchors>
+                                  <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                    <uix:Target CVScreenId="c76a9541-b6b1-4914-a787-34f457600700" CvTextArea="565, 769, 52, 12" CvTextArgument="Manish" CvType="Text" DesignTimeRectangle="567, 765, 50, 21" ElementType="Text" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;p' idx='13' isleaf='1' tag='P' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' class='_2NsDsF AwS1CA' isleaf='1' tag='P' aaname='Manish' check:innerText='Manish' /&gt;" Guid="443f30dc-c917-4d41-ab5e-1b6286298f00" SearchSteps="FuzzySelector, CV" />
+                                  </scg:List>
+                                </uix:TargetAnchorable.Anchors>
+                              </uix:TargetAnchorable>
+                            </uix:NGetText.Target>
+                          </uix:NGetText>
+                        </Sequence>
+                      </Sequence>
+                    </ActivityAction>
+                  </uix:NApplicationCard.Body>
+                  <uix:NApplicationCard.TargetApp>
+                    <uix:TargetApp Area="-9, -9, 1938, 1038" BrowserType="Chrome" IconBase64="iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAPFSURBVFhHxZZbSBRhFMc/Q0i6vIQVIWW0FZVB+lYIJb1kVE8F2Us3eukl8aGLWpGFdAEvZFAUEUFR+CBBN7ttmlne1rumLu5u6uquOu6u2+646+6cvjPr0DR7atdLNPBjhu+c8/3Pd74z3wxTLnCxDLCzR2Bh1f8UriG52cEp2V8XOJlTxhADanx1i8Betey3sWiQY+pZuM3DHMiU7K/LZ48TjDWJoSAVHa918Kx4C4hfF4TZ/sRo9RI5xqxfGWYz1q0G/9h8YUo2dJkMiSfa9Gt9zW/XA1RzRxWTVXFg+7AibDwSVh6Dsdpx1EAt1JTFzU2rnnZ+0oECdxr8l6i1UJuBj2f2H4mYQKAlk9+Lw8YjIYnPp2Jpu0LkCjhKQAp+pG1/QQpaQHLnkDY1EROQJvYDSA4IepeTdorARAoABEN3wq4mqh4I+FvB57lN2ij84kMI+mtJm5aoEvCMpctVEF3FIHnnkT6INMHA68znq/eGYggfLVElgAgDe+V9xWq4hWzwCCkw6YqV8QhJ4B7JhEmxlvvYwDFwiJyDIuoEEKFvDTgGL8tJ4B7jSkMEeck7wWUvBLtps1wJJQaf3a74EadD14uobci0EkAmf8TyFcbDULcOrF2pMviMY2hDHxRp69puOnW3aEh37gOw07XAzjTIHCp52qeeb9oJRAJXe+zmbSHmbCPE5LaTuFzreVeH/Oc0ARRPzSvzUaJqDMYDeiWGYVfPBdiMBwseuChBJOFCo7Qxrw72FL0ZGROSmpU4njbPZA54VZlhYjmtYcK7Ct8NjtqS+atDx+GPCMwWXH3albIJrfjqSwYx4FhopWIUGIzxg2WWDPRsslJN96D84mfKXw1/uXkms+SF/kiPVhyxmrbWUP5q5iSB3Pv5g1QCftvS75S/GgYj/EcxAgEbC3j6lw0PdCWZzO0pRi3UqxefY5AUO8aBPSZIzf3XBJzfN1iwvNkPb/Xuvv5yHCeV91qFfMIR3Y9jyumHdHfs/EppRFUBaXi+E8t578Wlb1qhaOnqSK+i5mYwzLsxApI9zu3uX2esqc9opSaPBrkfiLkZ2HgzKPB9wr3G0ls6d7Sh4KvKk8248rwnt0zH75QO7SssF9Ju6McV8ISjBLddrXSjHU++iuqjX37TUcF/4PnDLKCO38XnW4Pc5tX6UjDo43sxQwIWBvi51Sawt6DcTPlTMDDxhxkitCSMUifgtceFNZQ/BYPueSIHZkLT+7Re6hWseHekgvInEJnUzrI4IgemS1npYTN+YrXY6pIbKH8NXJNl/QQY2SMPYJ5++AAAAABJRU5ErkJggg==" InformativeScreenshot="4bf45eb6b02651030b07a9197e5954e9.jpg" Selector="&lt;html app='chrome.exe' title='Flipkart Supermart Select Sugar Reviews: Latest Review of Flipkart Supermart Select Sugar | Price in India | Flipkart.com' /&gt;" Title="Flipkart Supermart Select Sugar Reviews: Latest Review of Flipkart Supermart Select Sugar | Price in India | Flipkart.com" Url="https://www.flipkart.com/flipkart-supermart-select-sugar/product-reviews/itmfy2jxm4h87ptd?pid=SUGFY2JXQQKRYFBP" />
+                  </uix:NApplicationCard.TargetApp>
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                </uix:NApplicationCard>
+                <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Chrome: Flipkart Supermart Select Sugar Reviews: Latest Review of Flipkart Supermart Sel" sap:VirtualizedContainerService.HintSize="1175.2,56.8" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" InteractionMode="DebuggerApi" ScopeGuid="a0a36999-9299-4619-a7dc-7b022b072431" Version="V2">
+                  <uix:NApplicationCard.Body>
+                    <ActivityAction x:TypeArguments="x:Object">
+                      <ActivityAction.Argument>
+                        <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+                      </ActivityAction.Argument>
+                      <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="483.2,709.6" sap2010:WorkflowViewState.IdRef="Sequence_6">
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                        <Sequence DisplayName="Negative Reviews" sap:VirtualizedContainerService.HintSize="449.6,648" sap2010:WorkflowViewState.IdRef="Sequence_5">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                          <uix:NGetText DisplayName="Get Text 'Rohan Kulkarni'" sap:VirtualizedContainerService.HintSize="416,189.6" sap2010:WorkflowViewState.IdRef="NGetText_4" ScopeIdentifier="a0a36999-9299-4619-a7dc-7b022b072431" TextString="[r4]" Version="V4">
+                            <uix:NGetText.Target>
+                              <uix:TargetAnchorable BrowserURL="https://www.flipkart.com/flipkart-supermart-select-sugar/product-reviews/itmfy2jxm4h87ptd?pid=SUGFY2JXQQKRYFBP&amp;lid=LSTSUGFY2JXQQKRYFBP7UR9AS&amp;aid=overall&amp;certifiedBuyer=false&amp;sortOrder=NEGATIVE_FIRST" ContentHash="E6mdmZesekGXeDc4SZFYKQ" DesignTimeRectangle="537, 509, 1265, 164" DesignTimeScaleFactor="1.25" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div' idx='12' parentid='container' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' class='col EPCmJX Ma1fCG' parentid='container' tag='DIV' aaname='' /&gt;" Guid="274bceef-4fd9-4bf2-b16a-fbb55259a39b" InformativeScreenshot="5011ece46ec26214e6ffa55e95834471.png" Reference="-tIyJD5TCUWiFNPyWRMQnA/qlZggPtr20aA96xI4FjE2g" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Flipkart Supermart Select Sugar Reviews: Latest Review of Flipkart Supermart Select Sugar | Price in India | Flipkart.com' /&gt;" SearchSteps="FuzzySelector" Version="V4" Visibility="Interactive">
+                                <uix:TargetAnchorable.Anchors>
+                                  <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                    <uix:Target CVScreenId="9bba7022-53bd-4073-865f-bde78b13b7f9" CvTextArea="565, 625, 104, 13" CvTextArgument="Rohan Kulkarni" CvType="Text" DesignTimeRectangle="567, 622, 103, 21" ElementType="Text" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;p' idx='7' isleaf='1' tag='P' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' class='_2NsDsF AwS1CA' isleaf='1' tag='P' aaname='Rohan Kulkarni' check:innerText='Rohan Kulkarni' /&gt;" Guid="73746671-b2e9-4686-922b-bf2d42ae52f6" SearchSteps="FuzzySelector, CV" />
+                                  </scg:List>
+                                </uix:TargetAnchorable.Anchors>
+                              </uix:TargetAnchorable>
+                            </uix:NGetText.Target>
+                          </uix:NGetText>
+                          <uix:NGetText DisplayName="Get Text 'sidra shaikh'" sap:VirtualizedContainerService.HintSize="416,189.6" sap2010:WorkflowViewState.IdRef="NGetText_5" ScopeIdentifier="a0a36999-9299-4619-a7dc-7b022b072431" TextString="[r5]" Version="V4">
+                            <uix:NGetText.Target>
+                              <uix:TargetAnchorable BrowserURL="https://www.flipkart.com/flipkart-supermart-select-sugar/product-reviews/itmfy2jxm4h87ptd?pid=SUGFY2JXQQKRYFBP&amp;lid=LSTSUGFY2JXQQKRYFBP7UR9AS&amp;aid=overall&amp;certifiedBuyer=false&amp;sortOrder=NEGATIVE_FIRST" ContentHash="GmaRJjmmVEO9xfiISuf5gw" DesignTimeRectangle="537, 793, 1265, 164" DesignTimeScaleFactor="1.25" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div' idx='16' parentid='container' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' class='col EPCmJX Ma1fCG' parentid='container' tag='DIV' aaname='' /&gt;" Guid="52d66933-d6f6-4172-afd5-ec2eeb70d73c" InformativeScreenshot="00cc7984508025233c7b5ec25bb8a29c.png" Reference="-tIyJD5TCUWiFNPyWRMQnA/4GMGJMEpdEKYxsK3izfgOQ" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Flipkart Supermart Select Sugar Reviews: Latest Review of Flipkart Supermart Select Sugar | Price in India | Flipkart.com' /&gt;" SearchSteps="FuzzySelector" Version="V4" Visibility="Interactive">
+                                <uix:TargetAnchorable.Anchors>
+                                  <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                    <uix:Target CVScreenId="58b931a4-4acb-4a2d-b306-6e64ad686d03" CvTextArea="565, 909, 84, 13" CvTextArgument="sidra shaikh" CvType="Text" DesignTimeRectangle="567, 906, 83, 21" ElementType="Text" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;p' idx='15' isleaf='1' tag='P' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' class='_2NsDsF AwS1CA' isleaf='1' tag='P' aaname='sidra shaikh' check:innerText='sidra shaikh' /&gt;" Guid="864c7b4a-598d-4382-998f-41f2e29e1b6f" SearchSteps="FuzzySelector, CV" />
+                                  </scg:List>
+                                </uix:TargetAnchorable.Anchors>
+                              </uix:TargetAnchorable>
+                            </uix:NGetText.Target>
+                          </uix:NGetText>
+                          <uix:NGetText DisplayName="Get Text 'Giri krishna Meda'" sap:VirtualizedContainerService.HintSize="416,182.4" sap2010:WorkflowViewState.IdRef="NGetText_6" ScopeIdentifier="a0a36999-9299-4619-a7dc-7b022b072431" TextString="[r6]" Version="V4">
+                            <uix:NGetText.Target>
+                              <uix:TargetAnchorable BrowserURL="https://www.flipkart.com/flipkart-supermart-select-sugar/product-reviews/itmfy2jxm4h87ptd?pid=SUGFY2JXQQKRYFBP&amp;lid=LSTSUGFY2JXQQKRYFBP7UR9AS&amp;aid=overall&amp;certifiedBuyer=false&amp;sortOrder=NEGATIVE_FIRST" ContentHash="uToXLk9viUu4_MZ5_dVMig" DesignTimeRectangle="537, 458, 1265, 163" DesignTimeScaleFactor="1.25" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div' idx='17' parentid='container' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' class='col EPCmJX Ma1fCG' parentid='container' tag='DIV' aaname='' /&gt;" Guid="7e4424a5-87fe-4795-9af7-772bdd54764a" InformativeScreenshot="8a29d0551006d5de1bdf9092c05b7fc7.png" Reference="-tIyJD5TCUWiFNPyWRMQnA/GyMY6QyW9UCWn2KQWSQpWg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Flipkart Supermart Select Sugar Reviews: Latest Review of Flipkart Supermart Select Sugar | Price in India | Flipkart.com' /&gt;" SearchSteps="FuzzySelector" Version="V4" Visibility="Interactive">
+                                <uix:TargetAnchorable.Anchors>
+                                  <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                    <uix:Target CVScreenId="681263f2-344f-4277-9016-c5b803473e1a" CvTextArea="565, 572, 122, 14" CvTextArgument="Giri krishna Meda" CvType="Text" DesignTimeRectangle="567, 570, 120, 21" ElementType="Text" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;p' idx='17' isleaf='1' tag='P' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' class='_2NsDsF AwS1CA' isleaf='1' tag='P' aaname='Giri krishna Meda' check:innerText='Giri krishna Meda' /&gt;" Guid="d68f5269-8c14-4d4e-9158-bac2016d6492" SearchSteps="FuzzySelector, CV" />
+                                  </scg:List>
+                                </uix:TargetAnchorable.Anchors>
+                              </uix:TargetAnchorable>
+                            </uix:NGetText.Target>
+                          </uix:NGetText>
+                        </Sequence>
+                      </Sequence>
+                    </ActivityAction>
+                  </uix:NApplicationCard.Body>
+                  <uix:NApplicationCard.TargetApp>
+                    <uix:TargetApp Area="-9, -9, 1938, 1038" BrowserType="Chrome" IconBase64="iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAPFSURBVFhHxZZbSBRhFMc/Q0i6vIQVIWW0FZVB+lYIJb1kVE8F2Us3eukl8aGLWpGFdAEvZFAUEUFR+CBBN7ttmlne1rumLu5u6uquOu6u2+646+6cvjPr0DR7atdLNPBjhu+c8/3Pd74z3wxTLnCxDLCzR2Bh1f8UriG52cEp2V8XOJlTxhADanx1i8Betey3sWiQY+pZuM3DHMiU7K/LZ48TjDWJoSAVHa918Kx4C4hfF4TZ/sRo9RI5xqxfGWYz1q0G/9h8YUo2dJkMiSfa9Gt9zW/XA1RzRxWTVXFg+7AibDwSVh6Dsdpx1EAt1JTFzU2rnnZ+0oECdxr8l6i1UJuBj2f2H4mYQKAlk9+Lw8YjIYnPp2Jpu0LkCjhKQAp+pG1/QQpaQHLnkDY1EROQJvYDSA4IepeTdorARAoABEN3wq4mqh4I+FvB57lN2ij84kMI+mtJm5aoEvCMpctVEF3FIHnnkT6INMHA68znq/eGYggfLVElgAgDe+V9xWq4hWzwCCkw6YqV8QhJ4B7JhEmxlvvYwDFwiJyDIuoEEKFvDTgGL8tJ4B7jSkMEeck7wWUvBLtps1wJJQaf3a74EadD14uobci0EkAmf8TyFcbDULcOrF2pMviMY2hDHxRp69puOnW3aEh37gOw07XAzjTIHCp52qeeb9oJRAJXe+zmbSHmbCPE5LaTuFzreVeH/Oc0ARRPzSvzUaJqDMYDeiWGYVfPBdiMBwseuChBJOFCo7Qxrw72FL0ZGROSmpU4njbPZA54VZlhYjmtYcK7Ct8NjtqS+atDx+GPCMwWXH3albIJrfjqSwYx4FhopWIUGIzxg2WWDPRsslJN96D84mfKXw1/uXkms+SF/kiPVhyxmrbWUP5q5iSB3Pv5g1QCftvS75S/GgYj/EcxAgEbC3j6lw0PdCWZzO0pRi3UqxefY5AUO8aBPSZIzf3XBJzfN1iwvNkPb/Xuvv5yHCeV91qFfMIR3Y9jyumHdHfs/EppRFUBaXi+E8t578Wlb1qhaOnqSK+i5mYwzLsxApI9zu3uX2esqc9opSaPBrkfiLkZ2HgzKPB9wr3G0ls6d7Sh4KvKk8248rwnt0zH75QO7SssF9Ju6McV8ISjBLddrXSjHU++iuqjX37TUcF/4PnDLKCO38XnW4Pc5tX6UjDo43sxQwIWBvi51Sawt6DcTPlTMDDxhxkitCSMUifgtceFNZQ/BYPueSIHZkLT+7Re6hWseHekgvInEJnUzrI4IgemS1npYTN+YrXY6pIbKH8NXJNl/QQY2SMPYJ5++AAAAABJRU5ErkJggg==" InformativeScreenshot="cc4bf047f903adc25c86734d35f4f542.jpg" Selector="&lt;html app='chrome.exe' title='Flipkart Supermart Select Sugar Reviews: Latest Review of Flipkart Supermart Select Sugar | Price in India | Flipkart.com' /&gt;" Title="Flipkart Supermart Select Sugar Reviews: Latest Review of Flipkart Supermart Select Sugar | Price in India | Flipkart.com" Url="https://www.flipkart.com/flipkart-supermart-select-sugar/product-reviews/itmfy2jxm4h87ptd?pid=SUGFY2JXQQKRYFBP&amp;lid=LSTSUGFY2JXQQKRYFBP7UR9AS&amp;aid=overall&amp;certifiedBuyer=false&amp;sortOrder=NEGATIVE_FIRST" />
+                  </uix:NApplicationCard.TargetApp>
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                </uix:NApplicationCard>
+                <Sequence DisplayName="collection of reviews" sap:VirtualizedContainerService.HintSize="1175.2,56.8" sap2010:WorkflowViewState.IdRef="Sequence_9">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <uasc:BuildCollection x:TypeArguments="x:String" Items="{x:Null}" DisplayName="Build Collection" FirstItem="[r1]" sap:VirtualizedContainerService.HintSize="416,165.6" sap2010:WorkflowViewState.IdRef="BuildCollection`1_2" Result="[reviews]">
+                    <uasc:BuildCollection.NextItems>
+                      <scg:List x:TypeArguments="InArgument(x:String)" Capacity="8">
+                        <InArgument x:TypeArguments="x:String">[r2]</InArgument>
+                        <InArgument x:TypeArguments="x:String">[r3]</InArgument>
+                        <InArgument x:TypeArguments="x:String">[r4]</InArgument>
+                        <InArgument x:TypeArguments="x:String">[r5]</InArgument>
+                        <InArgument x:TypeArguments="x:String">[r6]</InArgument>
+                      </scg:List>
+                    </uasc:BuildCollection.NextItems>
+                  </uasc:BuildCollection>
+                </Sequence>
+                <ueab:ExcelProcessScopeX DisplayAlerts="{x:Null}" ExistingProcessAction="{x:Null}" FileConflictResolution="{x:Null}" LaunchMethod="{x:Null}" LaunchTimeout="{x:Null}" MacroSettings="{x:Null}" ProcessMode="{x:Null}" ShowExcelWindow="{x:Null}" DisplayName="Excel Process Scope" sap:VirtualizedContainerService.HintSize="1175.2,1141.6" sap2010:WorkflowViewState.IdRef="ExcelProcessScopeX_1">
+                  <ueab:ExcelProcessScopeX.Body>
+                    <ActivityAction x:TypeArguments="ui:IExcelProcess">
+                      <ActivityAction.Argument>
+                        <DelegateInArgument x:TypeArguments="ui:IExcelProcess" Name="ExcelProcessScopeTag" />
+                      </ActivityAction.Argument>
+                      <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="1141.6,1032" sap2010:WorkflowViewState.IdRef="Sequence_7">
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                        <ueab:ExcelApplicationCard Password="{x:Null}" ReadFormatting="{x:Null}" SensitivityLabel="{x:Null}" DisplayName="Use Excel File" sap:VirtualizedContainerService.HintSize="1108,972" sap2010:WorkflowViewState.IdRef="ExcelApplicationCard_1" ResizeWindow="None" SensitivityOperation="None" WorkbookPath="Auxilliary_Files\Sentimental_analysis_dataset.xlsx">
+                          <ueab:ExcelApplicationCard.Body>
+                            <ActivityAction x:TypeArguments="ue:IWorkbookQuickHandle">
+                              <ActivityAction.Argument>
+                                <DelegateInArgument x:TypeArguments="ue:IWorkbookQuickHandle" Name="Excel" />
+                              </ActivityAction.Argument>
+                              <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="1074.4,679.2" sap2010:WorkflowViewState.IdRef="Sequence_8">
+                                <sap:WorkflowViewStateService.ViewState>
+                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                  </scg:Dictionary>
+                                </sap:WorkflowViewStateService.ViewState>
+                                <Parallel sap:VirtualizedContainerService.HintSize="1040.8,238.4" sap2010:WorkflowViewState.IdRef="Parallel_1">
+                                  <ueab:WriteCellX Cell="[Excel.Sheet(&quot;Sheet1&quot;).Cell(&quot;A1&quot;)]" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="473.6,160" sap2010:WorkflowViewState.IdRef="WriteCellX_1" Value="[&quot;Review&quot;]" />
+                                  <ueab:WriteCellX Cell="[Excel.Sheet(&quot;Sheet1&quot;).Cell(&quot;B1&quot;)]" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="473.6,160" sap2010:WorkflowViewState.IdRef="WriteCellX_2" Value="[&quot;Sentiment&quot;]" />
+                                </Parallel>
+                                <ui:ForEach x:TypeArguments="x:String" CurrentIndex="{x:Null}" DisplayName="For Each currentText" sap:VirtualizedContainerService.HintSize="1040.8,380.8" sap2010:WorkflowViewState.IdRef="ForEach`1_1" Values="[reviews]">
+                                  <ui:ForEach.Body>
+                                    <ActivityAction x:TypeArguments="x:String">
+                                      <ActivityAction.Argument>
+                                        <DelegateInArgument x:TypeArguments="x:String" Name="currentText" />
+                                      </ActivityAction.Argument>
+                                      <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="467.2,243.2" sap2010:WorkflowViewState.IdRef="Sequence_10">
+                                        <sap:WorkflowViewStateService.ViewState>
+                                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                          </scg:Dictionary>
+                                        </sap:WorkflowViewStateService.ViewState>
+                                        <ueab:WriteCellX AutoIncrementRow="True" Cell="[Excel.Sheet(&quot;Sheet1&quot;).Cell(&quot;A2&quot;)]" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="433.6,183.2" sap2010:WorkflowViewState.IdRef="WriteCellX_4" Value="[currentText]" />
+                                      </Sequence>
+                                    </ActivityAction>
+                                  </ui:ForEach.Body>
+                                </ui:ForEach>
+                              </Sequence>
+                            </ActivityAction>
+                          </ueab:ExcelApplicationCard.Body>
+                        </ueab:ExcelApplicationCard>
+                      </Sequence>
+                    </ActivityAction>
+                  </ueab:ExcelProcessScopeX.Body>
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                </ueab:ExcelProcessScopeX>
+              </Sequence>
+            </Sequence>
+          </ui:CommentOut.Body>
+        </ui:CommentOut>
+        <FlowStep.Next>
+          <FlowStep x:Name="__ReferenceID0" sap2010:WorkflowViewState.IdRef="FlowStep_2">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <av:Point x:Key="ShapeLocation">245,255</av:Point>
+                <av:Size x:Key="ShapeSize">110.4,70.4</av:Size>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <Sequence DisplayName="Sentimental Analysis" sap:VirtualizedContainerService.HintSize="110.4,70.4" sap2010:WorkflowViewState.IdRef="Sequence_11">
+              <Sequence.Variables>
+                <Variable x:TypeArguments="sd:DataTable" Name="data_table" />
+                <Variable x:TypeArguments="x:String" Name="Overall_sentiment_label" />
+              </Sequence.Variables>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <ui:ReadRange WorkbookPathResource="{x:Null}" AddHeaders="True" DataTable="[data_table]" DisplayName="Read Range Workbook" sap:VirtualizedContainerService.HintSize="449.6,120" sap2010:WorkflowViewState.IdRef="ReadRange_1" Range="A1:B7" SheetName="Sheet1" WorkbookPath="Auxilliary_Files\Sentimental_analysis_dataset.xlsx" />
+              <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[data_table]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="449.6,410.4" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
+                <ui:ForEachRow.Body>
+                  <ActivityAction x:TypeArguments="sd:DataRow">
+                    <ActivityAction.Argument>
+                      <DelegateInArgument x:TypeArguments="sd:DataRow" Name="CurrentRow" />
+                    </ActivityAction.Argument>
+                    <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="416,221.6" sap2010:WorkflowViewState.IdRef="Sequence_13">
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                      <isactr:ConnectorActivity Configuration="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" ConnectionId="b943f4dd-add4-4bd5-a2f8-18e8940dfcc3" DisplayName="Summarize Text" sap:VirtualizedContainerService.HintSize="382.4,56.8" sap2010:WorkflowViewState.IdRef="ConnectorActivity_8" UiPathActivityTypeId="d82ffa74-9757-317d-8c48-1a3a1b4be976">
+                        <isactr:ConnectorActivity.FieldObjects>
+                          <isactr:FieldObject Name="modelName" Type="FieldArgument">
+                            <isactr:FieldObject.Value>
+                              <InArgument x:TypeArguments="x:String">gpt-35-turbo-0125</InArgument>
+                            </isactr:FieldObject.Value>
+                          </isactr:FieldObject>
+                          <isactr:FieldObject Name="prompt" Type="FieldArgument">
+                            <isactr:FieldObject.Value>
+                              <InArgument x:TypeArguments="x:String">[CurrentRow("Review").ToString]</InArgument>
+                            </isactr:FieldObject.Value>
+                          </isactr:FieldObject>
+                          <isactr:FieldObject Name="detectInputLanguage" Type="FieldArgument">
+                            <isactr:FieldObject.Value>
+                              <InArgument x:TypeArguments="x:Boolean">False</InArgument>
+                            </isactr:FieldObject.Value>
+                          </isactr:FieldObject>
+                          <isactr:FieldObject Name="outputLanguage" Type="FieldArgument">
+                            <isactr:FieldObject.Value>
+                              <InArgument x:TypeArguments="x:String">English</InArgument>
+                            </isactr:FieldObject.Value>
+                          </isactr:FieldObject>
+                          <isactr:FieldObject Name="out_summary" Type="FieldArgument">
+                            <isactr:FieldObject.Value>
+                              <OutArgument x:TypeArguments="x:String">[Overall_sentiment_label]</OutArgument>
+                            </isactr:FieldObject.Value>
+                          </isactr:FieldObject>
+                          <isactr:FieldObject Name="maxWordCount" Type="FieldArgument">
+                            <isactr:FieldObject.Value>
+                              <InArgument x:TypeArguments="x:Int64">50</InArgument>
+                            </isactr:FieldObject.Value>
+                          </isactr:FieldObject>
+                          <isactr:FieldObject Name="summaryFormat" Type="FieldArgument">
+                            <isactr:FieldObject.Value>
+                              <InArgument x:TypeArguments="x:String">Paragraph</InArgument>
+                            </isactr:FieldObject.Value>
+                          </isactr:FieldObject>
+                          <isactr:FieldObject Name="temperature" Type="FieldArgument">
+                            <isactr:FieldObject.Value>
+                              <InArgument x:TypeArguments="x:Double">0.5</InArgument>
+                            </isactr:FieldObject.Value>
+                          </isactr:FieldObject>
+                        </isactr:ConnectorActivity.FieldObjects>
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                      </isactr:ConnectorActivity>
+                      <isactr:ConnectorActivity Configuration="H4sIAAAAAAAACs1WbW8aORD+K9Z+PNEtpLleg5QPsGnvuEsK6pJepSpCZndgHYy9Z49JaJT/3vG+kdxCkm+pkADPzs7M88zjse+CTwJkaiOtkAsFJujfBTFwk2R8LqF8GPS/X3WCkcodNoa74DNfQ9APEG4x6ARnwuaSbyvjtDKCTYzIUWjljRkw781Qszkwrrjc/oCULbRhFhSKNX3RW9Nt7mNYNEItaR1rg2OT+tp6neAL/OeEgTToo3HQKes/1wmvsgx1ug3uqd6xw70FN6kGvgArbKg3YLiUcf0gRtNCNC59WOPUgldRaBkSziYJs4k2HmzKJJ+DfBYfBRVLind3X2IFi0F/waUlrF/A5lpZqLHX68gZjocpKZmgTGMVcbXhtnS87zzBSWMZGuCrVN+ofaw0bLDGbQ8vTqFlesFybQWKDXSYgiWv/zkkYjsFQ6iRS2aRwPig9mmyjl6VoESrhUhBJXAOm6Kvj6mJmuescWhth0p5bBeMSe/s2fIy4lW2HRFCISwJ/SMm3hEkbdYcS4f3x8GrUrOC7SQz3IIlzXz/7arFzT+wZZVHi5YBK3vtKaBALC/9mKcHxULQwBDqf3uspil8WjDHv8zuetDXx8zUHi1azoCGiyTwcEvuqkheq6RNxNM8/P6q2J2iIlCrg+q4bBxaLMRujhLYLgRLASHBnSiKA+ZGYOZXwjCxznnyzKny/pV08bfA2abX7zccvTmoi92gPaiQHcZLMeGYhSM/KqhEehyD2YgEwkFCU5dmMNgw/vcjhSz+Rh8/nBx3zz5F0TuqZ2bdfNaUtBbK2Zknp65tFtGoRwiH1AUJ4Ytf6LB9ecLrbqouvl3b6XnvdjM4mh4N3Ek+77CvYCxVftoLu/5DbzuJzsBpc2JM3FyKhGbJVK9AnSon/ZB9rnsvbBPddyz1p/CuGndF2rhUxQjyRNOdibSFgq5JTbKRosOLpviEG+obEgR/n6qgULICDOWiw0GRbLWh6snsBAXK3lQ/XJh0RU5Vs7ZVV2u5UaXza3q5UsZBAf2FmF8AZprqDyaaKKH6I55kQPD1yuVfuSSmSs2X9qHRNxbMiI7fyj4xYs3NlsqsboETnqz4Eh5COnkMqd7FhQjZn6AGI7bT3UPPh0GOe+EfDbQXaP9lHIxzOl/re0ihwhYx43hKNl8rrd5uem/3BjrnaukIN/mAv+Jc8NsJLWPxg0xH3S5F5ba4A9F0iTLy9sxWqvC34aHUyarg8P4nYgxQFnQLAAA=" ConnectionId="b943f4dd-add4-4bd5-a2f8-18e8940dfcc3" DisplayName="Sentiment Analysis" sap:VirtualizedContainerService.HintSize="382.4,56.8" sap2010:WorkflowViewState.IdRef="ConnectorActivity_6" UiPathActivityTypeId="2141cadf-6675-3876-bd1f-14adadee2c79">
+                        <isactr:ConnectorActivity.FieldObjects>
+                          <isactr:FieldObject Name="text" Type="FieldArgument">
+                            <isactr:FieldObject.Value>
+                              <InArgument x:TypeArguments="x:String">[Overall_sentiment_label]</InArgument>
+                            </isactr:FieldObject.Value>
+                          </isactr:FieldObject>
+                          <isactr:FieldObject Name="out_sentimentAnalysis_sub_overallSentimentStr" Type="FieldArgument">
+                            <isactr:FieldObject.Value>
+                              <OutArgument x:TypeArguments="x:String">[Overall_sentiment_label]</OutArgument>
+                            </isactr:FieldObject.Value>
+                          </isactr:FieldObject>
+                          <isactr:FieldObject Name="out_sentimentAnalysis_sub_sentimentBreakdownStr" Type="FieldArgument">
+                            <isactr:FieldObject.Value>
+                              <OutArgument x:TypeArguments="x:String" />
+                            </isactr:FieldObject.Value>
+                          </isactr:FieldObject>
+                          <isactr:FieldObject Name="out_sentimentAnalysis_sub_confidenceLevel" Type="FieldArgument">
+                            <isactr:FieldObject.Value>
+                              <OutArgument x:TypeArguments="s:Nullable(x:Int64)" />
+                            </isactr:FieldObject.Value>
+                          </isactr:FieldObject>
+                          <isactr:FieldObject Name="out_sentimentAnalysis_sub_keyPhrasesStr_array" Type="FieldArgument">
+                            <isactr:FieldObject.Value>
+                              <OutArgument x:TypeArguments="s:String[]" />
+                            </isactr:FieldObject.Value>
+                          </isactr:FieldObject>
+                          <isactr:FieldObject Name="out_sentimentAnalysis_sub_analysis" Type="FieldArgument">
+                            <isactr:FieldObject.Value>
+                              <OutArgument x:TypeArguments="x:String" />
+                            </isactr:FieldObject.Value>
+                          </isactr:FieldObject>
+                          <isactr:FieldObject Name="out_sentimentAnalysis_sub_undertonesStr_array" Type="FieldArgument">
+                            <isactr:FieldObject.Value>
+                              <OutArgument x:TypeArguments="s:String[]" />
+                            </isactr:FieldObject.Value>
+                          </isactr:FieldObject>
+                          <isactr:FieldObject Name="Jit_v1_sub_sentimentminus_signanalysis" Type="FieldArgument">
+                            <isactr:FieldObject.Value>
+                              <OutArgument x:TypeArguments="uiascb:v1_sub_sentimentminus_signanalysis_Create" />
+                            </isactr:FieldObject.Value>
+                          </isactr:FieldObject>
+                        </isactr:ConnectorActivity.FieldObjects>
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                      </isactr:ConnectorActivity>
+                      <ueab:ExcelProcessScopeX DisplayAlerts="{x:Null}" ExistingProcessAction="{x:Null}" FileConflictResolution="{x:Null}" LaunchMethod="{x:Null}" LaunchTimeout="{x:Null}" MacroSettings="{x:Null}" ProcessMode="{x:Null}" ShowExcelWindow="{x:Null}" DisplayName="Excel Process Scope" sap:VirtualizedContainerService.HintSize="382.4,48" sap2010:WorkflowViewState.IdRef="ExcelProcessScopeX_2">
+                        <ueab:ExcelProcessScopeX.Body>
+                          <ActivityAction x:TypeArguments="ui:IExcelProcess">
+                            <ActivityAction.Argument>
+                              <DelegateInArgument x:TypeArguments="ui:IExcelProcess" Name="ExcelProcessScopeTag" />
+                            </ActivityAction.Argument>
+                            <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="534.4,596" sap2010:WorkflowViewState.IdRef="Sequence_14">
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                              <ueab:ExcelApplicationCard Password="{x:Null}" ReadFormatting="{x:Null}" SensitivityLabel="{x:Null}" DisplayName="Use Excel File" sap:VirtualizedContainerService.HintSize="500.8,536" sap2010:WorkflowViewState.IdRef="ExcelApplicationCard_2" ResizeWindow="None" SensitivityOperation="None" WorkbookPath="Auxilliary_Files\Sentimental_analysis_dataset.xlsx">
+                                <ueab:ExcelApplicationCard.Body>
+                                  <ActivityAction x:TypeArguments="ue:IWorkbookQuickHandle">
+                                    <ActivityAction.Argument>
+                                      <DelegateInArgument x:TypeArguments="ue:IWorkbookQuickHandle" Name="Excel" />
+                                    </ActivityAction.Argument>
+                                    <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="467.2,243.2" sap2010:WorkflowViewState.IdRef="Sequence_15">
+                                      <sap:WorkflowViewStateService.ViewState>
+                                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                        </scg:Dictionary>
+                                      </sap:WorkflowViewStateService.ViewState>
+                                      <ueab:WriteCellX AutoIncrementRow="True" Cell="[Excel.Sheet(&quot;Sheet1&quot;).Cell(&quot;B2&quot;)]" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="433.6,183.2" sap2010:WorkflowViewState.IdRef="WriteCellX_5" Value="[Overall_sentiment_label]" />
+                                    </Sequence>
+                                  </ActivityAction>
+                                </ueab:ExcelApplicationCard.Body>
+                              </ueab:ExcelApplicationCard>
+                            </Sequence>
+                          </ActivityAction>
+                        </ueab:ExcelProcessScopeX.Body>
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                      </ueab:ExcelProcessScopeX>
+                    </Sequence>
+                  </ActivityAction>
+                </ui:ForEachRow.Body>
+              </ui:ForEachRow>
+            </Sequence>
+          </FlowStep>
+        </FlowStep.Next>
+      </FlowStep>
+      <x:Reference>__ReferenceID0</x:Reference>
+    </Flowchart>
+  </Sequence>
+</Activity>

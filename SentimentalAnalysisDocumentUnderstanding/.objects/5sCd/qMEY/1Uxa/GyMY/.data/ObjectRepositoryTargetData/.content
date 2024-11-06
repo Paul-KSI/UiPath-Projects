@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="uToXLk9viUu4_MZ5_dVMig" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="https://www.flipkart.com/flipkart-supermart-select-sugar/product-reviews/itmfy2jxm4h87ptd?pid=SUGFY2JXQQKRYFBP&amp;lid=LSTSUGFY2JXQQKRYFBP7UR9AS&amp;aid=overall&amp;certifiedBuyer=false&amp;sortOrder=NEGATIVE_FIRST" DesignTimeRectangle="537, 458, 1265, 163" DesignTimeScaleFactor="1.25" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div' idx='17' parentid='container' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' class='col EPCmJX Ma1fCG' parentid='container' tag='DIV' aaname='' /&gt;" Guid="7e4424a5-87fe-4795-9af7-772bdd54764a" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Flipkart Supermart Select Sugar Reviews: Latest Review of Flipkart Supermart Select Sugar | Price in India | Flipkart.com' /&gt;" SearchSteps="FuzzySelector" Version="V4" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="681263f2-344f-4277-9016-c5b803473e1a" CvTextArea="565, 572, 122, 14" CvTextArgument="Giri krishna Meda" CvType="Text" DesignTimeRectangle="567, 570, 120, 21" ElementType="Text" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;p' idx='17' isleaf='1' tag='P' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' class='_2NsDsF AwS1CA' isleaf='1' tag='P' aaname='Giri krishna Meda' check:innerText='Giri krishna Meda' /&gt;" Guid="d68f5269-8c14-4d4e-9158-bac2016d6492" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="8a29d0551006d5de1bdf9092c05b7fc7.png" xmlns="">0VdWPwSOrEU-_xrIfdEegBQ</imageRef>
+    </TargetAnchorable>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

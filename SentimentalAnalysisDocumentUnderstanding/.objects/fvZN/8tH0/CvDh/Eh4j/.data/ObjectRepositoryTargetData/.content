@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="HUDkVC9rn0GkQSHd7EG82g" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="https://www.flipkart.com/flipkart-supermart-select-sugar/product-reviews/itmfy2jxm4h87ptd?pid=SUGFY2JXQQKRYFBP" DesignTimeRectangle="537, 719, 1265, 188" DesignTimeScaleFactor="1.25" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div' idx='11' parentid='container' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' class='col EPCmJX Ma1fCG' parentid='container' tag='DIV' aaname='' /&gt;" Guid="721efabd-9737-4916-9025-0edaf1f8d374" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Flipkart Supermart Select Sugar Reviews: Latest Review of Flipkart Supermart Select Sugar | Price in India | Flipkart.com' /&gt;" SearchSteps="FuzzySelector" Version="V4" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="2737131c-3bd8-4c6d-b1ba-d147104e58fb" CvTextArea="565, 859, 97, 13" CvTextArgument="Dinesh kumar" CvType="Text" DesignTimeRectangle="567, 856, 94, 21" ElementType="Text" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;p' idx='5' isleaf='1' tag='P' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' class='_2NsDsF AwS1CA' isleaf='1' tag='P' aaname='Dinesh kumar' check:innerText='Dinesh kumar' /&gt;" Guid="09c5ec13-0b20-420c-86cd-8d884e23d03e" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="b4f2a019f7b81c70e74cabd3335822c2.png" xmlns="">0cDDHG0fWxkiH_BAB4CifQw</imageRef>
+    </TargetAnchorable>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

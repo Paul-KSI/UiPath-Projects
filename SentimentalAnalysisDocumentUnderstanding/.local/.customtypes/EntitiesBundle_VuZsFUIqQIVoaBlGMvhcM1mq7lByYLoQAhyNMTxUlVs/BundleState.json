@@ -1,0 +1,13 @@
+{
+  "assemblyStates": {
+    "CE8940DFCC3_v1_sub_s.j0dnMXjsTL1xvA2T2Au9pb": {
+      "namespace": "UiPath.IntegrationService.Activities.SWEntities.CE8940DFCC3_v1_sub_sentimentminus_signanalysis_Create.Bundle",
+      "providerName": "CustomEntities",
+      "key": {
+        "name": "UiPath.IntegrationService.Activities.SWEntities.CE8940DFCC3_v1_sub_sentimentminus_signanalysis_Create",
+        "hash": "b1U2cW5yK0pUNDl1QThlWWsrWVdjQWVyai8rbVIyV0lCM2xnMitXZTVyV01MRG41N0F0MEZrSDdOWHl4TW1YVndoUWZVV0tTYW9Kc1ZqMjJUZVNxeVE9PQ",
+        "assemblyName": "CE8940DFCC3_v1_sub_s.j0dnMXjsTL1xvA2T2Au9pb"
+      }
+    }
+  }
+}

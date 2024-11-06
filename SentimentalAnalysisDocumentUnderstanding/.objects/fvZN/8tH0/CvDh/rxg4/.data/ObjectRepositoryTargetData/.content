@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="PTIZHhk2f0qqPNJQ_FcE1w" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="https://www.flipkart.com/flipkart-supermart-select-sugar/product-reviews/itmfy2jxm4h87ptd?pid=SUGFY2JXQQKRYFBP" DesignTimeRectangle="537, 653, 1265, 163" DesignTimeScaleFactor="1.25" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div' idx='15' parentid='container' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' class='col EPCmJX Ma1fCG' parentid='container' tag='DIV' aaname='' /&gt;" Guid="772b1045-11aa-4d6b-9a5b-a7f92e88ffaf" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Flipkart Supermart Select Sugar Reviews: Latest Review of Flipkart Supermart Select Sugar | Price in India | Flipkart.com' /&gt;" SearchSteps="FuzzySelector" Version="V4" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="c76a9541-b6b1-4914-a787-34f457600700" CvTextArea="565, 769, 52, 12" CvTextArgument="Manish" CvType="Text" DesignTimeRectangle="567, 765, 50, 21" ElementType="Text" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;p' idx='13' isleaf='1' tag='P' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' class='_2NsDsF AwS1CA' isleaf='1' tag='P' aaname='Manish' check:innerText='Manish' /&gt;" Guid="443f30dc-c917-4d41-ab5e-1b6286298f00" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="36a89ca97063f5cddf76b19c50aeb989.png" xmlns="">0L6G8hfnN7UyKBP1g9FWjNg</imageRef>
+    </TargetAnchorable>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

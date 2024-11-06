@@ -1,0 +1,31 @@
+{
+  "Workflows": [
+    {
+      "Path": null,
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [],
+      "ArgumentsSectionElementsOrder": null,
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Main.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "Title_product&Sequence_2",
+        "r1&Sequence_2",
+        "r2&Sequence_2",
+        "r3&Sequence_2",
+        "r4&Sequence_2",
+        "r5&Sequence_2",
+        "r6&Sequence_2",
+        "reviews&Sequence_2",
+        "data_table&Sequence_11",
+        "Overall_sentiment_label&Sequence_11"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    }
+  ]
+}
