@@ -1,0 +1,31 @@
+{
+  "Workflows": [
+    {
+      "Path": null,
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": null,
+      "ArgumentsSectionElementsOrder": null,
+      "ConstantsSectionElementsOrder": null,
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Main.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "extract_text&Sequence_12",
+        "extract_text&Sequence_2",
+        "opening&Sequence_9",
+        "closing&Sequence_9",
+        "monthly&Sequence_9",
+        "export_pdf&Sequence_5",
+        "inv&Sequence_7",
+        "date_&Sequence_7",
+        "customer_name&Sequence_7",
+        "amount&Sequence_7"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    }
+  ]
+}

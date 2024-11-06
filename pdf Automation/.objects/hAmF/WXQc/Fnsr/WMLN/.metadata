@@ -1,0 +1,14 @@
+﻿{
+  "Name": "Get Text 'Invoice No.'",
+  "Type": "Element",
+  "TaxonomyType": "Label",
+  "Id": "WMLN6POc7EeaZM6B1xNAQA",
+  "Reference": "uAaCj0GVeEmiLrbQiJEwNA/WMLN6POc7EeaZM6B1xNAQA",
+  "ParentRef": "uAaCj0GVeEmiLrbQiJEwNA/FnsrU1KbL0ehjmoIAEsTOQ",
+  "Created": "2024-11-06T15:37:49.9514706Z",
+  "Updated": "2024-11-06T15:37:49.9514706Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=24.11.1.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.11.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Extract from the pdf",
+  "Type": "Screen",
+  "Id": "FnsrU1KbL0ehjmoIAEsTOQ",
+  "Reference": "uAaCj0GVeEmiLrbQiJEwNA/FnsrU1KbL0ehjmoIAEsTOQ",
+  "ParentRef": "uAaCj0GVeEmiLrbQiJEwNA/WXQctlwTrEma8LGa5LM80Q",
+  "Created": "2024-11-06T15:37:49.6442333Z",
+  "Updated": "2024-11-06T15:37:49.6442333Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=24.11.1.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.11.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}
