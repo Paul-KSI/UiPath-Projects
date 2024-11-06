@@ -3,7 +3,7 @@
     {
       "Path": null,
       "SortBy": 0,
-      "VariablesSectionElementsOrder": [],
+      "VariablesSectionElementsOrder": null,
       "ArgumentsSectionElementsOrder": null,
       "ConstantsSectionElementsOrder": [],
       "AddedNamespaces": null
@@ -12,9 +12,12 @@
       "Path": "Main.xaml",
       "SortBy": 0,
       "VariablesSectionElementsOrder": [
-        "name&Sequence_2",
-        "number&Sequence_2",
-        "status&Sequence_2"
+        "status&Sequence_9",
+        "customer_name&Sequence_2",
+        "amount&Sequence_2",
+        "date_&Sequence_2",
+        "inv&Sequence_2",
+        "logs_table&Sequence_9"
       ],
       "ArgumentsSectionElementsOrder": [],
       "ConstantsSectionElementsOrder": [],

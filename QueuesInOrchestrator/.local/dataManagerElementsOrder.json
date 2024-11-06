@@ -12,8 +12,8 @@
       "Path": "Main.xaml",
       "SortBy": 0,
       "VariablesSectionElementsOrder": [
-        "Out_TransactionItem&Sequence_2",
-        "dataTable&Sequence_2"
+        "dataTable&Sequence_2",
+        "Out_TransactionItem&Sequence_2"
       ],
       "ArgumentsSectionElementsOrder": [],
       "ConstantsSectionElementsOrder": [],

@@ -1,0 +1,41 @@
+Logged On : 11/06/2024 20:07:11
+-------------------------------------------------------------------------
+
+Accessing folder : Auxilliary_Files\pdf
+
+-------------------------------------------------------------------------
+
+Opening file : inv 001.pdf
+Extracting data from pdf . . .
+
+Invoice No.          : 001
+Date                     : 01-11-2024
+Customer Name  : customer X
+Amount               : 36,193.00
+-------------------------------------------------------------------------
+
+Opening file : inv 002.pdf
+Extracting data from pdf . . .
+
+Invoice No.          : 002
+Date                     : 05-11-2024
+Customer Name  : customer Y
+Amount               : 63,725.00
+-------------------------------------------------------------------------
+
+Opening file : inv 003.pdf
+Extracting data from pdf . . .
+
+Invoice No.          : 003
+Date                     : 07-11-2024
+Customer Name  : customer z
+Amount               : 28,448.00
+-------------------------------------------------------------------------
+
+Data are loaded to the 'Auxilliary_Files\logs.xlsx' file successfully
+Switching Process to validation stage . . . 
+-------------------------------------------------------------------------
+
+Started  Validation . . . 
+
+Validation Successful . . .
