@@ -75,10 +75,10 @@ The following is a list of all the projects available in this repository, along 
 
 For those who want to download all the projects at once, you can choose the compressed file in your preferred format from the options below:
 
-- [**All_experiment.zip**](https://github.com/Paul-KSI/UiPath-Projects/raw/main/All_experiment.zip)
-- [**All_experiment.rar**](https://github.com/Paul-KSI/UiPath-Projects/raw/main/All_experiment.rar)
-- [**All_experiment.7z**](https://github.com/Paul-KSI/UiPath-Projects/raw/main/All_experiment.7z)
-- [**All_experiment.tar**](https://github.com/Paul-KSI/UiPath-Projects/raw/main/All_experiment.tar)
+- [**Uipath-projects.zip**](https://github.com/Paul-KSI/UiPath-Projects/raw/main/Zip%20Files/All_Experiments_Zip/Uipath-Projects.zip)
+- [**Uipath-projects.7z**](https://github.com/Paul-KSI/UiPath-Projects/raw/main/Zip%20Files/All_Experiments_Zip/Uipath-Projects.7z)
+- [**Uipath-projects.rar**](https://github.com/Paul-KSI/UiPath-Projects/raw/main/Zip%20Files/All_Experiments_Zip/Uipath-Projects.rar)
+- [**Uipath-projects.tar**](https://github.com/Paul-KSI/UiPath-Projects/raw/main/Zip%20Files/All_Experiments_Zip/Uipath-Projects.tar)
 
 Click any of the links above to start downloading the full set of experiments.
 
