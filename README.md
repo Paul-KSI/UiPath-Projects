@@ -19,7 +19,7 @@ The repository is organized into different folders, each representing a specific
    
 2. **Auxiliary Files**: Most of the projects use external files (like Excel files, PDFs, or datasets). These are stored in the `Auxiliary_Files` folder within each project directory. The data files are referenced using **relative paths**, so the projects should work seamlessly when the folder structure is maintained.
 
-3. **Zip Files**: All the projects are available in compressed formats within the [**`Zip Files`**](https://github.com/Paul-KSI/UiPath-Projects/tree/main/Zip_Files) folder. This allows you to quickly download any individual project or even the entire collection of projects.
+3. **Zip Files**: All the projects are available in compressed formats within the [**`Zip Files`**](https://github.com/Paul-KSI/UiPath-Projects/tree/main/Zip Files) folder. This allows you to quickly download any individual project or even the entire collection of projects.
 
 4. **Download All Experiments**: There is a compressed file available that contains all the experiments in a single file for quick access. This can be downloaded in multiple formats (e.g., `.zip`, `.rar`, `.tar`, `.7z`).
 
