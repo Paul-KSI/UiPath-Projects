@@ -1,4 +1,0 @@
-All_experiment.zip
-All_experiment.7z
-All_experiment.rar
-All_experiment.tar

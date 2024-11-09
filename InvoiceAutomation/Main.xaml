@@ -185,7 +185,7 @@
               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
             </scg:Dictionary>
           </sap:WorkflowViewStateService.ViewState>
-          <ui:WriteTextFile File="{x:Null}" DisplayName="Write Text File" FileName="Auxilliary Files\logs\logs.txt" sap:VirtualizedContainerService.HintSize="416,56.8" sap2010:WorkflowViewState.IdRef="WriteTextFile_1" Text="[&quot;Logged On : &quot; + DateTime.Now.ToString &amp; Environment.NewLine +&#xD;&#xA;&quot;-------------------------------------------------------------------------&quot; &amp; Environment.NewLine +&#xD;&#xA;Environment.NewLine +&#xD;&#xA;&quot;Accessing folder : Auxilliary_Files\pdf&quot; + Environment.NewLine +&#xD;&#xA;Environment.NewLine+&quot;-------------------------------------------------------------------------&quot; + Environment.NewLine]">
+          <ui:WriteTextFile File="{x:Null}" DisplayName="Write Text File" FileName="Auxilliary Files\logs\logs.txt" sap:VirtualizedContainerService.HintSize="449.6,56.8" sap2010:WorkflowViewState.IdRef="WriteTextFile_1" Text="[&quot;Logged On : &quot; + DateTime.Now.ToString &amp; Environment.NewLine +&#xA;&quot;-------------------------------------------------------------------------&quot; &amp; Environment.NewLine +&#xA;Environment.NewLine +&#xA;&quot;Accessing folder : Auxilliary_Files\pdf&quot; + Environment.NewLine +&#xA;Environment.NewLine+&quot;-------------------------------------------------------------------------&quot; + Environment.NewLine]">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -193,7 +193,7 @@
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
           </ui:WriteTextFile>
-          <ui:ForEachFileX DisplayName="For Each File in Folder" Filter="*.pdf" Folder="C:\Users\pauls\OneDrive\Documents\UiPath\InvoiceAutomation\Auxilliary Files\pdf" sap:VirtualizedContainerService.HintSize="416,56.8" sap2010:WorkflowViewState.IdRef="ForEachFileX_2" IncludeSubDirectories="False" OrderBy="NameAscFirst" SkipFolderWithoutPermission="True">
+          <ui:ForEachFileX DisplayName="For Each File in Folder" Filter="*.pdf" Folder="C:\Users\pauls\OneDrive\Documents\UiPath\InvoiceAutomation\Auxilliary Files\pdf" sap:VirtualizedContainerService.HintSize="449.6,687.2" sap2010:WorkflowViewState.IdRef="ForEachFileX_2" IncludeSubDirectories="False" OrderBy="NameAscFirst" SkipFolderWithoutPermission="True">
             <ui:ForEachFileX.Body>
               <ActivityAction x:TypeArguments="si:FileInfo, x:Int32">
                 <ActivityAction.Argument1>
@@ -216,7 +216,7 @@
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
                   </WriteLine>
-                  <ui:AppendLine File="{x:Null}" DisplayName="Append Line" FileName="Auxilliary Files\logs\logs.txt" sap:VirtualizedContainerService.HintSize="382.4,56.8" sap2010:WorkflowViewState.IdRef="AppendLine_5" Text="[&quot;Opening file : &quot; + CurrentFile.Name &amp; Environment.NewLine &amp; _&#xD;&#xA;&quot;Extracting data from pdf . . .&quot; &amp; Environment.NewLine]" UseDefaultEncoding="False">
+                  <ui:AppendLine File="{x:Null}" DisplayName="Append Line" FileName="Auxilliary Files\logs\logs.txt" sap:VirtualizedContainerService.HintSize="382.4,56.8" sap2010:WorkflowViewState.IdRef="AppendLine_5" Text="[&quot;Opening file : &quot; + CurrentFile.Name &amp; Environment.NewLine &amp; _&#xA;&quot;Extracting data from pdf . . .&quot; &amp; Environment.NewLine]" UseDefaultEncoding="False">
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                         <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -240,7 +240,7 @@
                             <uix:NClick.Target>
                               <uix:TargetAnchorable CVScreenId="4f059c10-af91-4051-8ed6-fa9d71baadd8" CvElementArea="323, 134, 21, 21" CvType="CloseButton" DesignTimeRectangle="314, 125, 40, 40" DesignTimeScaleFactor="1.25" ElementType="Button" FullSelectorArgument="&lt;wnd cls='AVL_AVView' title='AVTabsContainerView' /&gt;&lt;ctrl name='All tools, Access all tools panel' /&gt;&lt;ctrl name='Close all tools' role='push button' /&gt;" FuzzySelectorArgument="&lt;wnd cls='AVL_AVView' title='AVTabsContainerView' /&gt;&lt;ctrl name='All tools, Access all tools panel' /&gt;&lt;ctrl name='Close all tools' role='push button' automationid='' check:text='Close all tools' /&gt;" Guid="4af758af-a314-4ceb-8424-3bd9eb63f917" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAACwAAAAsCAYAAAAehFoBAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAACnSURBVFhH7dW9CcMwFEXhzKRJNJgm0SRqNZHCLQIvjhubdwLCtzhY6Ae+wrJfpZS1UwbTGUxnMJ3BdAbTGUxnMJ3BdCng1trqva9a68+a5rSmPce1O6WABZpzrjHGF1pjzWlNe+KZu6WAI+yDPps7O3u1tHf4CCSwKvXSRTSBVc8FR6yecZyJfual2+6ztt2P458ZTGcwncF0BtMZTGcwncF0BrOV9QZLF1dtWMBjPwAAAABJRU5ErkJggg==" InformativeScreenshot="e819172a35d936198a8be8437ecda9e8.png" ScopeSelectorArgument="&lt;wnd app='acrobat.exe' cls='AcrobatSDIWindow' title='inv 00?.pdf - Adobe Acrobat Reader (64-bit)' /&gt;" SearchSteps="Selector, FuzzySelector, Image, CV" Version="V4" Visibility="Interactive">
                                 <uix:TargetAnchorable.Anchors>
-                                  <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                  <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
                                     <uix:Target CVScreenId="4f059c10-af91-4051-8ed6-fa9d71baadd8" DesignTimeRectangle="39, 128, 277, 28" ElementType="Text" FullSelectorArgument="&lt;wnd cls='AVL_AVView' title='AVTabsContainerView' /&gt;&lt;ctrl name='All tools, Access all tools panel' /&gt;&lt;ctrl name='All tools' role='text' /&gt;" FuzzySelectorArgument="&lt;wnd cls='AVL_AVView' title='AVTabsContainerView' /&gt;&lt;ctrl name='All tools, Access all tools panel' /&gt;&lt;ctrl name='All tools' role='text' automationid='' check:text='All tools' /&gt;" Guid="b76a86e3-b421-44e2-822a-d7d187c79f4d" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAARkAAAAgCAYAAAAmEgzGAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAJmSURBVHhe7drdkcIgFEDhrclyKIZa0gqd0Al70fCTcFETc2d3nMPM97CRKC+cTaI/t9stAYAVIgPAFJEBYIrIADBFZACYIjIATBEZAKaIDABTH0XGh/QYwT899h/813UB324ambopZcTFPZ9zJjJuSSHGFFNIXnv9YkQG+BuTyLi0xHVT3ocego8i0yYSGeCL6ZEpOzIGScBjBD/O+yQyrlaMyADfTI1MbYzcJtUYKJvzXGR8Ddd2dLFxPi0h30q1EcOS3OZ9js1V1yXn5lu2fkw/B8ApSmRKBNZN75Z1A49XHCaRqZ+njd0aDswd1/VG7AB8bIxM2Y11M7bnM/tbpnOReahXSLG/cuifBclmd+tc38VEWdfrucq6ygG5JWxRkSs377mSAS40RKY1ph2b3TJdHpnuymQftPYMJ6YlB+XIXDk2jYyMuBAWwMouMrNbiDLaps0uj0w9efs5dzUq62tH5sqxcV37b9BktrxGbIBrbSNTd+J89L+Z0YKiHdP8fWQyl/wS1rll8EwGuNImMmUjal9Xa1HQNq6+mUdqZN66BVojcGSueLUuJxPKWbMfHwI4rkVG+e+/8ebVweHISAja5+kPc/ugtPc9MndcV45K8K4LXLtVJDLAdWpk1CuLjXET1o2bx3qedmx8L7GZmMd4hTKOdmVyd2Dufl2+FWo3JpEFcEqNTGvM/L9426glCBKesldLULRjE75OlJE3fnlt/YFdG3H+UPbduft13f/uz5PD+etsAgNcavvgFwAuRmQAmCIyAEwRGQCmiAwAU0QGgCkiA8AUkQFgisgAMEVkABi6pV/eQQXJiRjCRwAAAABJRU5ErkJggg==" SearchSteps="Selector, FuzzySelector, Image" />
                                   </scg:List>
                                 </uix:TargetAnchorable.Anchors>
@@ -261,7 +261,7 @@
                             <uix:NGetText.Target>
                               <uix:TargetAnchorable CVScreenId="af246234-e0f1-44b4-8f33-e08ec3cefb8e" CvTextArea="1306, 342, 41, 21" CvType="AnyWordGroup" DesignTimeRectangle="1306, 342, 41, 21" DesignTimeScaleFactor="1.25" ElementType="Text" Guid="a16aa086-c796-4b54-ab6b-0d9334811045" ImageBase64="" InformativeScreenshot="a5eb1a0750ac9f47299afba3131ff738.png" ScopeSelectorArgument="&lt;wnd app='acrobat.exe' cls='AcrobatSDIWindow' title='inv 00?.pdf - Adobe Acrobat Reader (64-bit)' /&gt;" SearchSteps="CV" TargetType="ComputerVisionBased" Version="V4" Visibility="Interactive">
                                 <uix:TargetAnchorable.Anchors>
-                                  <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                  <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
                                     <uix:Target CVScreenId="af246234-e0f1-44b4-8f33-e08ec3cefb8e" CvTextArea="1077, 345, 114, 18" CvTextArgument="Invoice No." CvType="Text" DesignTimeRectangle="1077, 345, 114, 18" ElementType="Text" Guid="7e94e268-d05a-452b-a624-944749720004" SearchSteps="CV" TargetType="ComputerVisionBased" />
                                   </scg:List>
                                 </uix:TargetAnchorable.Anchors>
@@ -272,7 +272,7 @@
                             <uix:NGetText.Target>
                               <uix:TargetAnchorable CVScreenId="af246234-e0f1-44b4-8f33-e08ec3cefb8e" CvTextArea="1282, 372, 92, 17" CvType="AnyWordGroup" DesignTimeRectangle="1282, 372, 92, 17" DesignTimeScaleFactor="1.25" ElementType="Text" Guid="48fe3f91-9024-4ee0-9d25-ce59451f0099" ImageBase64="" InformativeScreenshot="10926f83af17173f9922bdea4da9df36.png" ScopeSelectorArgument="&lt;wnd app='acrobat.exe' cls='AcrobatSDIWindow' title='inv 00?.pdf - Adobe Acrobat Reader (64-bit)' /&gt;" SearchSteps="CV" TargetType="ComputerVisionBased" Version="V4" Visibility="Interactive">
                                 <uix:TargetAnchorable.Anchors>
-                                  <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                  <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
                                     <uix:Target CVScreenId="af246234-e0f1-44b4-8f33-e08ec3cefb8e" CvTextArea="1079, 371, 42, 17" CvTextArgument="Date" CvType="Text" DesignTimeRectangle="1079, 371, 42, 17" ElementType="Text" Guid="2d5e989b-2fa3-4d59-a55e-d9084645d3e6" SearchSteps="CV" TargetType="ComputerVisionBased" />
                                   </scg:List>
                                 </uix:TargetAnchorable.Anchors>
@@ -283,7 +283,7 @@
                             <uix:NGetText.Target>
                               <uix:TargetAnchorable CVScreenId="af246234-e0f1-44b4-8f33-e08ec3cefb8e" CvTextArea="559, 344, 106, 17" CvType="AnyWordGroup" DesignTimeRectangle="559, 344, 106, 17" DesignTimeScaleFactor="1.25" ElementType="Text" Guid="fcb6c16f-8d4a-4dda-bcd8-68077ec09eda" ImageBase64="" InformativeScreenshot="975fd96c9b23bc296b1860c2f3180626.png" ScopeSelectorArgument="&lt;wnd app='acrobat.exe' cls='AcrobatSDIWindow' title='inv 00?.pdf - Adobe Acrobat Reader (64-bit)' /&gt;" SearchSteps="CV" TargetType="ComputerVisionBased" Version="V4" Visibility="Visible">
                                 <uix:TargetAnchorable.Anchors>
-                                  <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                  <scg:List x:TypeArguments="uix:ITarget" Capacity="2">
                                     <uix:Target CVScreenId="af246234-e0f1-44b4-8f33-e08ec3cefb8e" CvTextArea="514, 345, 38, 17" CvTextArgument="M/S." CvType="Text" DesignTimeRectangle="514, 345, 38, 17" ElementType="Text" Guid="18908edd-6765-486d-a974-3e199584f02b" SearchSteps="CV" TargetType="ComputerVisionBased" />
                                     <uix:Target CVScreenId="3c090d87-56d0-44b5-8688-82f5a0211bc9" CvTextArea="559, 369, 137, 18" CvTextArgument="Address Line 1" CvType="Text" DesignTimeRectangle="559, 369, 137, 18" ElementType="Text" Guid="324b5b4a-a08e-4d0d-baad-66082cd41523" SearchSteps="CV" TargetType="ComputerVisionBased" />
                                   </scg:List>
@@ -296,7 +296,7 @@
                             <uix:NGetText.Target>
                               <uix:TargetAnchorable CVScreenId="4938ef83-8cb7-4be8-b300-9a96e1cd972d" CvTextArea="1346, 791, 93, 21" CvType="AnyWordGroup" DesignTimeRectangle="1346, 744, 93, 20" DesignTimeScaleFactor="1.25" ElementType="Text" Guid="f457012c-6106-4629-a4c1-aec7c34edee5" ImageBase64="" InformativeScreenshot="b6c63ee9b403aa9e151d82163ffe6f67.png" ScopeSelectorArgument="&lt;wnd app='acrobat.exe' cls='AcrobatSDIWindow' title='inv 00?.pdf - Adobe Acrobat Reader (64-bit)' /&gt;" SearchSteps="CV" TargetType="ComputerVisionBased" Version="V4" Visibility="Visible">
                                 <uix:TargetAnchorable.Anchors>
-                                  <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                  <scg:List x:TypeArguments="uix:ITarget" Capacity="3">
                                     <uix:Target CVScreenId="4938ef83-8cb7-4be8-b300-9a96e1cd972d" CvTextArea="1112, 791, 71, 18" CvTextArgument="TOTAL" CvType="Text" DesignTimeRectangle="1112, 742, 71, 20" ElementType="Text" Guid="3a6e66ab-cf41-44bb-919a-d333454ecabb" SearchSteps="CV" TargetType="ComputerVisionBased" />
                                     <uix:Target CVScreenId="4938ef83-8cb7-4be8-b300-9a96e1cd972d" CvTextArea="1277, 791, 31, 18" CvTextArgument="Rs." CvType="Text" DesignTimeRectangle="1276, 744, 33, 18" ElementType="Text" Guid="316a36c9-97b8-41f0-8cb9-f7a68aa85748" SearchSteps="CV" TargetType="ComputerVisionBased" />
                                     <uix:Target CVScreenId="6ec3048d-aa0f-4f9e-90d6-93c7187e8037" CvTextArea="1222, 790, 154, 17" CvTextArgument="for Company ABC" CvType="Text" DesignTimeRectangle="1222, 790, 154, 17" ElementType="Text" Guid="c2c9e635-abfe-4d01-8693-82c8b41f6d33" SearchSteps="CV" TargetType="ComputerVisionBased" />
@@ -330,7 +330,7 @@
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
                   </uix:NApplicationCard>
-                  <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="382.4,56.8" sap2010:WorkflowViewState.IdRef="WriteLine_1" Text="[&quot;Invoice No.          : &quot;+inv+Environment.NewLine &amp; _&#xD;&#xA;&quot;Date                     : &quot;+date_+Environment.NewLine &amp; _&#xD;&#xA;&quot;Customer Name  : &quot;+customer_name+Environment.NewLine &amp; _&#xD;&#xA;&quot;Amount               : &quot;+amount+Environment.NewLine]">
+                  <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="382.4,56.8" sap2010:WorkflowViewState.IdRef="WriteLine_1" Text="[&quot;Invoice No.          : &quot;+inv+Environment.NewLine &amp; _&#xA;&quot;Date                     : &quot;+date_+Environment.NewLine &amp; _&#xA;&quot;Customer Name  : &quot;+customer_name+Environment.NewLine &amp; _&#xA;&quot;Amount               : &quot;+amount+Environment.NewLine]">
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                         <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -338,7 +338,7 @@
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
                   </WriteLine>
-                  <ui:AppendLine File="{x:Null}" DisplayName="Append Line" FileName="Auxilliary Files\logs\logs.txt" sap:VirtualizedContainerService.HintSize="382.4,56.8" sap2010:WorkflowViewState.IdRef="AppendLine_6" Text="[&quot;Invoice No.          : &quot;+inv+Environment.NewLine &amp; _&#xD;&#xA;&quot;Date                     : &quot;+date_+Environment.NewLine &amp; _&#xD;&#xA;&quot;Customer Name  : &quot;+customer_name+Environment.NewLine &amp; _&#xD;&#xA;&quot;Amount               : &quot;+amount+Environment.NewLine &amp; _&#xD;&#xA;&quot;-------------------------------------------------------------------------&quot; &amp; Environment.NewLine]" UseDefaultEncoding="False">
+                  <ui:AppendLine File="{x:Null}" DisplayName="Append Line" FileName="Auxilliary Files\logs\logs.txt" sap:VirtualizedContainerService.HintSize="382.4,56.8" sap2010:WorkflowViewState.IdRef="AppendLine_6" Text="[&quot;Invoice No.          : &quot;+inv+Environment.NewLine &amp; _&#xA;&quot;Date                     : &quot;+date_+Environment.NewLine &amp; _&#xA;&quot;Customer Name  : &quot;+customer_name+Environment.NewLine &amp; _&#xA;&quot;Amount               : &quot;+amount+Environment.NewLine &amp; _&#xA;&quot;-------------------------------------------------------------------------&quot; &amp; Environment.NewLine]" UseDefaultEncoding="False">
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                         <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -395,12 +395,12 @@
             </ui:ForEachFileX.Body>
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                 <x:Boolean x:Key="IsPinned">False</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
           </ui:ForEachFileX>
-          <ui:AppendLine File="{x:Null}" DisplayName="Append Line" FileName="Auxilliary Files\logs\logs.txt" sap:VirtualizedContainerService.HintSize="416,48" sap2010:WorkflowViewState.IdRef="AppendLine_7" Text="[&quot;Data are loaded to the 'Auxilliary_Files\logs.xlsx' file successfully&quot; &amp; Environment.NewLine &amp; _&#xD;&#xA;&quot;Switching Process to validation stage . . . &quot; &amp; Environment.NewLine &amp; _&#xD;&#xA;&quot;-------------------------------------------------------------------------&quot; &amp; Environment.NewLine]" UseDefaultEncoding="False">
+          <ui:AppendLine File="{x:Null}" DisplayName="Append Line" FileName="Auxilliary Files\logs\logs.txt" sap:VirtualizedContainerService.HintSize="449.6,48" sap2010:WorkflowViewState.IdRef="AppendLine_7" Text="[&quot;Data are loaded to the 'Auxilliary_Files\logs.xlsx' file successfully&quot; &amp; Environment.NewLine &amp; _&#xA;&quot;Switching Process to validation stage . . . &quot; &amp; Environment.NewLine &amp; _&#xA;&quot;-------------------------------------------------------------------------&quot; &amp; Environment.NewLine]" UseDefaultEncoding="False">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -417,7 +417,7 @@
                 <av:Size x:Key="ShapeSize">110.4,70.4</av:Size>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <Sequence DisplayName="Validation" sap:VirtualizedContainerService.HintSize="702.4,2824.8" sap2010:WorkflowViewState.IdRef="Sequence_9">
+            <Sequence DisplayName="Validation" sap:VirtualizedContainerService.HintSize="702.4,2934.4" sap2010:WorkflowViewState.IdRef="Sequence_9">
               <Sequence.Variables>
                 <Variable x:TypeArguments="sd:DataTable" Name="logs_table" />
                 <Variable x:TypeArguments="x:String" Name="status" />
@@ -507,7 +507,7 @@
                                           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                         </scg:Dictionary>
                                       </sap:WorkflowViewStateService.ViewState>
-                                      <umab:SendMailX Bcc="{x:Null}" HtmlBodyFromText="{x:Null}" ReplyTo="{x:Null}" Account="[Gmail]" Body="[&quot;Dear Sir / Madam,&quot; + Environment.NewLine &amp; _&#xD;&#xA;&quot;                    We have found an error / discrepancy in one of your invoice no&quot; + CurrentRow(&quot;Invoice Number&quot;).ToString() + &quot;. We request your attention into this for validation. We have marked this as ' Not Validated'.&quot; &amp; _&#xD;&#xA;Environment.NewLine +&quot;Thanks &amp; Regards &quot; + Environment.NewLine  + &quot;UiPath Robot&quot; +Environment.NewLine  +Environment.NewLine  +&quot;Note : This a E-mail from invoice bot&quot;+Environment.NewLine  +&quot;Attachments :&quot;+Environment.NewLine  + &quot;1. Logs.txt&quot; &amp; Environment.NewLine  &amp; &quot;2. Logs.xlsx&quot;]" BodyType="Text" Cc="camouflage.unite@gmail.com" DisplayName="Send Email" sap:VirtualizedContainerService.HintSize="433.6,448.8" sap2010:WorkflowViewState.IdRef="SendMailX_1" Importance="Normal" IsDraft="False" MaxBodyDocumentSizeMB="2" Sensitivity="Normal" Subject="[&quot;Found an Error in invoice number&quot; + CurrentRow(&quot;Invoice Number&quot;).ToString()]" To="camouflage,unite@gmail.com" UseDocumentAsBody="False">
+                                      <umab:SendMailX Bcc="{x:Null}" HtmlBodyFromText="{x:Null}" ReplyTo="{x:Null}" Account="[Gmail]" Body="[&quot;Dear Sir / Madam,&quot; + Environment.NewLine &amp; _&#xA;&quot;                    We have found an error / discrepancy in one of your invoice no&quot; + CurrentRow(&quot;Invoice Number&quot;).ToString() + &quot;. We request your attention into this for validation. We have marked this as ' Not Validated'.&quot; &amp; _&#xA;Environment.NewLine +&quot;Thanks &amp; Regards &quot; + Environment.NewLine  + &quot;UiPath Robot&quot; +Environment.NewLine  +Environment.NewLine  +&quot;Note : This a E-mail from invoice bot&quot;+Environment.NewLine  +&quot;Attachments :&quot;+Environment.NewLine  + &quot;1. Logs.txt&quot; &amp; Environment.NewLine  &amp; &quot;2. Logs.xlsx&quot;]" BodyType="Text" Cc="mail.id@emailprovider.com" DisplayName="Send Email" sap:VirtualizedContainerService.HintSize="433.6,448.8" sap2010:WorkflowViewState.IdRef="SendMailX_1" Importance="Normal" IsDraft="False" MaxBodyDocumentSizeMB="2" Sensitivity="Normal" Subject="[&quot;Found an Error in invoice number&quot; + CurrentRow(&quot;Invoice Number&quot;).ToString()]" To="mail.id@emailprovider.com" UseDocumentAsBody="False">
                                         <umab:SendMailX.Files>
                                           <scg:List x:TypeArguments="InArgument(x:String)" Capacity="2">
                                             <InArgument x:TypeArguments="x:String">Auxilliary Files\logs\logs.txt</InArgument>
@@ -587,10 +587,10 @@
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
               </ui:ForEachRow>
-              <ui:AppendLine File="{x:Null}" DisplayName="Append Line" FileName="Auxilliary Files\logs\logs.txt" sap:VirtualizedContainerService.HintSize="668.8,48" sap2010:WorkflowViewState.IdRef="AppendLine_4" Text="Validation Successful . . ." UseDefaultEncoding="False">
+              <ui:AppendLine File="{x:Null}" DisplayName="Append Line" FileName="Auxilliary Files\logs\logs.txt" sap:VirtualizedContainerService.HintSize="668.8,157.6" sap2010:WorkflowViewState.IdRef="AppendLine_4" Text="Validation Successful . . ." UseDefaultEncoding="False">
                 <sap:WorkflowViewStateService.ViewState>
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                     <x:Boolean x:Key="IsPinned">False</x:Boolean>
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>

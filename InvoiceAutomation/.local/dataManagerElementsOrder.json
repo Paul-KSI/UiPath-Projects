@@ -12,10 +12,12 @@
       "Path": "Main.xaml",
       "SortBy": 0,
       "VariablesSectionElementsOrder": [
-        "customer_name&Sequence_2",
-        "amount&Sequence_2",
+        "inv&Sequence_2",
         "date_&Sequence_2",
-        "inv&Sequence_2"
+        "amount&Sequence_2",
+        "customer_name&Sequence_2",
+        "logs_table&Sequence_9",
+        "status&Sequence_9"
       ],
       "ArgumentsSectionElementsOrder": [],
       "ConstantsSectionElementsOrder": [],

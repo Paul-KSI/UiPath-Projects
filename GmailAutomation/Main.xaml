@@ -147,7 +147,7 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <Flowchart sap:VirtualizedContainerService.HintSize="1468.8000000000002,337.704" sap2010:WorkflowViewState.IdRef="Flowchart_1">
+    <Flowchart sap:VirtualizedContainerService.HintSize="1468.8000000000002,563.2" sap2010:WorkflowViewState.IdRef="Flowchart_1">
       <Flowchart.Variables>
         <Variable x:TypeArguments="x:String" Name="best_body" />
         <Variable x:TypeArguments="scg:IList(x:String)" Name="mail_id" />
@@ -203,7 +203,7 @@
                               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                             </scg:Dictionary>
                           </sap:WorkflowViewStateService.ViewState>
-                          <umab:SendMailX Bcc="{x:Null}" HtmlBodyFromText="{x:Null}" ReplyTo="{x:Null}" Account="[Gmail]" Body="[best_body]" BodyType="Text" Cc="camouflage.unite@gmail.com" DisplayName="Send Email" sap:VirtualizedContainerService.HintSize="433.6,420.8" sap2010:WorkflowViewState.IdRef="SendMailX_2" Importance="Normal" IsDraft="False" MaxBodyDocumentSizeMB="2" Sensitivity="Normal" Subject="Notification : Automated Generated mail | Uipath" To="[currentText]" UseDocumentAsBody="False">
+                          <umab:SendMailX Bcc="{x:Null}" HtmlBodyFromText="{x:Null}" ReplyTo="{x:Null}" Account="[Gmail]" Body="[best_body]" BodyType="Text" Cc="mail.id@emailprovider.com" DisplayName="Send Email" sap:VirtualizedContainerService.HintSize="433.6,420.8" sap2010:WorkflowViewState.IdRef="SendMailX_2" Importance="Normal" IsDraft="False" MaxBodyDocumentSizeMB="2" Sensitivity="Normal" Subject="Notification : Automated Generated mail | Uipath" To="[currentText]" UseDocumentAsBody="False">
                             <umab:SendMailX.Files>
                               <scg:List x:TypeArguments="InArgument(x:String)" Capacity="1">
                                 <InArgument x:TypeArguments="x:String">Auxilliary Files\Process Description.txt</InArgument>
@@ -248,7 +248,7 @@
                 <av:PointCollection x:Key="ConnectorLocation">490.2,95.4 490.2,145</av:PointCollection>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <Sequence DisplayName="Log Unread" sap:VirtualizedContainerService.HintSize="550.4,1249.6" sap2010:WorkflowViewState.IdRef="Sequence_25">
+            <Sequence DisplayName="Log Unread" sap:VirtualizedContainerService.HintSize="110.4,70.4" sap2010:WorkflowViewState.IdRef="Sequence_25">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -256,19 +256,19 @@
               </sap:WorkflowViewStateService.ViewState>
               <ui:WriteTextFile File="{x:Null}" DisplayName="Write Text File" FileName="Auxilliary Files\unread_mail_logs.txt" sap:VirtualizedContainerService.HintSize="516.8,166.4" sap2010:WorkflowViewState.IdRef="WriteTextFile_1" Text="[&quot;Log mail: &quot; &amp; DateTime.Now.ToString(&quot;dd/MM/yyyy HH:mm:ss&quot;) &amp; vbCrLf &amp; vbCrLf]" />
               <ui:CreateList x:TypeArguments="ugm:GmailMessage" DisplayName="Create List" sap:VirtualizedContainerService.HintSize="516.8,167.2" sap2010:WorkflowViewState.IdRef="CreateList`1_5" NewList="[Emailist]" />
-              <umab:GmailApplicationCard ConnectionAccountName="{x:Null}" ConnectionId="{x:Null}" Account="camouflage.unite@gmail.com" DisplayName="Use Gmail" EmailAddress="camouflage.unite@gmail.com" sap:VirtualizedContainerService.HintSize="516.8,856" sap2010:WorkflowViewState.IdRef="GmailApplicationCard_3" Timeout="90" UseConnectionService="False">
+              <umab:GmailApplicationCard ConnectionAccountName="{x:Null}" ConnectionId="{x:Null}" Account="camouflage.unite@gmail.com" DisplayName="Use Gmail" EmailAddress="camouflage.unite@gmail.com" sap:VirtualizedContainerService.HintSize="516.8,868.8" sap2010:WorkflowViewState.IdRef="GmailApplicationCard_3" Timeout="90" UseConnectionService="False">
                 <umab:GmailApplicationCard.Body>
                   <ActivityAction x:TypeArguments="um:IMailQuickHandle">
                     <ActivityAction.Argument>
                       <DelegateInArgument x:TypeArguments="um:IMailQuickHandle" Name="Gmail" />
                     </ActivityAction.Argument>
-                    <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="483.2,651.2" sap2010:WorkflowViewState.IdRef="Sequence_11">
+                    <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="483.2,664" sap2010:WorkflowViewState.IdRef="Sequence_11">
                       <sap:WorkflowViewStateService.ViewState>
                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
-                      <uga:GetEmailListConnections ConnectionAccountName="{x:Null}" ContinueOnError="{x:Null}" CurrentIndex="{x:Null}" Filter="{x:Null}" FolderIdBackup="{x:Reference __ReferenceID0}" ManualEntryFolder="{x:Null}" AllLabels="W3siSWQiOiJDSEFUIiwiTmFtZSI6IkNIQVQiLCJUeXBlIjoic3lzdGVtIn0seyJJZCI6IlNFTlQiLCJOYW1lIjoiU0VOVCIsIlR5cGUiOiJzeXN0ZW0ifSx7IklkIjoiSU5CT1giLCJOYW1lIjoiSU5CT1giLCJUeXBlIjoic3lzdGVtIn0seyJJZCI6IklNUE9SVEFOVCIsIk5hbWUiOiJJTVBPUlRBTlQiLCJUeXBlIjoic3lzdGVtIn0seyJJZCI6IlRSQVNIIiwiTmFtZSI6IlRSQVNIIiwiVHlwZSI6InN5c3RlbSJ9LHsiSWQiOiJEUkFGVCIsIk5hbWUiOiJEUkFGVCIsIlR5cGUiOiJzeXN0ZW0ifSx7IklkIjoiU1BBTSIsIk5hbWUiOiJTUEFNIiwiVHlwZSI6InN5c3RlbSJ9LHsiSWQiOiJDQVRFR09SWV9GT1JVTVMiLCJOYW1lIjoiQ0FURUdPUllfRk9SVU1TIiwiVHlwZSI6InN5c3RlbSJ9LHsiSWQiOiJDQVRFR09SWV9VUERBVEVTIiwiTmFtZSI6IkNBVEVHT1JZX1VQREFURVMiLCJUeXBlIjoic3lzdGVtIn0seyJJZCI6IkNBVEVHT1JZX1BFUlNPTkFMIiwiTmFtZSI6IkNBVEVHT1JZX1BFUlNPTkFMIiwiVHlwZSI6InN5c3RlbSJ9LHsiSWQiOiJDQVRFR09SWV9QUk9NT1RJT05TIiwiTmFtZSI6IkNBVEVHT1JZX1BST01PVElPTlMiLCJUeXBlIjoic3lzdGVtIn0seyJJZCI6IkNBVEVHT1JZX1NPQ0lBTCIsIk5hbWUiOiJDQVRFR09SWV9TT0NJQUwiLCJUeXBlIjoic3lzdGVtIn0seyJJZCI6IlNUQVJSRUQiLCJOYW1lIjoiU1RBUlJFRCIsIlR5cGUiOiJzeXN0ZW0ifSx7IklkIjoiVU5SRUFEIiwiTmFtZSI6IlVOUkVBRCIsIlR5cGUiOiJzeXN0ZW0ifSx7IklkIjoiTGFiZWxfNDY2MzExNjA2Mjg5MjEwMTA2NiIsIk5hbWUiOiJVbnJlYWRfbWFpbCIsIlR5cGUiOiJ1c2VyIn1d" AuthScopesInvalid="False" BrowserFolder="Unread" BrowserFolderLabelId="UNREAD" ConnectionId="2c704b73-d591-4e3f-bf88-97ae0d0fce4c" DisplayName="Get Email List" EmailList="[emailist]" FolderInputSelectionMode="Browse" sap:VirtualizedContainerService.HintSize="449.6,236" sap2010:WorkflowViewState.IdRef="GetEmailListConnections_3" ImportantOnly="False" IncludeSubfolders="False" MarkAsRead="False" MaxResults="100" StarredOnly="False" UnreadOnly="True" UseConnectionService="True" WithAttachmentsOnly="False">
+                      <uga:GetEmailListConnections ConnectionAccountName="{x:Null}" ContinueOnError="{x:Null}" CurrentIndex="{x:Null}" Filter="{x:Null}" FolderIdBackup="{x:Reference __ReferenceID0}" ManualEntryFolder="{x:Null}" AllLabels="W3siSWQiOiJDSEFUIiwiTmFtZSI6IkNIQVQiLCJUeXBlIjoic3lzdGVtIn0seyJJZCI6IlNFTlQiLCJOYW1lIjoiU0VOVCIsIlR5cGUiOiJzeXN0ZW0ifSx7IklkIjoiSU5CT1giLCJOYW1lIjoiSU5CT1giLCJUeXBlIjoic3lzdGVtIn0seyJJZCI6IklNUE9SVEFOVCIsIk5hbWUiOiJJTVBPUlRBTlQiLCJUeXBlIjoic3lzdGVtIn0seyJJZCI6IlRSQVNIIiwiTmFtZSI6IlRSQVNIIiwiVHlwZSI6InN5c3RlbSJ9LHsiSWQiOiJEUkFGVCIsIk5hbWUiOiJEUkFGVCIsIlR5cGUiOiJzeXN0ZW0ifSx7IklkIjoiU1BBTSIsIk5hbWUiOiJTUEFNIiwiVHlwZSI6InN5c3RlbSJ9LHsiSWQiOiJDQVRFR09SWV9GT1JVTVMiLCJOYW1lIjoiQ0FURUdPUllfRk9SVU1TIiwiVHlwZSI6InN5c3RlbSJ9LHsiSWQiOiJDQVRFR09SWV9VUERBVEVTIiwiTmFtZSI6IkNBVEVHT1JZX1VQREFURVMiLCJUeXBlIjoic3lzdGVtIn0seyJJZCI6IkNBVEVHT1JZX1BFUlNPTkFMIiwiTmFtZSI6IkNBVEVHT1JZX1BFUlNPTkFMIiwiVHlwZSI6InN5c3RlbSJ9LHsiSWQiOiJDQVRFR09SWV9QUk9NT1RJT05TIiwiTmFtZSI6IkNBVEVHT1JZX1BST01PVElPTlMiLCJUeXBlIjoic3lzdGVtIn0seyJJZCI6IkNBVEVHT1JZX1NPQ0lBTCIsIk5hbWUiOiJDQVRFR09SWV9TT0NJQUwiLCJUeXBlIjoic3lzdGVtIn0seyJJZCI6IlNUQVJSRUQiLCJOYW1lIjoiU1RBUlJFRCIsIlR5cGUiOiJzeXN0ZW0ifSx7IklkIjoiVU5SRUFEIiwiTmFtZSI6IlVOUkVBRCIsIlR5cGUiOiJzeXN0ZW0ifSx7IklkIjoiTGFiZWxfNDY2MzExNjA2Mjg5MjEwMTA2NiIsIk5hbWUiOiJVbnJlYWRfbWFpbCIsIlR5cGUiOiJ1c2VyIn1d" AuthScopesInvalid="False" BrowserFolder="Unread" BrowserFolderLabelId="UNREAD" ConnectionId="2c704b73-d591-4e3f-bf88-97ae0d0fce4c" DisplayName="Get Email List" EmailList="[emailist]" FolderInputSelectionMode="Browse" sap:VirtualizedContainerService.HintSize="449.6,248.8" sap2010:WorkflowViewState.IdRef="GetEmailListConnections_3" ImportantOnly="False" IncludeSubfolders="False" MarkAsRead="False" MaxResults="100" StarredOnly="False" UnreadOnly="True" UseConnectionService="True" WithAttachmentsOnly="False">
                         <uga:GetEmailListConnections.Folder>
                           <ugagm:FolderArgument ConnectionDescriptor="{x:Null}" ManualEntryFolderName="{x:Null}" BrowserFolderId="UNREAD" BrowserFolderName="Unread" ConnectionKey="2c704b73-d591-4e3f-bf88-97ae0d0fce4c" InputMode="Browse">
                             <ugagm:FolderArgument.Backup>
@@ -293,7 +293,7 @@
                                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                 </scg:Dictionary>
                               </sap:WorkflowViewStateService.ViewState>
-                              <ui:AppendLine File="{x:Null}" DisplayName="Append Line" FileName="Auxilliary Files\unread_mail_logs.txt" sap:VirtualizedContainerService.HintSize="382.4,157.6" sap2010:WorkflowViewState.IdRef="AppendLine_1" Text="[&quot;From: &quot; &amp; currentGmailMessage.FromAddress &amp; vbCrLf &amp; _&#xD;&#xA;                         &quot;Date: &quot; &amp; If(currentGmailMessage.ReceivedDateTime.HasValue, currentGmailMessage.ReceivedDateTime.Value.ToString(&quot;dd/MM/yyyy HH:mm:ss&quot;), &quot;unknown date&quot;) &amp; vbCrLf &amp; _&#xD;&#xA;                         &quot;Status: Unread&quot; &amp; vbCrLf &amp; _&#xD;&#xA;                         &quot;Attachments: &quot; &amp; currentGmailMessage.AttachmentCount.ToString() &amp; vbCrLf &amp; _&#xD;&#xA;                         &quot;Subject: &quot; &amp; currentGmailMessage.Subject &amp; vbCrLf &amp; _&#xD;&#xA;                         &quot;Body of the mail: &quot; &amp; vbCrLf &amp; _ &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9; currentGmailMessage.Body &amp; vbCrLf &amp; _&#xD;&#xA;                         &quot;-----------------------------------------------------------&quot; &amp; vbCrLf &amp; vbCrLf]" UseDefaultEncoding="False" />
+                              <ui:AppendLine File="{x:Null}" DisplayName="Append Line" FileName="Auxilliary Files\unread_mail_logs.txt" sap:VirtualizedContainerService.HintSize="382.4,157.6" sap2010:WorkflowViewState.IdRef="AppendLine_1" Text="[&quot;From: &quot; &amp; currentGmailMessage.FromAddress &amp; vbCrLf &amp; _&#xA;                         &quot;Date: &quot; &amp; If(currentGmailMessage.ReceivedDateTime.HasValue, currentGmailMessage.ReceivedDateTime.Value.ToString(&quot;dd/MM/yyyy HH:mm:ss&quot;), &quot;unknown date&quot;) &amp; vbCrLf &amp; _&#xA;                         &quot;Status: Unread&quot; &amp; vbCrLf &amp; _&#xA;                         &quot;Attachments: &quot; &amp; currentGmailMessage.AttachmentCount.ToString() &amp; vbCrLf &amp; _&#xA;                         &quot;Subject: &quot; &amp; currentGmailMessage.Subject &amp; vbCrLf &amp; _&#xA;                         &quot;Body of the mail: &quot; &amp; vbCrLf &amp; _ &#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9; currentGmailMessage.Body &amp; vbCrLf &amp; _&#xA;                         &quot;-----------------------------------------------------------&quot; &amp; vbCrLf &amp; vbCrLf]" UseDefaultEncoding="False" />
                             </Sequence>
                           </ActivityAction>
                         </ui:ForEach.Body>
@@ -321,7 +321,7 @@
                     <av:Size x:Key="ShapeSize">110.4,70.4</av:Size>
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
-                <Sequence DisplayName="Download from specific sender" sap:VirtualizedContainerService.HintSize="110.4,70.4" sap2010:WorkflowViewState.IdRef="Sequence_14">
+                <Sequence DisplayName="Download from specific sender" sap:VirtualizedContainerService.HintSize="550.4,811.2" sap2010:WorkflowViewState.IdRef="Sequence_14">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -517,21 +517,9 @@
                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
-              <ui:CreateList x:TypeArguments="x:String" DisplayName="Create List" sap:VirtualizedContainerService.HintSize="451.2,167.2" sap2010:WorkflowViewState.IdRef="CreateList`1_3" NewList="[mail_id]" />
-              <uasa:AppendItemToList x:TypeArguments="x:String" ItemIndex="{x:Null}" DisplayName="Append Item to List" sap:VirtualizedContainerService.HintSize="451.2,167.2" sap2010:WorkflowViewState.IdRef="AppendItemToList`1_1" ItemToAppend="camouflage.unite@gmail.com" List="[mail_id]" />
-              <uasa:AppendItemToList x:TypeArguments="x:String" ItemIndex="{x:Null}" DisplayName="Append Item to List" sap:VirtualizedContainerService.HintSize="451.2,167.2" sap2010:WorkflowViewState.IdRef="AppendItemToList`1_2" ItemToAppend="paul72k4samuel@gmail.com" List="[mail_id]" />
-              <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="451.2,320" sap2010:WorkflowViewState.IdRef="CommentOut_1">
-                <ui:CommentOut.Body>
-                  <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="416,218.4" sap2010:WorkflowViewState.IdRef="Sequence_6">
-                    <sap:WorkflowViewStateService.ViewState>
-                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                      </scg:Dictionary>
-                    </sap:WorkflowViewStateService.ViewState>
-                    <uasa:AppendItemToList x:TypeArguments="x:String" ItemIndex="{x:Null}" DisplayName="Append Item to List" sap:VirtualizedContainerService.HintSize="382.4,158.4" sap2010:WorkflowViewState.IdRef="AppendItemToList`1_3" ItemToAppend="preethi.g.ads@kct.ac.in" List="[mail_id]" />
-                  </Sequence>
-                </ui:CommentOut.Body>
-              </ui:CommentOut>
+              <ui:CreateList x:TypeArguments="x:String" DisplayName="Create List" sap:VirtualizedContainerService.HintSize="416,167.2" sap2010:WorkflowViewState.IdRef="CreateList`1_3" NewList="[mail_id]" />
+              <uasa:AppendItemToList x:TypeArguments="x:String" ItemIndex="{x:Null}" DisplayName="Append Item to List" sap:VirtualizedContainerService.HintSize="416,167.2" sap2010:WorkflowViewState.IdRef="AppendItemToList`1_1" ItemToAppend="mail.id@emailprovider.com" List="[mail_id]" />
+              <uasa:AppendItemToList x:TypeArguments="x:String" ItemIndex="{x:Null}" DisplayName="Append Item to List" sap:VirtualizedContainerService.HintSize="416,158.4" sap2010:WorkflowViewState.IdRef="AppendItemToList`1_2" ItemToAppend="mail.id@emailprovider.com" List="[mail_id]" />
             </Sequence>
             <FlowStep.Next>
               <x:Reference>__ReferenceID1</x:Reference>
